@@ -38,10 +38,10 @@ sections:
   label: Site Config
   templates:
   - info
-upload_dir: portfolio/.vuepress/public/upload
-public_path: "/upload"
+upload_dir: ''
+public_path: portfolio/.vuepress/public/media
 front_matter_path: ''
-use_front_matter_path: false
+use_front_matter_path: 
 file_template: ":filename:"
 build:
   preview_command: yarn build
