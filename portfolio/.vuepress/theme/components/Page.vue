@@ -211,6 +211,12 @@
 
 <style lang="stylus">
     @require '~@parent-theme/styles/wrapper.styl'
+    ::selection
+        background: $accentColor /* WebKit/Blink Browsers */
+
+    ::-moz-selection
+        background: $accentColor /* Gecko Browsers */
+
     .page
         padding-bottom 2rem
         display block
