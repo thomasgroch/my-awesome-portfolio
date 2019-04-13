@@ -79,10 +79,12 @@ exports.handler = async (event, context) => {
 			throw new Error(result)
 		}
 
-		const dbResponse = await client.query(q.Create(q.Ref('classes/contacts'), {data: {
-			...payload,
+		const dbResponse = await client.query(q.Create(q.Ref('classes/contacts'), {
+			data: {
+				...payload,
 				createdAt: moment()
-			}}))
+			}
+		}))
 
 	} catch (error) {
 		return {
