@@ -1,7 +1,7 @@
 import {parse} from 'querystring'
 
 const faunadb = require('faunadb')
-
+const moment = require('moment')
 const Mailgun = require('mailgun-js')
 const q = faunadb.query
 const client = new faunadb.Client({
@@ -79,7 +79,10 @@ exports.handler = async (event, context) => {
 			throw new Error(result)
 		}
 
-		const dbResponse = await client.query(q.Create(q.Ref('classes/contacts'), {data: payload}))
+		const dbResponse = await client.query(q.Create(q.Ref('classes/contacts'), {data: {
+			...payload,
+				createdAt: moment()
+			}}))
 
 	} catch (error) {
 		return {
