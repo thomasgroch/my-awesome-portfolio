@@ -165,9 +165,6 @@
 <style src="prismjs/themes/prism-tomorrow.css"></style>
 <style src="@theme/styles/theme.styl" lang="stylus"></style>
 <style lang="stylus" scoped>
-    main
-        margin 0 !important
-        padding 0 !important
     a
         text-decoration none
         position: relative;
