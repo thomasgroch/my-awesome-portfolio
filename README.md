@@ -12,6 +12,10 @@
     <img alt="Import this project into Forestry" src="https://assets.forestry.io/import-to-forestryK.svg" />
 </a>
 
+# Env
+
+[install on github](https://github.com/settings/tokens/new?scopes=repo&description=My%20awesome%20portfolio)
+
 # Credits
 
 Eu reescrevi meu portfólio muitas vezes, e cada vez fui influenciado por alguém novo. Essas pessoas incluem:
@@ -21,3 +25,4 @@ Eu reescrevi meu portfólio muitas vezes, e cada vez fui influenciado por algué
 # Conhecimentos
 
 - [laxxx](https://github.com/alexfoxy/laxxx)
+- [vuepress socket examples](https://vuepress-examples.netlify.com/)
