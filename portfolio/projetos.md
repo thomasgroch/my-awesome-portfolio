@@ -1,12 +1,18 @@
 ---
 title: Projetos
 projetos:
+- title: asd
+  href: carefitness.netlify.com
+  external: true
+  description: kkk
+  date: 2019-04-18 03:00:00 +0000
+  draft: false
 - title: Sellia
   href: http://sellia.com.br
   description: Uma solução de agregador de mensagens instantâneas. - Um aplicativo
     que traz todos juntos. Ele permite que você se conecte a todas as plataformas
     de mensagens, incluindo o Facebook Messenger, WhatsApp e Instagram.
-  date: 2018-06-01
+  date: 2018-06-01 00:00:00 +0000
   tags:
   - mobile
   - backend
@@ -15,25 +21,27 @@ projetos:
   - aws
   external: true
 - title: Projeto
-  href: #
+  href: 
   description: 'Description #2'
-  date: 2018-04-12
+  date: 2018-04-12 00:00:00 +0000
   tags:
   - Archlinux
 - title: Projeto
-  href: #
+  href: 
   description: 'Description #3'
-  date: 2018-04-12
+  date: 2018-04-12 00:00:00 +0000
   tags:
   - Archlinux
 - title: Projeto
-  href: #
+  href: 
   description: 'Description #4'
-  date: 2018-04-12
+  date: 2018-04-12 00:00:00 +0000
   tags:
   - Archlinux
 sidebar: false
 view: projeto
+navbar: false
+
 ---
 # Projetos page title
 
