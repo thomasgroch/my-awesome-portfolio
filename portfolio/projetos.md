@@ -2,7 +2,7 @@
 title: Projetos
 projetos:
 - title: asd
-  href: carefitness.netlify.com
+  href: https://carefitness.netlify.com/
   external: true
   description: kkk
   date: 2019-04-18 03:00:00 +0000
