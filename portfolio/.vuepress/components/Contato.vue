@@ -151,6 +151,7 @@
 <script>
 	import VueTextareaAutosize from 'vue-textarea-autosize'
 	import Estados from './Estados'
+	import nprogress from 'nprogress'
 
 	export default {
 		name: 'Contato',
@@ -174,6 +175,7 @@
 		methods: {
 			async validateBeforeSubmit() {
 				let result = false
+				let response
 				try {
 					// TODO: Add UX like this
 					//  https://forestry-community.slack.com/join/shared_invite/enQtNDAxMTU5NzcwMzA3LWUyYTk3NDY2ZDNiMjFhNmVlMjExM2FjYzFhNjJhNjU2NTc2ODVjZTdlYjJiODhhZDgwYTVhYjY0ZGU3ZWFmYzM
@@ -182,34 +184,31 @@
 						throw new Error('Form is not valid')
 						return
 					}
-					console.log(this.$data)
+					nprogress.start()
 
-					const response = await fetch(this.formAction, {
+					response = await fetch(this.formAction, {
 						method: 'POST',
 						body: JSON.stringify(this.$data)
 					})
-					const body = response.json()
 					if (Number(response.status) !== 200) {
-						if(response.body.error){
-							alert(response.body.error)
-                        }
-						throw new Error('Status ${response.status}. Error submitting the form. ')
+						throw new Error('Status: ${response.status}. Error: ${response.body.error}. ')
 						return
 					}
 				} catch (error) {
 					console.log(error)
+					nprogress.done()
 					return
 				}
-
+				nprogress.done()
 				// Show success
-				this.showSuccess(this.$data)
+				this.showSuccess(response.json())
 
 				return true
 			},
 
-			showSuccess(data) {
+			showSuccess() {
 				alert('It works!')
-				alert(data)
+				alert(this.$data)
 			},
 
 			hasFilled(field) {

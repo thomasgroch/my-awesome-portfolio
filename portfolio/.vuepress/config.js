@@ -64,7 +64,6 @@ module.exports = {
 		disqusApiKey: info.disqusApiKey
 	},
 	plugins: [
-		// ['@vuepress/google-analytics', {ga: info.googleAnalytics}],
 		['@vssue/vuepress-plugin-vssue', {
 			owner: process.env.VSSUE_OWNER,
 			repo: process.env.VSSUE_REPO,

@@ -103,7 +103,7 @@
 		mounted() {
 			window.addEventListener("scroll", this.onScroll);
 			// configure progress bar
-			nprogress.configure({ showSpinner: false })
+			nprogress.configure({ showSpinner: true })
 			this.$router.beforeEach((to, from, next) => {
 				if (to.path !== from.path && !Vue.component(to.name)) {
 					nprogress.start()
@@ -165,6 +165,12 @@
 <style src="prismjs/themes/prism-tomorrow.css"></style>
 <style src="@theme/styles/theme.styl" lang="stylus"></style>
 <style lang="stylus" scoped>
+    #nprogress .spinner
+        display: block
+        position: fixed
+        z-index: 1031
+        top: 15px
+        right: 50%
     a
         text-decoration none
         position: relative;

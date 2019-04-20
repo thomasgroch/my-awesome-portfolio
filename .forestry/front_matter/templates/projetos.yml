@@ -51,7 +51,7 @@ fields:
     label: Draft
     default: false
     description: Hide this project on the projects page
-- name: navbar
+- name: sidebar
   type: boolean
   label: Navegation Bar
   default: false

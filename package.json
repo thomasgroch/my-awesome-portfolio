@@ -38,7 +38,6 @@
     "@stackblitz/sdk": "1.3.0",
     "@vssue/vuepress-plugin-vssue": "0.8.2",
     "@vuepress/plugin-back-to-top": "1.0.0-alpha.44",
-    "@vuepress/plugin-google-analytics": "1.0.0-alpha.44",
     "axios": "0.18.0",
     "dotenv-webpack": "1.7.0",
     "faunadb": "2.6.1",

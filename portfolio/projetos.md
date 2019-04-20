@@ -40,8 +40,6 @@ projetos:
   - Archlinux
 sidebar: false
 view: projeto
-navbar: false
-
 ---
 # Projetos page title
 
