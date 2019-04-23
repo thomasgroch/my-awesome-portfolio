@@ -68,6 +68,13 @@ exports.handler = async (event, context) => {
 
 	// code
 	try {
+		const dbResponse = await client.query(q.Create(q.Ref('classes/contacts'), {
+			data: {
+				...payload,
+				createdAt: moment().format()
+			}
+		}))
+
 		const playloadMail = {
 			from: process.env.MAILGUN_FROM || 'Support <support@thomasgroch.com>',
 			to: payload.email,
@@ -78,13 +85,6 @@ exports.handler = async (event, context) => {
 		if (!result || !result.message) {
 			throw new Error( (result.message) ? result.message : result )
 		}
-
-		const dbResponse = await client.query(q.Create(q.Ref('classes/contacts'), {
-			data: {
-				...payload,
-				createdAt: moment().format()
-			}
-		}))
 
 	} catch (error) {
 		return {
