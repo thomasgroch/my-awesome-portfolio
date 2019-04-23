@@ -82,7 +82,7 @@ exports.handler = async (event, context) => {
 		const dbResponse = await client.query(q.Create(q.Ref('classes/contacts'), {
 			data: {
 				...payload,
-				createdAt: moment()
+				createdAt: moment().format()
 			}
 		}))
 
