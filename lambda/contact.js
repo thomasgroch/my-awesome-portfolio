@@ -76,7 +76,7 @@ exports.handler = async (event, context) => {
 		}
 		const result = await sendEmail(playloadMail)
 		if (!result || !result.message) {
-			throw new Error(result)
+			throw new Error( (result.message) ? result.message : result )
 		}
 
 		const dbResponse = await client.query(q.Create(q.Ref('classes/contacts'), {
