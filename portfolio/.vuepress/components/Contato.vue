@@ -20,7 +20,7 @@
                         <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                                :class="{'input': true, 'border-red': errors.has('nome') }"
                                name="nome"
-                               v-model="nome"
+                               v-model="form.nome"
                                v-validate="'required'"
                                id="grid-nome"
                                type="text">
@@ -42,7 +42,7 @@
                             <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                                    :class="{'input': true, 'border-red': errors.has('email') }"
                                    name="email"
-                                   v-model="email"
+                                   v-model="form.email"
                                    v-validate="'required|email'"
                                    id="grid-email"
                                    type="text">
@@ -61,7 +61,7 @@
                             <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                                    :class="{'input': true, 'border-red': errors.has('telefone') }"
                                    name="telefone"
-                                   v-model="telefone"
+                                   v-model="form.telefone"
                                    v-validate="'required'"
                                    id="grid-telefone"
                                    type="text">
@@ -79,11 +79,11 @@
                         <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
                                for="grid-mensagem">Mensagem</label>
                         <textarea
-                                class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded pt-3 pb-10 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-grey"
+                                class="appearance-none focus:shadow block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded pt-3 pb-10 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-grey"
                                 :class="{'input': true, 'border-red': errors.has('mensagem') }"
                                 name="mensagem"
                                 v-validate="'required|min:50'"
-                                v-model="mensagem"
+                                v-model="form.mensagem"
                                 @input="textareaResize" ref="textarea" rows="3"
                                 id="grid-mensagem"/>
                         <p class="text-red text-xs italic"
@@ -105,7 +105,7 @@
                                      :class="{'input': true, 'border-red': errors.has('estado') }"
                                      name="estado"
                                      v-validate="'required'"
-                                     v-model="estado"
+                                     v-model="form.estado"
                                      id="grid-estado"/>
                             <p class="text-red text-xs italic"
                                v-if="errors.has('estado')">{{ errors.first('estado') }}</p>
@@ -124,8 +124,8 @@
                                     :class="{'input': true, 'border-red': errors.has('cidade') }"
                                     name="cidade"
                                     v-validate="'required'"
-                                    v-model="cidade"
-                                    :estado="estado"
+                                    v-model="form.cidade"
+                                    :estado="form.estado"
                                     @onCidadeSelected="changeCidade"
                                     id="grid-cidade"/>
                             <p class="text-red text-xs italic"
@@ -136,9 +136,27 @@
                 </div>
 
                 <div class="w-full px-3 mb-3 md:mb-0">
+
+                    <div v-if="this.status === 'error'"
+                         class="bg-red-lightest border border-red-light text-red-dark pl-4 pr-8 py-3 rounded relative"
+                         role="alert">
+                        <strong class="font-bold">Brbrbr!</strong>
+                        <span class="block sm:inline">Ops. Algo deu errado.</span>
+                        <span class="absolute pin-t pin-b pin-r pr-2 py-3">
+                            <svg class="h-6 w-6 text-red" role="button" xmlns="http://www.w3.org/2000/svg"
+                                 viewBox="0 0 20 20">
+                                <title>Fechar</title>
+                                <path d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z"/></svg>
+                          </span>
+                    </div>
+
                     <div class="flex items-center justify-center px-3 my-6 md:mb-0 items-center">
 
-                        <button class="shadow bg-green hover:bg-green-dark focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+                        <!--
+                        class="bg-green hover:bg-green-dark focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+                        -->
+                        <button
+                                class="bg-transparent shadow hover:bg-green text-green-dark font-semibold hover:text-white py-2 px-4 border border-green hover:border-transparent rounded"
                                 type="submit">Enviar
                         </button>
 
@@ -159,12 +177,15 @@
 		props: {},
 		data() {
 			return {
-				nome: null,
-				email: null,
-				telefone: null,
-				estado: null,
-				cidade: null,
-				mensagem: '',
+				form: {
+					nome: null,
+					email: null,
+					telefone: null,
+					estado: null,
+					cidade: null,
+					mensagem: ''
+				},
+				status: 'idle'
 			}
 		},
 		computed: {
@@ -179,49 +200,53 @@
 				try {
 					// TODO: Add UX like this
 					//  https://forestry-community.slack.com/join/shared_invite/enQtNDAxMTU5NzcwMzA3LWUyYTk3NDY2ZDNiMjFhNmVlMjExM2FjYzFhNjJhNjU2NTc2ODVjZTdlYjJiODhhZDgwYTVhYjY0ZGU3ZWFmYzM
+					nprogress.start()
+					this.status = 'loading'
+
+					// Validate
 					result = await this.$validator.validateAll()
 					if (!result) {
+						this.status = 'error'
 						throw new Error('Form is not valid')
 						return
 					}
-					nprogress.start()
 
 					response = await fetch(this.formAction, {
 						method: 'POST',
-						body: JSON.stringify(this.$data)
+						body: JSON.stringify(this.$data.form)
 					})
 					if (Number(response.status) !== 200) {
-						throw new Error('Status: ${response.status}. Error: ${response.body.error}. ')
+						throw new Error(`Status: ${response.status}. Error: ${response.body.error}.`)
 						return
 					}
 				} catch (error) {
 					console.log(error)
+					this.status = 'error'
 					nprogress.done()
 					return
 				}
 				nprogress.done()
-				// Show success
+                this.status = 'done'
 				this.showSuccess(response.json())
-
 				return true
 			},
 
 			showSuccess() {
 				alert('It works!')
-				alert(this.$data)
+				alert(this.$data.form)
 			},
 
 			hasFilled(field) {
-				return (!this.errors.has(field) && this[field])
+				return (!this.errors.has(field) && this.form[field])
 			},
 			textareaResize() {
 				this.$refs.textarea.style.minHeight = this.$refs.textarea.scrollHeight + 'px'
 			},
 			changeEstado(estado) {
-				this.estado = estado
+				this.form.estado = estado
 			},
 			changeCidade(cidade) {
-				this.cidade = cidade
+				this.form.cidade = cidade
 			}
 		}
 		,
