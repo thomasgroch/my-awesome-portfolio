@@ -20,6 +20,15 @@ projetos:
     - nodejs
     - docker
     - aws
+- title: XCRM
+  href: 'https://xcrm.com.br'
+  external: true
+  description: 'Desenvolvimento de sistema de CRM Multitenancy. Implementação de gerenciador de empreendimentos, pessoas e empresas do projeto.'
+  date: 2017-05-01 00:00:00 +0000
+  tags:
+    - backend
+    - codeigniter
+    - aws
 - title: Projeto
   href: '#'
   external: true
