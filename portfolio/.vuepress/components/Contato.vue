@@ -1,7 +1,22 @@
 <template>
     <main class="mt-5 flex flex-col">
         <div class="flex mb-4 flex-wrap justify-center">
-
+            <modal name="done"
+                   classes="flex flex-col h-full bg-white font-nunito rounded-lg shadow-lg p-10"
+                   @closed="beforeModalClose">
+                <h1 class="pb-10 h-10">Contato</h1>
+                <div class="flex-1 pt-2">
+                    <div class="bg-green-lightest border-l-4 border-green p-4" role="alert">
+                        <p class="text-green-dark font-bold">Sua mensagem foi enviada com sucesso.</p>
+                        <p>Obrigado pelo seu interesse.</p>
+                    </div>
+                </div>
+                <div class="modal-footer flex justify-end pt-2 h-10">
+                    <button class="bg-transparent shadow hover:bg-green text-green-dark font-semibold hover:text-white py-2 px-4 border border-green hover:border-transparent rounded"
+                            type="submit">Fechar
+                    </button>
+                </div>
+            </modal>
             <form class="w-full max-w-md font-nunito"
                   :action="formAction"
                   @submit.prevent="validateBeforeSubmit"
@@ -151,15 +166,10 @@
                     </div>
 
                     <div class="flex items-center justify-center px-3 my-6 md:mb-0 items-center">
-
-                        <!--
-                        class="bg-green hover:bg-green-dark focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
-                        -->
                         <button
                                 class="bg-transparent shadow hover:bg-green text-green-dark font-semibold hover:text-white py-2 px-4 border border-green hover:border-transparent rounded"
                                 type="submit">Enviar
                         </button>
-
                     </div>
                 </div>
             </form>
@@ -226,14 +236,13 @@
 					return
 				}
 				nprogress.done()
-                this.status = 'done'
+				this.status = 'done'
 				this.showSuccess(response.json())
 				return true
 			},
 
 			showSuccess() {
-				alert('It works!')
-				alert(this.$data.form)
+				this.$modal.show('done', this.$data.form)
 			},
 
 			hasFilled(field) {
@@ -247,6 +256,9 @@
 			},
 			changeCidade(cidade) {
 				this.form.cidade = cidade
+			},
+			beforeModalClose(event) {
+				this.status = 'dismiss'
 			}
 		}
 		,
@@ -256,4 +268,7 @@
 	}
 </script>
 <style>
+    #app :not(div.v--modal-overlay) {
+        filter: blur(5px);
+    }
 </style>
