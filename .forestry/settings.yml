@@ -53,3 +53,5 @@ build:
   preview_output_directory: dist
   output_directory: dist
   instant_preview_command: yarn dev
+  preview_docker_image: node:10
+  mount_path: "/srv"
