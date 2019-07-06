@@ -27,5 +27,3 @@ fields:
   label: Internal page type
   default: post
   hidden: true
-pages:
-- portfolio/blog/kkkkkkkkkkkkkkkkkkkkkkk.md

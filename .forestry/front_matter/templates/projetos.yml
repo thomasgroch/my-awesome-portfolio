@@ -14,43 +14,43 @@ fields:
   description: List of works
   default: ''
   fields:
-  - name: title
-    type: text
-    label: Project Title
-    default: ''
-  - name: href
-    type: text
-    label: Project website
-    default: "#"
-  - name: external
-    type: boolean
-    label: External
-    default: true
-    description: open in a new tab
-  - name: description
-    type: textarea
-    label: Description
-    default: ''
-    config:
-      wysiwyg: true
-      schema:
-        format: markdown
-  - name: date
-    type: datetime
-    label: Publish Date
-    default: ''
-    required: true
-    config:
-      date_format: YYYY-MM-DD
-      display_utc: false
-  - name: tags
-    type: tag_list
-    label: Tags
-  - name: draft
-    type: boolean
-    label: Draft
-    default: false
-    description: Hide this project on the projects page
+- name: title
+  type: text
+  label: Project Title
+  default: ''
+- name: href
+  type: text
+  label: Project website
+  default: "#"
+- name: external
+  type: boolean
+  label: External
+  default: true
+  description: open in a new tab
+- name: description
+  type: textarea
+  label: Description
+  default: ''
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+- name: date
+  type: datetime
+  label: Publish Date
+  default: ''
+  required: true
+  config:
+    date_format: YYYY-MM-DD
+    display_utc: false
+- name: tags
+  type: tag_list
+  label: Tags
+- name: draft
+  type: boolean
+  label: Draft
+  default: false
+  description: Hide this project on the projects page
 - name: sidebar
   type: boolean
   label: Navegation Bar
