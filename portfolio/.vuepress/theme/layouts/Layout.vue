@@ -101,7 +101,6 @@
 		},
 
 		mounted() {
-			window.addEventListener("scroll", this.onScroll);
 			// configure progress bar
 			nprogress.configure({ showSpinner: true })
 			this.$router.beforeEach((to, from, next) => {

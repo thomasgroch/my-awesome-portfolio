@@ -53,18 +53,24 @@
 		name: 'Page',
 		props: ['sidebarItems'],
 
-		beforeMount() {
-			const protocol = location.protocol
-			const slashes = protocol.concat('//')
-			this.host = slashes.concat(window.location.hostname)
-		},
+        data(){
+			return {
+				url: ''
+            }
+        },
+
+		// beforeMount() {
+		// 	const protocol = location.protocol
+		// 	const slashes = protocol.concat('//')
+		// 	this.host = slashes.concat(window.location.hostname)
+		// },
 
 		computed: {
 			showComments() {
 				return process.env.NODE_ENV !== 'development' &&
 					this.$page.frontmatter.type &&
 					this.$page.frontmatter.type === 'post' &&
-					this.$page.path !== '/blog/'
+					this.$page.path !== '/blog/' // TODO: Add way to remove comments per post
 			},
 
 			lastUpdated() {
