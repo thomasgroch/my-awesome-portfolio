@@ -31,7 +31,7 @@
                     <div class="w-full md:w-full px-3 mb-3 md:mb-0">
 
                         <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
-                               for="grid-nome">Nome Completo</label>
+                               for="grid-nome">Nome</label>
                         <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                                :class="{'input': true, 'border-red': errors.has('nome') }"
                                name="nome"
@@ -52,7 +52,7 @@
                          :class="{'input': true, 'md:w-1/2': hasFilled('email') }">
 
                         <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
-                               for="grid-email">E-mail</label>
+                               for="grid-email">Endereço de e-mail</label>
                         <div class="relative">
                             <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                                    :class="{'input': true, 'border-red': errors.has('email') }"
@@ -92,7 +92,7 @@
                     <div class="w-full px-3">
 
                         <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
-                               for="grid-mensagem">Mensagem</label>
+                               for="grid-mensagem">Como posso ajudar?</label>
                         <textarea
                                 class="appearance-none focus:shadow block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded pt-3 pb-10 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-grey"
                                 :class="{'input': true, 'border-red': errors.has('mensagem') }"
@@ -103,7 +103,7 @@
                                 id="grid-mensagem"/>
                         <p class="text-red text-xs italic"
                            v-if="errors.has('mensagem')">{{ errors.first('mensagem') }}</p>
-                        <p class="text-grey-dark text-xs italic">Make it as long and as crazy as you'd like</p>
+                        <p class="text-grey-dark text-xs italic">Detalhe o quanto você quiser. Por favor, não inclua informações confidenciais ou sensíveis em sua mensagem.</p>
 
                     </div>
                 </div>
