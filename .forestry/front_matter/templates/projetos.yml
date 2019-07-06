@@ -13,7 +13,6 @@ fields:
   label: Projetos
   description: List of works
   default: ''
-  fields:
 - name: title
   type: text
   label: Project Title
