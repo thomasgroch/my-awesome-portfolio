@@ -34,13 +34,9 @@
             </p>
         </div>
 
-        <div class="content"
-             v-if="showComments">
-
-            <ClientOnly>
-                <Vssue title="Vssue Demo"/>
-            </ClientOnly>
-        </div>
+        <ClientOnly v-if="showComments">
+            <Vssue title="Vssue Demo"/>
+        </ClientOnly>
 
         <slot name="bottom"/>
     </main>
@@ -216,6 +212,26 @@
 </script>
 
 <style lang="stylus">
+.vssue
+    padding 0 !important
+
+button.vssue-button:hover
+    @apply bg-green
+    @apply text-white
+    @apply border-transparent
+
+button.vssue-button
+    margin-top 15px
+    @apply bg-transparent
+    @apply shadow
+    @apply text-green-dark
+    @apply font-semibold
+    @apply py-2
+    @apply px-4
+    @apply border
+    @apply border-green
+    @apply rounded
+
 span.vssue-header-powered-by
     display none
 </style>
