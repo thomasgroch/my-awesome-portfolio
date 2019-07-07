@@ -34,7 +34,7 @@
             </p>
         </div>
 
-        <div class="content text-center"
+        <div class="content"
              v-if="showComments">
 
             <ClientOnly>
@@ -214,3 +214,8 @@
 	}
 
 </script>
+
+<style lang="stylus">
+span.vssue-header-powered-by
+    display none
+</style>

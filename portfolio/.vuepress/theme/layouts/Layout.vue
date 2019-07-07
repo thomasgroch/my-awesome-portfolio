@@ -169,7 +169,7 @@
         position: fixed
         z-index: 1031
         top: 15px
-        right: 50%
+        right: 50% !important
     a
         text-decoration none
         position: relative;

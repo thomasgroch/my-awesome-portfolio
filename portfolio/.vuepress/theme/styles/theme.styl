@@ -24,6 +24,16 @@ body
 
 .navbar
   position inherit !important
+  //position fixed
+  z-index 20
+  top 0
+  left 0
+  right 0
+  height $navbarHeight
+  background-color #fff
+  box-sizing border-box
+  //border-bottom 1px solid $borderColor
+  border-bottom none !important
 
 .sidebar-mask
   position fixed
@@ -45,7 +55,8 @@ body
   left 0
   bottom 0
   box-sizing border-box
-  border-right 1px solid $borderColor
+  //border-right 1px solid $borderColor
+  border-right none !important
   overflow-y auto
 
 .content:not(.custom)
