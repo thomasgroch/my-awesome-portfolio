@@ -224,7 +224,7 @@
         background: $accentColor /* Gecko Browsers */
 
     .page
-        padding-bottom 2rem
+        @extend $wrapper
         display block
 
     .page-edit
