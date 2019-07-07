@@ -18,18 +18,12 @@ body
   color $textColor
 
 .page
-  padding-left $sidebarWidth
+  @extend $wrapper
+  padding-top 3.5rem
+  padding-left 2rem
 
 .navbar
-  position fixed
-  z-index 20
-  top 0
-  left 0
-  right 0
-  height $navbarHeight
-  background-color #fff
-  box-sizing border-box
-  border-bottom 1px solid $borderColor
+  position inherit !important
 
 .sidebar-mask
   position fixed
@@ -82,6 +76,7 @@ p a code
   font-weight 400
   color $accentColor
 
+
 kbd
   background #eee
   border solid 0.15rem #ddd
@@ -107,6 +102,8 @@ strong
 h1, h2, h3, h4, h5, h6
   font-weight 600
   line-height 1.25
+  margin-top 1rem !important
+  margin-bottom 1rem !important
   .content:not(.custom) > &
     margin-top (0.5rem - $navbarHeight)
     padding-top ($navbarHeight + 1rem)
