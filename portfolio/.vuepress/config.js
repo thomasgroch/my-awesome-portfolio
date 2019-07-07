@@ -39,8 +39,9 @@ module.exports = {
 		logo: info.logo,
 		author: 'Thomas Groch',
 		activeHeaderLinks: false, // Default: true
-		repo: 'thomasgroch/my-awesome-portfolio',
-		editLinks: true,
+		// repo: 'thomasgroch/my-awesome-portfolio',
+		repo: '',
+		editLinks: false,
 		docsDir: 'portfolio',
 		lastUpdated: 'Última atualização',
 		editLinkText: 'Edite essa página',

@@ -23,12 +23,7 @@
     },
     {
       "text": "contato",
-      "items": [
-        {"text": "Site", "link": "/contato.html"},
-        {"text": "Ethlance", "link": "https://ethlance.com/#/freelancer/0xc106e12e98b70ca974716feea37f4403e4f0014a"},
-        {"text": "Twitter", "link": "https://twitter.com/thgroch"},
-        {"text": "Github","link": "https://github.com/thomasgroch"}
-      ],
+      "link": "/contato.html",
       "draft": false
     }
   ]
