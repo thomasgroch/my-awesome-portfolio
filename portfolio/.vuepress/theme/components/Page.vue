@@ -18,7 +18,7 @@
             </div>
         </footer>
 
-        <div class="page-nav" v-if="prev || next">
+        <div class="page-nav py-10" v-if="prev || next">
             <p class="inner">
                 <span class="prev" v-if="prev">
                   <router-link class="prev" :to="prev.path" v-if="prev">
@@ -216,21 +216,20 @@
     padding 0 !important
 
 button.vssue-button:hover
-    @apply bg-green
-    @apply text-white
-    @apply border-transparent
+    @apply bg-green !important
+    @apply text-white !important
+    @apply border-transparent !important
 
 button.vssue-button
-    margin-top 15px
-    @apply bg-transparent
-    @apply shadow
-    @apply text-green-dark
-    @apply font-semibold
-    @apply py-2
-    @apply px-4
-    @apply border
-    @apply border-green
-    @apply rounded
+    @apply bg-transparent !important
+    @apply shadow !important
+    @apply text-green-dark !important
+    @apply font-semibold !important
+    @apply py-2 !important
+    @apply px-4 !important
+    @apply border !important
+    @apply border-green !important
+    @apply rounded !important
 
 span.vssue-header-powered-by
     display none
