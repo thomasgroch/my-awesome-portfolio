@@ -6,8 +6,9 @@ projetos:
 - title: Tweetric
   href: https://my-tweets.netlify.com/dashboard
   external: true
-  description: ''
-  date: 2019-05-03 03:00:00 +0000
+  description: Disponibilizamos recursos que lhe ajudaram em desempenho alimentar
+    e físico, independente se já pratica ou não exercícios ou alguma dieta.
+  date: 2019-05-03T03:00:00.000+00:00
   tags:
   - vue
   - laravel
