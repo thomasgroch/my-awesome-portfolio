@@ -229,6 +229,8 @@
     @media (max-width: $MQMobileNarrow)
         padding 1.5rem
 
+a:hover:not(.nav-link)
+    background-color $secondColor
 .page-edit
     @extend $wrapper
     padding-top 1rem
@@ -280,7 +282,7 @@
             font-size .8em
             float none
             text-align left
-    
+
 .vssue
     padding 0 !important
 

@@ -25,6 +25,11 @@
             <slot name="page-bottom" slot="bottom"/>
         </Page>
 
+        <div class="text-center text-xs text-grey">
+            <p>Siga-me no  <a target="_blank" href="http://twitter.com/thgroch">twitter</a>, ou assine o meu feed <a target="_blank" href="/rss.xml">rss</a>.</p>
+            <p>© 2012-2019 Thomas Letsch Groch.<br>Esta obra está licenciada sob uma licença <a rel="license" target="_blank" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+        </div>
+
         <router-view></router-view>
         <SWUpdatePopup :updateEvent="swUpdateEvent"/>
     </div>
@@ -163,33 +168,33 @@
 
 <style src="prismjs/themes/prism-tomorrow.css"></style>
 <style src="@theme/styles/theme.styl" lang="stylus"></style>
-<style lang="stylus" scoped>
-    #nprogress .spinner
-        display: block
-        position: fixed
-        z-index: 1031
-        top: 15px
-        right: 50% !important
-    a
-        text-decoration none
-        position: relative;
-        font-size: 1.28rem;
-        line-height: 36px;
-        display: inline-block;
-        :after
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            bottom: 0;
-            left: 0;
-            background-color: $accentColor;
-            visibility: hidden;
-            -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-            transition: .3s ease-in-out;
-        :hover:after
-            visibility visible
-            -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+<style lang="stylus">
+#nprogress .spinner
+    display: block
+    position: fixed
+    z-index: 1031
+    top: 15px
+    right: 50% !important
+.custom-layout a
+    text-decoration none
+    position: relative;
+    font-size: 1.28rem;
+    line-height: 36px;
+    display: inline-block;
+    :after
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: $accentColor;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        transition: .3s ease-in-out;
+    :hover:after
+        visibility visible
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
 </style>
