@@ -63,9 +63,13 @@
 					'&url=' + encodeURI(this.href)
 			},
 			displayDate() {
-				const m = moment(this.date)
-				m.locale('pt-BR')
-				return m.format('Do MMM YY')
+				try {
+					const m = moment(this.date)
+					m.locale('pt-BR')
+					return m.format('Do MMM YY')
+				}catch (e) {
+                    return ''
+				}
 			}
 		},
 		data() {
