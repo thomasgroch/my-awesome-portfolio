@@ -4,7 +4,7 @@ sidebar: false
 view: projeto
 projetos:
 - title: Tweetric
-  href: https://my-tweets.netlify.com/dashboard
+  href: https://my-tweets.netlify.com/
   external: true
   description: Disponibilizamos recursos que lhe ajudaram em desempenho alimentar
     e físico, independente se já pratica ou não exercícios ou alguma dieta.
