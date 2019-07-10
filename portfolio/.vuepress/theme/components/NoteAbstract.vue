@@ -40,6 +40,8 @@ export default {
 
 <style lang="stylus" scoped>
 /*@import '../../styles/config.styl'*/
+  a:hover
+    background-color transparent
 
   .abstract-item
     margin: 0 auto 20px;
@@ -79,7 +81,7 @@ export default {
         cursor: pointer;
         &.active
           color $accentColor
-        &:hover 
+        &:hover
           color $accentColor
 
 </style>
