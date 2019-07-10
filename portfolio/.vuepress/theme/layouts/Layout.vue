@@ -26,7 +26,7 @@
         </Page>
 
         <div class="text-center text-xs text-grey">
-            <p>Siga-me no  <a target="_blank" href="http://twitter.com/thgroch">twitter</a>, ou assine o meu feed <a target="_blank" href="/rss.xml">rss</a>.</p>
+            <p>Siga-me no  <a target="_blank" href="https://twitter.com/thgroch">twitter</a>, ou assine o meu feed <a target="_blank" href="/rss.xml">rss</a>.</p>
             <p>© 2012-2019 Thomas Letsch Groch.<br>Esta obra está licenciada sob uma licença <a rel="license" target="_blank" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
         </div>
 
@@ -36,7 +36,6 @@
 </template>
 <script>
 	import Vue from 'vue'
-	import Darkmode from 'darkmode-js'
 	import nprogress from 'nprogress'
 	import Navbar from '@theme/components/Navbar.vue'
 	import Page from '@theme/components/Page.vue'
@@ -106,7 +105,8 @@
 			}
 		},
 
-		mounted() {
+		async mounted() {
+			const Darkmode = await import('darkmode-js')
 			const options = {
 				bottom: '64px', // default: '32px'
 				time: '0.5s', // default: '0.3s'
