@@ -117,7 +117,7 @@
 				label: '🌓' // default: ''
 			}
 
-			const darkmode = new Darkmode(options)
+			const darkmode = new Darkmode.default(options)
 			darkmode.showWidget()
 
 			// configure progress bar

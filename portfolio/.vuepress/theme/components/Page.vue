@@ -221,8 +221,8 @@
     @media (max-width: $MQMobileNarrow)
         padding 1.5rem
 
-.page a:hover
-    background-color $secondColor
+//.page a:hover
+//    background-color $secondColor
 
 .page-edit
     @extend $wrapper
