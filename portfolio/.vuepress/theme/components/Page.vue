@@ -138,14 +138,6 @@
 					|| this.$site.themeConfig.editLinkText
 					|| `Edit this page`
 				)
-			},
-
-			disqusIdentifier() {
-				return this.$page.frontmatter.disqus || this.$page.path
-			},
-
-			disqusUrl() {
-				return this.host + this.$page.path
 			}
 		},
 

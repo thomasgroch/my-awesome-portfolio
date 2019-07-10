@@ -171,7 +171,6 @@ This is the value of `$site.themeConfig`:
     "sidebarDepth": 0,
     "serviceWorker": {
     },
-    "disqus": "",
     "topNavigation": false,
     "searchMaxSuggestions": 7,
     "share": {

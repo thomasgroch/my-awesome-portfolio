@@ -21,7 +21,7 @@ module.exports = [
   ['meta', { name: 'msapplication-TileImage', content: '/favicon/ms-icon-144x144.png' }],
   ['meta', { name: 'msapplication-square150x150logo', content: '/favicon/mstile-150x150.png' }],
   ['meta', { name: 'msapplication-wide310x150logo', content: '/favicon/ms-icon-310x310.png' }],
-  
+
   // Twitter
   ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
   ['meta', { name: 'twitter:site', content: '@thgroch' }],
@@ -33,7 +33,7 @@ module.exports = [
   // ['meta', { property: 'og:image:height', content: '1200' }],
   // ['meta', { property: 'og:image:width', content: '360' }],
   // ['meta', { property: 'og:image:type', content: 'image/png' }],
-  
+
   // ['meta', {  name: 'google-site-verification', content: 'MY VERIFICATION KEY' }], // google
   // ['meta', {  name: 'msvalidate.01', content: 'MY VERIFICATION KEY' }], // bing
   // ['meta', {  name: 'yandex-verification', content: 'MY VERIFICATION KEY' }], // Yandex
@@ -43,7 +43,7 @@ module.exports = [
   // ['link', { rel: 'author', href: 'MY URL GOOGLE PLUS }],
   ['link', { rel: 'author', href: '/humans.txt' }],
   ['link', { rel: 'manifest', href: '/manifest.json' }],
-  
+
   ['link', { rel: 'apple-touch-icon', sizes: '57x57', href: '/favicon/apple-icon-57x57.png' }],
   ['link', { rel: 'apple-touch-icon', sizes: '60x60', href: '/favicon/apple-icon-60x60.png' }],
   ['link', { rel: 'apple-touch-icon', sizes: '72x72', href: '/favicon/apple-icon-72x72.png' }],
@@ -73,8 +73,6 @@ module.exports = [
   ['link', { rel: 'preconnect', href: 'https://www.youtube.com/' }],
   ['link', { rel: 'preconnect', href: 'https://scrimba.com/' }],
   ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com/' }],
-  ['link', { rel: 'preconnect', href: 'https://c.disquscdn.com/' }],
-  ['link', { rel: 'preconnect', href: 'https://disqus.com/' }],
   // ['link', { rel: 'preconnect', href: 'https://www.google-analytics.com/' }],
   // ['link', { rel: 'preconnect', href: 'https://stats.g.doubleclick.net' }],
 ]

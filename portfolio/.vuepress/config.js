@@ -60,9 +60,7 @@ module.exports = {
 			}
 		},
 		topNavigation: false,
-		searchMaxSuggestions: 7,
-		disqus: info.disqus,
-		disqusApiKey: info.disqusApiKey
+		searchMaxSuggestions: 7
 	},
 	plugins: [
 		['@vssue/vuepress-plugin-vssue', {
