@@ -36,6 +36,7 @@
 </template>
 <script>
 	import Vue from 'vue'
+	import Darkmode from 'darkmode-js'
 	import nprogress from 'nprogress'
 	import Navbar from '@theme/components/Navbar.vue'
 	import Page from '@theme/components/Page.vue'
@@ -106,6 +107,19 @@
 		},
 
 		mounted() {
+			const options = {
+				bottom: '64px', // default: '32px'
+				time: '0.5s', // default: '0.3s'
+				mixColor: '#fff', // default: '#fff'
+				backgroundColor: '#fff',  // default: '#fff'
+				buttonColorDark: '#100f2c',  // default: '#100f2c'
+				buttonColorLight: '#fff', // default: '#fff'
+				label: '🌓' // default: ''
+			}
+
+			const darkmode = new Darkmode(options)
+			darkmode.showWidget()
+
 			// configure progress bar
 			nprogress.configure({ showSpinner: true })
 			this.$router.beforeEach((to, from, next) => {
