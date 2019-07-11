@@ -267,8 +267,8 @@
 		}
 	}
 </script>
-<style>
-    #app :not(div.v--modal-overlay) {
-        filter: blur(5px);
-    }
+<style lang="stylus">
+    /*#app :not(div.v--modal-overlay) {*/
+    /*    filter: blur(5px);*/
+    /*}*/
 </style>
