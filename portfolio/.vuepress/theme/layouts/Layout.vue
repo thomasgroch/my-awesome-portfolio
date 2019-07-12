@@ -5,12 +5,14 @@
          @touchend="onTouchEnd">
         <!--<Password v-if="!isHasKey"></Password>-->
 
-        <Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar"/>
+        <Navbar v-if="shouldShowNavbar"
+                @toggle-sidebar="toggleSidebar" />
 
         <div class="sidebar-mask" @click="toggleSidebar(false)"></div>
 
         <Sidebar :items="sidebarItems"
-                 @toggle-sidebar="toggleSidebar">
+                 @toggle-sidebar="toggleSidebar"
+                 class="shadow-lg">
             <slot name="sidebar-top" slot="top"/>
             <slot name="sidebar-bottom" slot="bottom"/>
         </Sidebar>
