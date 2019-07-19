@@ -17,3 +17,5 @@ sites estáticos uso Pug como engine template pois facilita a modularização.
 A Web é a plataforma
 
 Eu ajudo desenvolvedores e usuários a tirar o máximo proveito da Web como uma plataforma de software.
+
+teste
