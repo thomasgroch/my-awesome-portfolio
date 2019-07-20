@@ -1,5 +1,9 @@
 <template>
+	<a :href="href"
+		target="_blank">
+		<font-awesome-icon :icon="icon"></font-awesome-icon>
     <span v-text="displayTotal"></span>
+	</a>
 </template>
 <script>
 	import axios from 'axios'
@@ -17,9 +21,21 @@
 				displayTotal: 0,
 				local_items: [],
 				config: {
-					'github': {'url': 'https://api.github.com/users/thomasgroch/repos?per_page=100'},
-					'gist': {'url': 'https://api.github.com/users/thomasgroch/gists?per_page=100'},
-					'gitlab': {'url': 'https://gitlab.com/api/v4/users/thomas.groch/projects?per_page=100'},
+					'github': {
+						'url': 'https://api.github.com/users/thomasgroch/repos?per_page=100',
+						'href': 'https://github.com/thomasgroch',
+						'icon': ['fab', 'github'],
+					},
+					'gist': {
+						'url': 'https://api.github.com/users/thomasgroch/gists?per_page=100',
+						'href': 'https://gist.github.com/thomasgroch',
+						'icon': 'sticky-note',
+					},
+					'gitlab': {
+						'url': 'https://gitlab.com/api/v4/users/thomas.groch/projects?per_page=100',
+						'href': 'https://gitlab.com/thomas.groch',
+						'icon': ['fab', 'gitlab'],
+					},
 				}
 			}
 		},
@@ -29,6 +45,12 @@
 			},
 			providerUrl() {
 				return this.config[this.provider].url
+			},
+			href() {
+				return this.config[this.provider].href
+			},
+			icon() {
+				return this.config[this.provider].icon
 			}
 		},
 		methods: {
@@ -64,8 +86,9 @@
 		}
 	}
 </script>
-<style scoped>
-    span:before {
-        content: "+";
-    }
+<style lang="stylus" scoped>
+span:before
+	content "+"
+a
+	color white
 </style>
