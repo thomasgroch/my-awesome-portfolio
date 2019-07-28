@@ -32,7 +32,7 @@
 
                         <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
                                for="grid-nome">Nome</label>
-                        <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                        <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-grey"
                                :class="{'input': true, 'border-red': errors.has('nome') }"
                                name="nome"
                                v-model="form.nome"
@@ -54,7 +54,7 @@
                         <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
                                for="grid-email">Endereço de e-mail</label>
                         <div class="relative">
-                            <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                            <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-grey"
                                    :class="{'input': true, 'border-red': errors.has('email') }"
                                    name="email"
                                    v-model="form.email"
@@ -73,7 +73,7 @@
                         <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
                                for="grid-telefone">Telefone</label>
                         <div class="relative">
-                            <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                            <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-grey"
                                    :class="{'input': true, 'border-red': errors.has('telefone') }"
                                    name="telefone"
                                    v-model="form.telefone"
@@ -94,7 +94,7 @@
                         <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
                                for="grid-mensagem">Como posso ajudar?</label>
                         <textarea
-                                class="appearance-none focus:shadow block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded pt-3 pb-10 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-grey"
+                                class="appearance-none focus:shadow block w-full bg-grey-lighter text-grey-darker border rounded pt-3 pb-10 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-grey"
                                 :class="{'input': true, 'border-red': errors.has('mensagem') }"
                                 name="mensagem"
                                 v-validate="'required|min:50'"
@@ -176,6 +176,7 @@
         </div>
     </main>
 </template>
+
 <script>
 	import VueTextareaAutosize from 'vue-textarea-autosize'
 	import Estados from './Estados'
@@ -268,6 +269,8 @@
 	}
 </script>
 <style lang="stylus">
+    /*textarea*/
+
     /*#app :not(div.v--modal-overlay) {*/
     /*    filter: blur(5px);*/
     /*}*/
