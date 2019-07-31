@@ -265,7 +265,6 @@
 		}
 		,
 		mounted() {
-			this.$modal.show('done', this.$data.form)
 			this.$refs.textarea.style.minHeight = this.$refs.textarea.scrollHeight + 'px'
 		}
 	}
