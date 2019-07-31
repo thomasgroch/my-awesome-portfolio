@@ -4,7 +4,13 @@ sidebar: false
 ---
 # Sobre {{ $site.themeConfig.author }}
 
-A muitos anos aprimorei minhas habilidades em projetos corporativos e acredito poder contribuir muito ao seu negócio. 
+<BaseStack :items="[ 
+    { domain: 'asdasdtg.netlify.com' }
+]" />
+
+A 15+ anos aprimorei minhas habilidades em projetos corporativos e desenvolvimento web.
+
+Como um Desenvolvedor Full Stack, sou focado principalmente em fornecer código de alta qualidade para superar desafios complexos em software para empresas. Tenho uma sólida experiência em desenvolvimento web e forneceço códigos bem elaborados que outros desenvolvedores adoram manter, reutilizar e estender.
 
 ## FrontEnd
 
@@ -14,15 +20,36 @@ A muitos anos aprimorei minhas habilidades em projetos corporativos e acredito p
 
 ## BackEnd
 
- - Laravel	
+<Stack :item="{ domain: 'laravel.com' }" />
+<Stack :item="{ domain: 'coreos.com' }" />
 
-Também tenho amplo conhecimento de sysadmin, orquestragem de containers e integração entre serviços. Com API de terceiros (Google Maps, Facebook Connect e Twitter) se deseja um aspecto "social" ao seu website.
+Faço testes de integração de alto nivel tanto para escalar o tempo de desenvolvimento quanto para garantir a integridade do ambiente de produção.
+
+Análise, arquitetura e desenvolvimento de microserviços e aplicações distribuídas.
+
+- Padrões de design OO fortes e modular
+
+Tambem tenho afinidade com Wordpress Custom Post Types, Taxonomias e seu sistema de hierarquia de templates.
+
 
 ## SysAdmin
 
+Também tenho amplo conhecimento de sysadmin, orquestragem de containers e integração entre serviços.
 Eu posso executar testes de penetração e trabalhar com todos os sistemas de gerenciamento de conteúdo, incluindo WordPress e Durpal. Eu posso ajudar a desenvolver novos recursos para o seu site, verifique se ele é seguro e corrija-o se ele for invadido.
 
+- Conhecimentos de mensageria e comunicação assíncrona
+- Conhecimento prático de técnicas para escalar serviços a fim de atender centenas de milhões de requisições por dia;
+- Conhecimentos em Big Data, Machine Learning e Business Intelligence;
+- Experiência com tecnologias como Docker, Docker Compose, Kubernetes e soluções de cloud;
+- Experiência com a última versão do Php e Laravel e conhecimentos das mudanças das últimas versões;
+- Experiência com Mariadb e FaunaDB;
+- Vivência em projetos IoT e tecnologias relevantes, como MQTT;
+- Experiência com TDD e BDD;
+- Experiência com análise de qualidade de código e ferramentas do mercado;
+
 ## Analise
+
+Eu ajudo desenvolvedores e usuários a tirar o máximo proveito da Web como uma plataforma de software.
 
 - Análise, arquitetura e desenvolvimento de Microservices e aplicações distribuídas.
 
@@ -48,17 +75,17 @@ Você pode dar uma olhada nas ferramentas por trás do meu processo de desenvolv
 
 ## Social
 
+- Inglês avançado
 Estou pronto para atender outros fusos horário de trabalho.
+
+- Orientado a resultados, focado na ação para entrega esperada;
 
 - [x] Parcialmente Remoto
 - [x] Remoto Total
 - [x] Alocado
 
-
 Disponível para qualquer trabalho, grande ou pequeno, tempo integral ou parcial, alocado ou remoto. Eu tenho um excelente tempo de resposta e forneço excelentes resultados sempre e dentro do orçamento. Tenho excelentes habilidades de comunicação e me esforçarei para manter você em contato com todos os aspectos do processo de desenvolvimento.
 
-
-Com relação ao software tenho muita afinidade com Custom Post Types, Taxonomias do wordpress e o sistema de hierarquia de template. E na infra Amazon AWS (EC2, AMIs, Elastic IPs, S3).
 
 ### Principais atividades
 - Desenvolver softwares web de gestão
@@ -81,18 +108,5 @@ Com relação ao software tenho muita afinidade com Custom Post Types, Taxonomia
 - Desejável cursando/concluído Superior em Sistemas de Informação, Ciências da Computação ou áreas afins.
 
 
-Como um Desenvolvedor Full Stack, sou focado principalmente em fornecer código de alta qualidade para superar desafios complexos em software para empresas. Tenho uma sólida experiência em desenvolvimento web e forneceço códigos bem elaborados que outros desenvolvedores adoram manter, reutilizar e estender.
-
-
-- 15+ anos de experiência em desenvolvimento web
-- Orientado a resultados, focado na ação para entrega esperada;
-- Padrões de design OO fortes, design modular
-
-Faço testes de integração de alto nivel tanto para escalar o tempo de desenvolvimento quanto para garantir a integridade do ambiente de produções.
-
-Análise, arquitetura e desenvolvimento de microserviços e aplicações distribuídas.
-
-
-Eu ajudo desenvolvedores e usuários a tirar o máximo proveito da Web como uma plataforma de software.
-
+acredito poder contribuir muito ao seu negócio
 Estou ansioso para trabalhar com você,
