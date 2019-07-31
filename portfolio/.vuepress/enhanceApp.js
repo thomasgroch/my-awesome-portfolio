@@ -1,6 +1,6 @@
 import VeeValidate, {Validator} from 'vee-validate'
 import locale from './vee-validate-locales/pt_BR'
-// import VModal from 'vue-js-modal'
+import VModal from 'vue-js-modal'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { fas } from '@fortawesome/free-solid-svg-icons'
@@ -22,11 +22,11 @@ export default ({
 	// ...apply enhancements to the app
 	Vue.component('font-awesome-icon', FontAwesomeIcon)
 	Vue.use(VeeValidate)
-	// Vue.use(VModal, {
-	// 	dynamic: true,
-	// 	injectModalsContainer: true,
-	// 	dynamicDefaults: { clickToClose: false }
-	// })
+	Vue.use(VModal, {
+		dynamic: true,
+		injectModalsContainer: true,
+		dynamicDefaults: { clickToClose: false }
+	})
 	// Vue.mixin({
 	// 	localize (localeName) {
 	// 		// asynchronously load the locale file then localize the validator with it.
