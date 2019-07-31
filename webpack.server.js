@@ -5,7 +5,8 @@ const webpack = require('webpack')
 module.exports = {
 	mode: 'development',
 	plugins: [
-		new webpack.DefinePlugin({'global.GENTLY': false})
+		new webpack.DefinePlugin({'global.GENTLY': false}),
+		'~plugins/vue-js-modal'
 	],
 	node: {
 		__dirname: true,
