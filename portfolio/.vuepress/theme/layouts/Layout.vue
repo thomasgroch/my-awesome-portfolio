@@ -4,7 +4,6 @@
          @touchstart="onTouchStart"
          @touchend="onTouchEnd">
         <!--<Password v-if="!isHasKey"></Password>-->
-
         <Navbar v-if="shouldShowNavbar"
                 @toggle-sidebar="toggleSidebar" />
 
@@ -29,7 +28,8 @@
 
         <div class="text-center text-sm text-grey-dark py-8">
             <p>Siga-me no  <a target="_blank" href="https://twitter.com/thgroch">twitter</a>, ou assine o meu feed <a target="_blank" href="/rss.xml">rss</a>.</p>
-            <p>© 2012-2019 Thomas Letsch Groch.<br>Esta obra está licenciada sob uma licença <a rel="license" target="_blank" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+            <p>© 2012-2019 Thomas Letsch Groch.<br />
+                Esta obra está licenciada sob uma licença <a rel="license" target="_blank" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
         </div>
 
         <router-view></router-view>
