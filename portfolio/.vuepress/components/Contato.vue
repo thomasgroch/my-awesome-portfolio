@@ -1,23 +1,27 @@
 <template>
-    <main class="mt-5 flex flex-col">
+    <main class="mt-5 flex flex-col items-center">
+        <div v-if="modal.visible" @click.self="modal.visible = false"
+             class="absolute bg-white rounded shadow p-8 m-4 max-h-full text-center">
+            <div class="mb-4">
+                <h1>Olá {{ form.nome }}</h1>
+            </div>
+            <div class="mb-8">
+                <div class="bg-green-lightest border-l-4 border-green p-4 mb-4" role="alert">
+                    <p class="text-green-dark font-bold">Sua mensagem foi enviada com sucesso.</p>
+                </div>
+                <p>Obrigado pelo seu interesse.</p>
+            </div>
+            <div class="flex justify-center">
+                <button class="bg-transparent shadow hover:bg-green text-green-dark font-semibold hover:text-white px-4 py-2 border border-green hover:border-transparent rounded"
+                        @click.self="modal.visible = false">Fechar</button>
+            </div>
+        </div>
+
         <div class="flex mb-4 flex-wrap justify-center">
-            <modal name="done"
-                   classes="flex flex-col h-full bg-white font-nunito rounded-lg shadow-lg p-10"
-                   @closed="beforeModalClose">
-                <h1 class="pb-10 h-10">Contato</h1>
-                <div class="flex-1 pt-2">
-                    <div class="bg-green-lightest border-l-4 border-green p-4" role="alert">
-                        <p class="text-green-dark font-bold">Sua mensagem foi enviada com sucesso.</p>
-                        <p>Obrigado pelo seu interesse.</p>
-                    </div>
-                </div>
-                <div class="modal-footer flex justify-end pt-2 h-10">
-                    <button class="bg-transparent shadow hover:bg-green text-green-dark font-semibold hover:text-white px-4 border border-green hover:border-transparent rounded"
-                            @click.self="modal.visible = false"
-                            type="submit">Fechar
-                    </button>
-                </div>
-            </modal>
+<!--            <div v-if="modal.visible" @click.self="modal.visible = false"-->
+<!--                 class="h-screen w-full absolute flex items-center justify-center bg-modal rounded-lg shadow-lg p-10">-->
+<!--            </div>-->
+
             <form class="w-full max-w-md font-nunito"
                   :action="formAction"
                   @submit.prevent="validateBeforeSubmit"
@@ -104,7 +108,8 @@
                                 id="grid-mensagem"/>
                         <p class="text-red text-xs italic"
                            v-if="errors.has('mensagem')">{{ errors.first('mensagem') }}</p>
-                        <p class="text-grey-dark text-xs italic">Detalhe o quanto você quiser. Por favor, não inclua informações confidenciais ou sensíveis em sua mensagem.</p>
+                        <p class="text-grey-dark text-xs italic">Detalhe o quanto você quiser. Por favor, não inclua
+                            informações confidenciais ou sensíveis em sua mensagem.</p>
 
                     </div>
                 </div>
@@ -159,11 +164,12 @@
                         <strong class="font-bold">Brbrbr!</strong>
                         <span class="block sm:inline">Ops. Algo deu errado.</span>
                         <span class="absolute pin-t pin-b pin-r pr-2 py-3">
-                            <svg class="h-6 w-6 text-red" role="button" xmlns="http://www.w3.org/2000/svg"
-                                 viewBox="0 0 20 20">
-                                <title>Fechar</title>
-                                <path d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z"/></svg>
-                          </span>
+                                                    <svg class="h-6 w-6 text-red" role="button"
+                                                         xmlns="http://www.w3.org/2000/svg"
+                                                         viewBox="0 0 20 20">
+                                                        <title>Fechar</title>
+                                                        <path d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z"/></svg>
+                                                  </span>
                     </div>
 
                     <div class="flex items-center justify-center px-3 my-6 md:mb-0 items-center">
@@ -189,6 +195,9 @@
 		props: {},
 		data() {
 			return {
+				modal: {
+					visible: true
+				},
 				form: {
 					nome: null,
 					email: null,
@@ -244,7 +253,7 @@
 			},
 
 			showSuccess() {
-				this.$modal.show('done', this.$data.form)
+				// this.$modal.show('done', this.$data.form)
 			},
 
 			hasFilled(field) {
@@ -262,15 +271,13 @@
 			beforeModalClose(event) {
 				this.status = 'dismiss'
 			}
-		}
-		,
+		},
 		mounted() {
-			this.$modal.show('done', this.$data.form)
 			this.$refs.textarea.style.minHeight = this.$refs.textarea.scrollHeight + 'px'
 		}
 	}
 </script>
 <style lang="stylus">
-#app :not(div.v--modal-overlay)
-    filter: blur(5px)
+    //#app :not(div.v--modal-overlay)
+    //    filter: blur(5px)
 </style>
