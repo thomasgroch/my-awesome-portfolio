@@ -196,7 +196,7 @@
 		data() {
 			return {
 				modal: {
-					visible: true
+					visible: false
 				},
 				form: {
 					nome: null,
@@ -248,12 +248,8 @@
 				}
 				nprogress.done()
 				this.status = 'done'
-				this.showSuccess(response.json())
+				this.modal.visible = true
 				return true
-			},
-
-			showSuccess() {
-				// this.$modal.show('done', this.$data.form)
 			},
 
 			hasFilled(field) {
