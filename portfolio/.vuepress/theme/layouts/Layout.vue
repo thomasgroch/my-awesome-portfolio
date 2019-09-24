@@ -8,24 +8,24 @@
                 @toggle-sidebar="toggleSidebar" />
 
         <div class="sidebar-mask" @click="toggleSidebar(false)"></div>
+        <div class="flex flex-no-wrap">
+            <Sidebar :items="sidebarItems"
+                     @toggle-sidebar="toggleSidebar"
+                     :class="{'shadow-lg': isSidebarOpen}">
+                <slot name="sidebar-top" slot="top"/>
+                <slot name="sidebar-bottom" slot="bottom"/>
+            </Sidebar>
 
-        <Sidebar :items="sidebarItems"
-                 @toggle-sidebar="toggleSidebar"
-                 class="shadow-lg">
-            <slot name="sidebar-top" slot="top"/>
-            <slot name="sidebar-bottom" slot="bottom"/>
-        </Sidebar>
+            <div class="custom-layout" v-if="$page.frontmatter.layout">
+                <component :is="$page.frontmatter.layout"/>
+            </div>
 
-        <div class="custom-layout" v-if="$page.frontmatter.layout">
-            <component :is="$page.frontmatter.layout"/>
+            <!--@tagChange="tagChange"-->
+            <Page :sidebar-items="sidebarItems">
+                <slot name="page-top" slot="top"/>
+                <slot name="page-bottom" slot="bottom"/>
+            </Page>
         </div>
-
-        <!--@tagChange="tagChange"-->
-        <Page :sidebar-items="sidebarItems">
-            <slot name="page-top" slot="top"/>
-            <slot name="page-bottom" slot="bottom"/>
-        </Page>
-
         <div class="text-center text-sm text-grey-dark py-8">
             <p>Siga-me no  <a target="_blank" href="https://twitter.com/thgroch">twitter</a>, ou assine o meu feed <a target="_blank" href="/rss.xml">rss</a>.</p>
             <p>© 2012-2019 Thomas Letsch Groch.<br />
@@ -41,7 +41,8 @@
 	import nprogress from 'nprogress'
 	import Navbar from '@theme/components/Navbar.vue'
 	import Page from '@theme/components/Page.vue'
-	import Sidebar from '@theme/components/Sidebar.vue'
+	// import Sidebar from '@theme/components/Sidebar.vue'
+	import Sidebar from '@parent-theme/components/Sidebar.vue'
 
 	import SWUpdatePopup from '@theme/components/SWUpdatePopup/'
 	import { resolveSidebarItems } from '@parent-theme/util/'

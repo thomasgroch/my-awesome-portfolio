@@ -75,13 +75,13 @@ exports.handler = async (event, context) => {
 			}
 		}))
 
-		const playloadMail = {
-			from: process.env.MAILGUN_FROM || 'Support <support@thomasgroch.com>',
+		const payloadMail = {
+			from: process.env.MAILGUN_FROM || 'Thomas Groch <contato@thomasgroch.com>',
 			to: payload.email,
 			subject: 'Obrigado pelo seu interesse ' + payload.nome + '.',
 			text: 'Retorno para você o mais cedo possível!'
 		}
-		const result = await sendEmail(playloadMail)
+		const result = await sendEmail(payloadMail)
 		if (!result || !result.message) {
 			throw new Error( (result.message) ? result.message : result )
 		}

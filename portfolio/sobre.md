@@ -6,6 +6,14 @@ sidebar: false
 
 A 15+ anos aprimorei minhas habilidades em projetos corporativos e desenvolvimento web.
 
+Eficiência na comunicação, aprendo rápido e .
+Retenho dados sentitivos de negócio e compartilho o conhecimento.
+ajudo outras pessoas com o trabalho em equipe
+desenvolvedor 10x.
+soft skills, crescer junto time projeto
+UI guidelines
+
+
 Como um Desenvolvedor Full Stack, sou focado principalmente em fornecer código de alta qualidade para superar desafios complexos em software para empresas. Tenho uma sólida experiência em desenvolvimento web e forneceço códigos bem elaborados que outros desenvolvedores adoram manter, reutilizar e estender.
 
 ## FrontEnd

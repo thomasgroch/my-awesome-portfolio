@@ -2,6 +2,7 @@
 type: post
 title: Snippet Post
 date: 2018-01-12 08:32:30
+draft: true
 tags: []
 ---
 

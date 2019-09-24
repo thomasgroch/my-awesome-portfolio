@@ -57,14 +57,15 @@
         },
 		computed: {
 			displayImage() {
-				return 'https://http2pic.haschek.at/api.php?' +
-					'onfail=' + encodeURI(this.host + '/images/no-image.svg') +
-					'&ondomainfail=' + encodeURI(this.host + '/images/no-image.svg') +
-					'&js=yes' +
-					'&type=png' +
-					'&cache=1' +
-					'&viewport=810x400' +
-					'&url=' + encodeURI(this.href)
+				// return 'https://http2pic.haschek.at/api.php?' +
+				// 	'onfail=' + encodeURI(this.host + '/images/no-image.svg') +
+				// 	'&ondomainfail=' + encodeURI(this.host + '/images/no-image.svg') +
+				// 	'&js=yes' +
+				// 	'&type=png' +
+				// 	'&cache=1' +
+				// 	'&viewport=810x400' +
+				// 	'&url=' + encodeURI(this.href)
+					return 'https://render-tron.appspot.com/screenshot/' + encodeURI(this.href)
 			},
 			displayDate() {
 				try {
