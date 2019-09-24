@@ -43,16 +43,17 @@ public_path: portfolio/.vuepress/public/media
 front_matter_path: ''
 use_front_matter_path: 
 file_template: ":filename:"
+instant_preview: 
 build:
-  preview_command: yarn build
-  publish_command: yarn build
   preview_env:
   - NODE_ENV=staging
-  publish_env:
-  - NODE_ENV=production
   preview_output_directory: dist
-  output_directory: dist
-  instant_preview_command: yarn dev
   install_dependencies_command: yarn install
   preview_docker_image: node:10
   mount_path: "/srv"
+  instant_preview_command: yarn dev
+  publish_command: yarn build
+  publish_env:
+  - NODE_ENV=production
+  output_directory: dist
+  preview_command: yarn build
