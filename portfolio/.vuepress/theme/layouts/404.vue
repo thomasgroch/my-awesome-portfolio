@@ -1,27 +1,26 @@
 <template>
-  <div class="">
-    <div class="c">
-      <div class="cloud x1"></div>
-      <div class="cloud x1_5"></div>
-      <div class="cloud x2"></div>
-      <div class="cloud x3"></div>
-      <div class="cloud x4"></div>
-      <div class="cloud x5"></div>
-    </div>
-    <div class='c'>
-      <div class='_404'>404</div>
-      <hr>
-      <div class='_1'>THE PAGE</div>
-      <div class='_2'>WAS NOT FOUND</div>
-      <router-link to="/" class="btn">BACK</router-link>
-    </div>
+<div class="body h-screen w-full">
+  <div class="absolute h-full w-full mt-56">
+    <div class="cloud x1"></div>
+    <!-- Time for multiple clouds to dance around -->
+    <div class="cloud x2"></div>
+    <div class="cloud x3"></div>
+    <div class="cloud x4"></div>
+    <div class="cloud x5"></div>
+  </div>
+  <div class='c pt-10'>
+    <div class='_404'>404</div>
+    <div class='_1'>NOT FOUND</div>
+    <div class='_3 pb-5' v-text="msg"></div>
+    <router-link to="/" class="btn">Voltar</router-link>
+  </div>
+</div>
 
     <!--<div class="content">-->
       <!--<h1>404</h1>-->
       <!--<blockquote>{{ getMsg() }}</blockquote>-->
       <!--<router-link to="/">Take me home.</router-link>-->
     <!--</div>-->
-  </div>
 </template>
 <script>
 const msgs = [
@@ -32,20 +31,18 @@ const msgs = [
 ]
 
 export default {
-  methods: {
-    getMsg () {
+  computed: {
+    msg () {
       return msgs[Math.floor(Math.random() * msgs.length)]
     }
   }
 }
 </script>
 <style lang="stylus">
-  body
+  .body
     color #fff
     background-color #33cc99
     font-family 'Open Sans', sans-serif;
-</style>
-<style lang="stylus" scoped>
   .c{
     text-align: center;
     display: block;
@@ -73,6 +70,18 @@ export default {
     position: relative;
     font-size: 20px;
   }
+  ._2{
+    text-align:center;
+    display:block;
+    position: relative;
+    font-size: 20px;
+  }
+  ._3{
+    text-align:center;
+    display:block;
+    position: relative;
+    padding-top 15px
+  }
   .text{
     font-size: 70px;
     text-align: center;
@@ -86,9 +95,13 @@ export default {
     display: inline-block;
   }
 
-
+  .btn:hover {
+    background-color #fff
+    color: #33cc99
+  }
   .btn{
-    background-color: rgb( 255, 255, 255 );
+    border: solid .2em #fff
+    background-color #33cc99
     position: relative;
     display: inline-block;
     width: 358px;
@@ -96,7 +109,7 @@ export default {
     z-index: 5;
     font-size: 25px;
     margin:0 auto;
-    color:#33cc99;
+    color: #fff;
     text-decoration: none;
     margin-right: 10px
   }
@@ -105,128 +118,83 @@ export default {
     width:60%;
   }
 
-  hr{
-    padding: 0;
-    border: none;
-    border-top: 5px solid #fff;
-    color: #fff;
-    text-align: center;
-    margin: 0px auto;
-    width: 420px;
-    height:10px;
-    z-index: -10;
-  }
-
-  hr:after {
-    content: "\2022";
-    display: inline-block;
-    position: relative;
-    top: -0.75em;
-    font-size: 2em;
-    padding: 0 0.2em;
-    background: #33cc99;
-  }
-
+  /*Time to finalise the cloud shape*/
   .cloud {
-    width: 350px; height: 120px;
+    width: 200px; height: 60px;
+    background: #fff;
 
-    background: #FFF;
-    background: linear-gradient(top, #FFF 100%);
-    background: -webkit-linear-gradient(top, #FFF 100%);
-    background: -moz-linear-gradient(top, #FFF 100%);
-    background: -ms-linear-gradient(top, #FFF 100%);
-    background: -o-linear-gradient(top, #FFF 100%);
+    border-radius: 200px;
+    -moz-border-radius: 200px;
+    -webkit-border-radius: 200px;
 
-    border-radius: 100px;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-
-    position: absolute;
-    margin: 120px auto 20px;
-    z-index:-1;
-    transition: ease 1s;
+    position: relative;
   }
 
-  .cloud:after, .cloud:before {
+  .cloud:before, .cloud:after {
     content: '';
     position: absolute;
-    background: #FFF;
-    z-index: -1
+    background: #fff;
+    width: 100px; height: 80px;
+    position: absolute; top: -15px; left: 10px;
+
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
   }
 
   .cloud:after {
-    width: 100px; height: 100px;
-    top: -50px; left: 50px;
-
-    border-radius: 100px;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
+    width: 120px; height: 120px;
+    top: -55px; left: auto; right: 15px;
   }
 
-  .cloud:before {
-    width: 180px; height: 180px;
-    top: -90px; right: 50px;
-
-    border-radius: 200px;
-    -webkit-border-radius: 200px;
-    -moz-border-radius: 200px;
-  }
-
+  /*Time to animate*/
   .x1 {
-    top:-50px;
-    left:100px;
-    -webkit-transform: scale(0.3);
-    -moz-transform: scale(0.3);
-    transform: scale(0.3);
-    opacity: 0.9;
+    left: 500px
     -webkit-animation: moveclouds 15s linear infinite;
     -moz-animation: moveclouds 15s linear infinite;
     -o-animation: moveclouds 15s linear infinite;
   }
 
-  .x1_5{
-    top:-80px;
-    left:250px;
-    -webkit-transform: scale(0.3);
-    -moz-transform: scale(0.3);
-    transform: scale(0.3);
-    -webkit-animation: moveclouds 17s linear infinite;
-    -moz-animation: moveclouds 17s linear infinite;
-    -o-animation: moveclouds 17s linear infinite;
-  }
-
+  /*variable speed, opacity, and position of clouds for realistic effect*/
   .x2 {
-    left: 250px;
-    top:30px;
+    left: calc(300px + 200px)
+
     -webkit-transform: scale(0.6);
     -moz-transform: scale(0.6);
     transform: scale(0.6);
-    opacity: 0.6;
+    opacity: 0.6; /*opacity proportional to the size*/
+
+    /*Speed will also be proportional to the size and opacity*/
+    /*More the speed. Less the time in 's' = seconds*/
     -webkit-animation: moveclouds 25s linear infinite;
     -moz-animation: moveclouds 25s linear infinite;
     -o-animation: moveclouds 25s linear infinite;
   }
 
   .x3 {
-    left: 250px; bottom: -70px;
+    left: calc(300px + -250px); top: -200px;
 
-    -webkit-transform: scale(0.6);
-    -moz-transform: scale(0.6);
-    transform: scale(0.6);
-    opacity: 0.8;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.8; /*opacity proportional to the size*/
 
-    -webkit-animation: moveclouds 25s linear infinite;
-    -moz-animation: moveclouds 25s linear infinite;
-    -o-animation: moveclouds 25s linear infinite;
+    -webkit-animation: moveclouds 20s linear infinite;
+    -moz-animation: moveclouds 20s linear infinite;
+    -o-animation: moveclouds 20s linear infinite;
   }
 
   .x4 {
-    left: 470px; botttom: 20px;
+    left: calc(300px + 470px); top: -250px;
 
     -webkit-transform: scale(0.75);
     -moz-transform: scale(0.75);
     transform: scale(0.75);
-    opacity: 0.75;
+    opacity: 0.75; /*opacity proportional to the size*/
 
     -webkit-animation: moveclouds 18s linear infinite;
     -moz-animation: moveclouds 18s linear infinite;
@@ -234,12 +202,12 @@ export default {
   }
 
   .x5 {
-    left: 200px; top: 300px;
+    left: calc(300px + -150px); top: -150px;
 
-    -webkit-transform: scale(0.5);
-    -moz-transform: scale(0.5);
-    transform: scale(0.5);
-    opacity: 0.8;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.8; /*opacity proportional to the size*/
 
     -webkit-animation: moveclouds 20s linear infinite;
     -moz-animation: moveclouds 20s linear infinite;
