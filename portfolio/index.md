@@ -2,20 +2,29 @@
 home: true
 heroText: Eu sou Thomas Letsch Groch,
 links:
-- href: blog/index.html
-  title: blog
-- href: projetos.html
-  title: projetos
 - href: sobre.html
   title: sobre
+  external: false
+  draft: false
+- href: projetos.html
+  title: projetos
+  external: false
+  draft: false
+- href: blog/index.html
+  title: blog
+  external: false
+  draft: false
 - href: contato.html
   title: contato
+  external: false
+  draft: false
 navbar: false
 title: ''
 heroImage: ''
+tagline: ''
+
 ---
 ::: slot header
 <Home/>
 <BaseRepository/>
 :::
-
