@@ -43,7 +43,6 @@ export default {
     margin-top: 145px;
     max-width: 100%;
     overflow-x: hidden;
-
   }
   .body
     color #fff
