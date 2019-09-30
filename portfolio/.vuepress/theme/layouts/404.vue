@@ -1,5 +1,5 @@
 <template>
-<div class="body h-screen w-full">
+<div class="body h-screen max-w-full">
   <div class="absolute h-full w-full top-offset">
     <div class="cloud x1"></div>
     <!-- Time for multiple clouds to dance around -->
@@ -41,6 +41,9 @@ export default {
 <style lang="stylus">
   .top-offset{
     margin-top: 145px;
+    max-width: 100%;
+    overflow-x: hidden;
+
   }
   .body
     color #fff
