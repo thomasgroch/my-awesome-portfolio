@@ -46,7 +46,6 @@ export default {
     color #fff
     background-color #33cc99
     font-family 'Open Sans', sans-serif;
-    overflow: hidden;
   .c{
     text-align: center;
     display: block;
@@ -120,9 +119,6 @@ export default {
   .cloud {
     width: 200px; height: 60px;
     background: #fff;
-    background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);
-    background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
-    background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);
 
     border-radius: 200px;
     -moz-border-radius: 200px;
