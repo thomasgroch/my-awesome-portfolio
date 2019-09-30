@@ -193,9 +193,12 @@ th, td
     .sidebar
       display none
     .page
-      padding-left 0
+      padding-left 2em
 
 @require '~@parent-theme/styles/mobile.styl'
+@media (max-width: 719px)
+  .page
+    padding-left 2em !important
 
 .darkmode--activated aside.sidebar
   background-color black

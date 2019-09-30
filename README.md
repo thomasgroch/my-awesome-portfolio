@@ -8,17 +8,17 @@
     <img alt="Import this project into Forestry" src="https://assets.forestry.io/import-to-forestryK.svg" />
 </a>
 
-# Env
+## Env
 
-[install on github](https://github.com/settings/tokens/new?scopes=repo&description=My%20awesome%20portfolio)
+[Install on github](https://github.com/settings/tokens/new?scopes=repo&description=My%20awesome%20portfolio)
 
-# Credits
+## Credits
 
 Eu reescrevi meu portfólio muitas vezes, e cada vez fui influenciado por alguém novo. Essas pessoas incluem:
 
 - [recoluan](https://github.com/recoluan)
 
-# Refs
+## Refs
 
 - [laxxx](https://github.com/alexfoxy/laxxx)
 - [vuepress socket examples](https://vuepress-examples.netlify.com/)
