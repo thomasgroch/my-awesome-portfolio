@@ -5,26 +5,32 @@
   "logo": "",
   "menu": [
     {
-      "text": "home",
-      "link": "/",
-      "draft": true
+      "text": "sobre",
+      "link": "/sobre.html",
+      "href": "",
+      "external": false,
+      "draft": false
     },
     {
       "text": "blog",
-      "link": "/blog/index.html"
+      "link": "/blog/index.html",
+      "href": "",
+      "external": false,
+      "draft": false
     },
     {
       "text": "projetos",
-      "link": "/projetos.html"
-    },
-    {
-      "text": "sobre",
-      "link": "/sobre.html"
+      "link": "/projetos.html",
+      "href": "",
+      "external": false,
+      "draft": false
     },
     {
       "text": "contato",
       "link": "/contato.html",
-      "draft": false
+      "draft": false,
+      "href": "",
+      "external": false
     }
   ]
 }
