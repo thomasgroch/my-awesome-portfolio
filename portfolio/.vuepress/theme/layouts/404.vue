@@ -1,6 +1,6 @@
 <template>
 <div class="body h-screen w-full">
-  <div class="absolute h-full w-full mt-56">
+  <div class="absolute h-full w-full top-offset">
     <div class="cloud x1"></div>
     <!-- Time for multiple clouds to dance around -->
     <div class="cloud x2"></div>
@@ -39,10 +39,14 @@ export default {
 }
 </script>
 <style lang="stylus">
+  .top-offset{
+    margin-top: 145px;
+  }
   .body
     color #fff
     background-color #33cc99
     font-family 'Open Sans', sans-serif;
+    overflow: hidden;
   .c{
     text-align: center;
     display: block;
@@ -63,12 +67,6 @@ export default {
     letter-spacing: 12px;
     font-size: 4em;
     line-height: 80%;
-  }
-  ._2{
-    text-align:center;
-    display:block;
-    position: relative;
-    font-size: 20px;
   }
   ._2{
     text-align:center;
@@ -122,6 +120,9 @@ export default {
   .cloud {
     width: 200px; height: 60px;
     background: #fff;
+    background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+    background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
+    background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);
 
     border-radius: 200px;
     -moz-border-radius: 200px;
