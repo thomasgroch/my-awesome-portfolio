@@ -187,18 +187,17 @@ th, td
     .sidebar
       top 0
 
+@require '~@parent-theme/styles/mobile.styl'
+@media (max-width: 719px)
+  .page
+    padding-left 2em !important
 
 @media (min-width: ($MQMobile + 1px))
   .theme-container.no-sidebar
     .sidebar
       display none
     .page
-      padding-left 2em
-
-@require '~@parent-theme/styles/mobile.styl'
-@media (max-width: 719px)
-  .page
-    padding-left 2em !important
+      padding-left 2em !important
 
 .darkmode--activated aside.sidebar
   background-color black
