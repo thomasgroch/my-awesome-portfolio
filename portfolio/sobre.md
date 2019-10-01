@@ -2,9 +2,9 @@
 title: Sobre
 sidebar: false
 ---
-# Sobre {{ $site.themeConfig.author }}
+# Sobre
 
-A 15+ anos aprimorei minhas habilidades em projetos corporativos e desenvolvimento web.
+Eu sou o {{ $site.themeConfig.author }} e a mais de 15 anos aprimorei minhas habilidades em projetos corporativos e desenvolvimento web.
 
 Eficiência na comunicação, aprendo rápido e .
 Retenho dados sentitivos de negócio e compartilho o conhecimento.

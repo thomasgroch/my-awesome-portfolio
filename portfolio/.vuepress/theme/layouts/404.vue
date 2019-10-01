@@ -1,6 +1,6 @@
 <template>
-<div class="body h-screen max-w-full">
-  <div class="absolute h-full w-full top-offset">
+<div class="body h-screen max-w-full top-offset">
+  <div class="absolute h-full w-full">
     <div class="cloud x1"></div>
     <!-- Time for multiple clouds to dance around -->
     <div class="cloud x2"></div>
@@ -40,7 +40,7 @@ export default {
 </script>
 <style lang="stylus">
   .top-offset{
-    margin-top: 145px;
+    padding-top: 145px;
     max-width: 100%;
     overflow-x: hidden;
   }
@@ -133,8 +133,6 @@ export default {
     content: '';
     position: absolute;
     background: #fff;
-    width: 100px; height: 80px;
-    position: absolute; top: -15px; left: 10px;
 
     border-radius: 100px;
     -moz-border-radius: 100px;
@@ -143,6 +141,11 @@ export default {
     -webkit-transform: rotate(30deg);
     transform: rotate(30deg);
     -moz-transform: rotate(30deg);
+  }
+
+  .cloud:before {
+    width: 100px; height: 80px;
+    top: -15px; left: 10px;
   }
 
   .cloud:after {
