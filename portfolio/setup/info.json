@@ -6,7 +6,7 @@
   "menu": [
     {
       "text": "stack",
-      "href": "",
+      "link": "/stack.html",
       "external": false,
       "draft": false
     },

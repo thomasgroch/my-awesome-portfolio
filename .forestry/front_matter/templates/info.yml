@@ -31,7 +31,7 @@ fields:
   - name: text
     type: text
     label: Title
-  - name: href
+  - name: link
     type: text
     label: Link
   - name: external
