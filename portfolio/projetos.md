@@ -61,7 +61,7 @@ projetos:
   draft: false
 
 ---
-# Projetos page title
+# Projetos
 
 Eficiência na comunicação, aprendo rápido e . Retenho dados sentitivos de negócio e compartilho o conhecimento. ajudo outras pessoas com o trabalho em equipe desenvolvedor 10x. soft skills, crescer junto time projeto UI guidelines
 
