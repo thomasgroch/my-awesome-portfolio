@@ -152,7 +152,7 @@ Você pode dar uma olhada nas ferramentas por trás do meu processo de desenvolv
 
 <Stack :item="{ domain: 'laravel.com' }" /> <Stack :item="{ domain: 'coreos.com' }" />
 
-<BaseStack :items="\[ { domain: 'asdasdtg.netlify.com' } \]" />
+<BaseStack :items="[ { domain: 'asdasdtg.netlify.com' } ]" />
 
 ## Social
 
