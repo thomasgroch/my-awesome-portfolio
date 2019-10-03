@@ -7,8 +7,6 @@ tags:
 - qwe
 ---
 
-Participo na formação do produto: trabalho com os clientes para resolver os seus problemas, proporcionando uma excelente e agradável experiência ao usuário.
-
 Tecnologias que uso atualmente: {PHP, Node.JS}, Vue, {Laravel, Nuxt.js, lambda}, SSGs e todos os outros componentes JAMstack
 
 PWA, SPA, SSR, SSG
@@ -18,10 +16,14 @@ netlify
 faunadb
 forestry
 
+The way these systems work is by pulling content either from a filesystem or API endpoint and running a build task to generate an entire site in *static* HTML. The end result = wildly fast websites which have no back end and can be deployed just about anywhere.
+
+
+A maneira como esses sistemas funcionam é extrair conteúdo de um sistema de arquivos ou de um ponto de extremidade da API e executar uma tarefa de construção para gerar um site inteiro em HTML estático. O resultado final = sites extremamente rápidos, sem back-end e que podem ser implantados em qualquer lugar.
 
 # Technology stack
 
-## Technology stack on the client side
+## Stack de tecnologia no lado do cliente
 
 Single Web page application:
 
@@ -43,7 +45,8 @@ And what if a single Web page application isn’t enough for your needs?
 
 - Support for the [Thymeleaf](http://www.thymeleaf.org/) template engine, to generate Web pages on the server side
 
-## Technology stack on the server side
+
+## Stack de tecnologia no lado do servidor
 
 A complete [Spring application](https://spring.io/):
 
@@ -60,51 +63,49 @@ A complete [Spring application](https://spring.io/):
 - [Cassandra](https://cassandra.apache.org/) support if you’d rather use a column-oriented NoSQL database instead of JPA
 - [Kafka](https://kafka.apache.org/) support if you want to use a publish-subscribe messaging system
 
-## Technology stack for microservices
 
-Microservices are optional, and fully supported:
+####  Web Apps tradicionais
+
+Developer hosts app and data, user controls device.
+
+![Traditional web app](https://remotestorage.io/img/explainer-1-traditional-webapp-scoured.svg)
+
+**Traditional hosted web stack, for example LAMP/.Net/RoR/Django/etc.**
+
+
+#### [No-Backend](http://nobackend.org/) Web Apps
+
+Developer provides app and data,user controls device.
+
+![Traditional web app](https://remotestorage.io/img/explainer-2-no-backend-scoured.svg)
+
+**100% client-side app plus CouchDB, Hoodie, Firebase, Parse, Kinto, etc.**
+
+
+#### [Unhosted](https://unhosted.org/) Web Apps
+
+Developer provides app only, user controls device and data.
+
+![Traditional web app](https://remotestorage.io/img/explainer-3-unhosted-scoured.svg)
+
+**100% client-side app plus remoteStorage, Google Drive, Dropbox, etc.**
+
+
+## Stack de tecnologia para microsserviços
+
+
+Os microsserviços são opcionais
 
 - HTTP routing using [Netflix Zuul](https://github.com/Netflix/zuul) or [Traefik](https://traefik.io/)
 - Service discovery using [Netflix Eureka](https://github.com/Netflix/eureka) or [HashiCorp Consul](https://www.consul.io/)
 
-## Ready to go into production:
+## Pronto para entrar em produção:
 
-- Monitoring with [Metrics](http://metrics.dropwizard.io/) and [the ELK Stack](https://www.elastic.co/products)
-- Caching with [ehcache](http://ehcache.org/) (local cache), [hazelcast](http://www.hazelcast.com/) or [Infinispan](http://infinispan.org/)
+- Monitoring and automation
+- Caching 
 - Optimized static resources (gzip filter, HTTP cache headers)
-- Log management with [Logback](http://logback.qos.ch/), configurable at runtime
-- Connection pooling with [HikariCP](https://github.com/brettwooldridge/HikariCP) for optimum performance
-- Builds a standard WAR file or an executable JAR file
-- Full Docker and Docker Compose support
-- Support for all major cloud providers: AWS, Cloud Foundry, Heroku, Kubernetes, OpenShift, Azure, Docker…
+- Log management configurable at runtime
+- Full Docker and Docker Compose
+- Suporte para todos os principais provedores de nuvem: AWS, Cloud Foundry, Heroku, Kubernetes, OpenShift, Azure, Docker…
 
 
-
-
-
-https://remotestorage.io/
-
-####  Traditional Web Apps
-
-![Traditional web app](https://remotestorage.io/img/explainer-1-traditional-webapp-scoured.svg)Traditional hosted web stack, for example LAMP/.Net/RoR/Django/etc.
-
-Developer hosts app and data,
-user controls device.
-
-#### [No-Backend](http://nobackend.org/) Web Apps
-
-![Traditional web app](https://remotestorage.io/img/explainer-2-no-backend-scoured.svg)100% client-side app plus CouchDB, Hoodie, Firebase, Parse, Kinto, etc.
-
-Developer provides app and data,
-user controls device.
-
-#### [Unhosted](https://unhosted.org/) Web Apps
-
-![Traditional web app](https://remotestorage.io/img/explainer-3-unhosted-scoured.svg)100% client-side app plus remoteStorage, Google Drive, Dropbox, etc.
-
-Developer provides app only,
-user controls device and data.
-
-
-
-The way these systems work is by pulling content either from a filesystem or API endpoint and running a build task to generate an entire site in *static* HTML. The end result = wildly fast websites which have no back end and can be deployed just about anywhere.
