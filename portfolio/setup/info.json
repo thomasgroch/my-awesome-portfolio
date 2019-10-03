@@ -5,6 +5,12 @@
   "logo": "",
   "menu": [
     {
+      "text": "stack",
+      "href": "stack",
+      "external": false,
+      "draft": false
+    },
+    {
       "text": "sobre",
       "link": "/sobre.html",
       "href": "",
