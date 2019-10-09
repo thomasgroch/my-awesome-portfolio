@@ -8,6 +8,9 @@
     <img alt="Import this project into Forestry" src="https://assets.forestry.io/import-to-forestryK.svg" />
 </a>
 
+
+Esta applicação o conteúdo mudar apenas no deploy. Durante o build SSG renderiza as páginas HTML. Quando o site é criado e cada página é renderizada em um arquivo HTML que inclui o conteúdo da página.
+
 ## Env
 
 [Install on github](https://github.com/settings/tokens/new?scopes=repo&description=My%20awesome%20portfolio)

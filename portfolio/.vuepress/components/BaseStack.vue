@@ -7,7 +7,7 @@
 </template>
 
 <script>
-	import StackCard from '@/components/StackCard.vue'
+	import StackCard from './StackCard.vue'
 
 	export default {
 		name: 'BaseStack',
@@ -20,7 +20,7 @@
 			StackCard,
 		},
         created(){
-			console.log(this.$page.frontmatter)
+			console.log(this.$page.frontmatter.techs)
         },
 		computed: {
 			techs() {
