@@ -72,9 +72,12 @@ Com o avanço nos estudos na area de desenvolvimento web, tive contato com diver
 
 ####  Web Apps Monolitico
 
-O desenvolvedor hospeda aplicativos e dados, o usuário controla o dispositivo.
-
 ![Traditional web app](https://remotestorage.io/img/explainer-1-traditional-webapp-scoured.svg)
+
+```
+O desenvolvedor hospeda aplicativos e dados, 
+o usuário controla o dispositivo.
+```
 
 ** por exemplo, LAMP / .Net / RoR / Django / etc. **
 
@@ -148,18 +151,23 @@ forestry
 
 #### [No-Backend](http://nobackend.org/) Web Apps
 
-Developer provides app and data,user controls device.
-
 ![Traditional web app](https://remotestorage.io/img/explainer-2-no-backend-scoured.svg)
+
+```
+O desenvolvedor fornece aplicativos e dados, 
+o usuário controla o dispositivo.
+```
 
 **100% client-side app plus CouchDB, Hoodie, Firebase, Parse, Kinto, etc.**
 
-
 #### [Unhosted](https://unhosted.org/) Web Apps
 
-Developer provides app only, user controls device and data.
-
 ![Traditional web app](https://remotestorage.io/img/explainer-3-unhosted-scoured.svg)
+
+```
+O desenvolvedor fornece apenas o aplicativo, 
+o usuário controla o dispositivo e os dados.
+```
 
 **100% client-side app plus remoteStorage, Google Drive, Dropbox, etc.**
 
