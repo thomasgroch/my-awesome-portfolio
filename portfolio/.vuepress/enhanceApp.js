@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
+import animated from 'animate.css'
 
 library.add(
 	fas,
@@ -21,6 +22,7 @@ export default ({
 	// ...apply enhancements to the app
 	Vue.component('font-awesome-icon', FontAwesomeIcon)
 	Vue.use(VeeValidate)
+	Vue.use(animated)
 	// Vue.mixin({
 	// 	localize (localeName) {
 	// 		// asynchronously load the locale file then localize the validator with it.
