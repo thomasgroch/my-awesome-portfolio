@@ -2,20 +2,22 @@
     <main class="mt-5 flex flex-col" aria-labelledby="main-title">
         <div class="flex mb-4 flex-wrap justify-center">
 
-            <header class="hero uppercase font-nunito px-4 py-2 m-2 text-center animated bounceInDown">
+            <header class="hero uppercase font-nunito px-4 py-2 m-2 text-center">
 
-                <img v-if="data.heroImage" class="rounded shadow-lg" :src="$withBase(data.heroImage)"
-                     :alt="data.heroAlt || 'hero'"/>
+                <div class="animated fadeInDown">
+                    <img v-if="data.heroImage" class="rounded shadow-lg" :src="$withBase(data.heroImage)"
+                         :alt="data.heroAlt || 'hero'"/>
 
-                <h1 class="font-nunito text-2xl sm:text-3xl" v-if="data.heroText !== null" id="main-title">{{
-                    data.heroText ||
-                    $title || 'Hello' }}</h1>
+                    <h1 class="font-nunito text-2xl sm:text-3xl tracking-wide" v-if="data.heroText !== null" id="main-title">{{
+                        data.heroText ||
+                        $title || 'Hello' }}</h1>
 
-                <p class="description my-6 mx-auto leading-tight font-nunito text-xl md:text-2xl">
-                    {{ data.tagline || $description || 'Welcome to your VuePress site' }}
-                </p>
+                    <p class="description my-6 mx-auto leading-tight font-nunito text-xl md:text-2xl">
+                        {{ data.tagline || $description || 'Welcome to your VuePress site' }}
+                    </p>
+                </div>
 
-                <div class="links py-2 sm:text-xl sm:flex sm:flex-row sm:justify-between"
+                <div class="links py-2 sm:text-xl sm:flex sm:flex-row sm:justify-between tracking-wide"
                      v-if="data.links && data.links.length">
                     <div class="link py-6" v-for="(link, index) in activeLinks" :key="index">
                         <router-link class="hover:text-black"
