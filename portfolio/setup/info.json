@@ -5,12 +5,6 @@
   "logo": "",
   "menu": [
     {
-      "text": "stack",
-      "link": "/stack.html",
-      "external": false,
-      "draft": false
-    },
-    {
       "text": "sobre",
       "link": "/sobre.html",
       "href": "",
@@ -18,9 +12,8 @@
       "draft": false
     },
     {
-      "text": "blog",
-      "link": "/blog/index.html",
-      "href": "",
+      "text": "stack",
+      "link": "/stack.html",
       "external": false,
       "draft": false
     },
@@ -37,6 +30,13 @@
       "draft": false,
       "href": "",
       "external": false
+    },
+    {
+      "text": "blog",
+      "link": "/blog/index.html",
+      "href": "",
+      "external": false,
+      "draft": false
     }
   ]
 }
