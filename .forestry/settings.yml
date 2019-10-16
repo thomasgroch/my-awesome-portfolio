@@ -7,7 +7,6 @@ sections:
 - type: document
   path: portfolio/stack.md
   label: Stack
-  match: "**/*"
 - type: directory
   path: portfolio/blog
   label: Posts
