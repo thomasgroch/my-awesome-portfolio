@@ -5,8 +5,29 @@ admin_path: portfolio/.vuepress/public/admin
 webhook_url: 
 sections:
 - type: document
+  path: portfolio/index.md
+  label: Home
+  templates:
+  - home
+- type: document
+  path: portfolio/sobre.md
+  label: Sobre
+  templates:
+  - sobre
+- type: document
   path: portfolio/stack.md
   label: Stack
+  match: "**/*"
+- type: document
+  path: portfolio/projetos.md
+  label: Projetos
+  templates:
+  - projetos
+- type: document
+  path: portfolio/blog/README.md
+  label: Blog Home
+  templates:
+  - blog-index
 - type: directory
   path: portfolio/blog
   label: Posts
@@ -16,26 +37,6 @@ sections:
   new_doc_ext: md
   templates:
   - blog
-- type: document
-  path: portfolio/projetos.md
-  label: Projetos
-  templates:
-  - projetos
-- type: document
-  path: portfolio/index.md
-  label: Home
-  templates:
-  - home
-- type: document
-  path: portfolio/blog/README.md
-  label: Blog Home
-  templates:
-  - blog-index
-- type: document
-  path: portfolio/sobre.md
-  label: Sobre
-  templates:
-  - sobre
 - type: document
   path: portfolio/setup/info.json
   label: Site Config
