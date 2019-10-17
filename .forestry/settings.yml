@@ -2,7 +2,7 @@
 new_page_extension: md
 auto_deploy: true
 admin_path: portfolio/.vuepress/public/admin
-webhook_url:
+webhook_url: 
 sections:
 - type: document
   path: portfolio/index.md
@@ -44,8 +44,9 @@ sections:
 upload_dir: ''
 public_path: portfolio/.vuepress/public/media
 front_matter_path: ''
-use_front_matter_path:
+use_front_matter_path: 
 file_template: ":filename:"
+instant_preview: 
 build:
   preview_env:
   - NODE_ENV=staging
