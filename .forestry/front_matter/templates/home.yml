@@ -4,7 +4,7 @@ hide_body: false
 fields:
 - name: title
   type: text
-  label: Title
+  label: Page title
   hidden: true
   config:
     required: true

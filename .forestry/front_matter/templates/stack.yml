@@ -5,7 +5,7 @@ display_field: title
 fields:
 - type: text
   name: title
-  label: title
+  label: Page title
 - type: boolean
   name: sidebar
   label: sidebar

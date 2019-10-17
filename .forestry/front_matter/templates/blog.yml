@@ -4,7 +4,7 @@ hide_body: false
 fields:
 - name: title
   default: ''
-  label: Title
+  label: Page title
   type: text
 - name: date
   type: datetime
