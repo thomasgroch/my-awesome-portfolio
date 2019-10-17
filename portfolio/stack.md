@@ -2,11 +2,11 @@
 title: stack
 sidebar: false
 techs:
-- name: HTML,
-  photo: ./techs/html_logo2.png
+- name: HTML
+  photo: "./techs/html_logo2.png"
   href: https://www.w3schools.com
 - name: CSS
-  photo: ./techs/css_logo2.png
+  photo: "./techs/css_logo2.png"
   href: https://www.w3schools.com
 - name: SASS
   photo: https://logo.clearbit.com/sass-lang.com
@@ -62,8 +62,8 @@ techs:
 - name: VisualStudio Code IDE
   photo: https://logo.clearbit.com/https://www.https://code.visualstudio.com/
   href: https://www.code.visualstudio.com/
----
 
+---
 # Stack de tecnologia
 
 <BaseStack />
@@ -179,4 +179,3 @@ o usuário controla o dispositivo e os dados.
 - Log management configurable at runtime
 - Full Docker and Docker Compose
 - Suporte para todos os principais provedores de nuvem: AWS, Cloud Foundry, Heroku, Kubernetes, OpenShift, Azure, Docker…
-
