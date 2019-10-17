@@ -1,0 +1,23 @@
+---
+label: tech
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: boolean
+  name: sidebar
+  label: sidebar
+- type: field_group_list
+  name: techs
+  label: techs
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: file
+    name: photo
+    label: photo
+  - type: text
+    name: href
+    label: href
