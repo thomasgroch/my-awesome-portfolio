@@ -20,6 +20,10 @@ front:
 - name: jQuery
   photo: https://logo.clearbit.com/https://jquery.com
   href: https://jquery.com
+back:
+- name: Docker
+  photo: https://logo.clearbit.com/docker.com
+  href: https://docker.com
 - name: RestfulAPI
   photo: https://logo.clearbit.com/https://restfulapi.net/
   href: https://restfulapi.net/
@@ -38,9 +42,6 @@ front:
 - name: Parceljs
   photo: https://logo.clearbit.com/https://parceljs.org/
   href: https://parceljs.org/
-- name: Docker
-  photo: https://logo.clearbit.com/docker.com
-  href: https://docker.com
 - name: Netlify
   photo: https://logo.clearbit.com/netlify.com
   href: https://netlify.com
@@ -182,13 +183,6 @@ o usuário controla o dispositivo e os dados.
 - Optimized static resources (gzip filter, HTTP cache headers)
 - Log management configurable at runtime
 - Full Docker and Docker Compose
-<<<<<<< HEAD
 - Suporte para todos os principais provedores de nuvem: AWS, Cloud Foundry, Heroku, Kubernetes, OpenShift, Azure, Docker…
 
 ⭐️ 🎯📌💻🚀❓❗☕
-||||||| merged common ancestors
-- Suporte para todos os principais provedores de nuvem: AWS, Cloud Foundry, Heroku, Kubernetes, OpenShift, Azure, Docker…
-
-=======
-- Suporte para todos os principais provedores de nuvem: AWS, Cloud Foundry, Heroku, Kubernetes, OpenShift, Azure, Docker…
->>>>>>> 427fc891bad84e8532b24062bbeada2d07ab18c1
