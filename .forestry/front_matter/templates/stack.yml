@@ -10,19 +10,6 @@ fields:
   label: Navegation Bar
   hidden: true
   default: false
-- type: field_group_list
-  name: techs
-  label: techs
-  fields:
-  - type: text
-    name: name
-    label: name
-  - type: file
-    name: photo
-    label: photo
-  - type: text
-    name: href
-    label: href
 - name: asd
   type: field_group_list
   config:
