@@ -2,11 +2,11 @@
 title: stack
 sidebar: false
 front:
-- name: HTML,
+- name: HTML
   photo: ./techs/html_logo2.png
   href: https://www.w3schools.com
 - name: CSS
-  photo: ./techs/css_logo2.png
+  photo: "./techs/css_logo2.png"
   href: https://www.w3schools.com
 - name: SASS
   photo: https://logo.clearbit.com/sass-lang.com
@@ -62,8 +62,8 @@ front:
 - name: VisualStudio Code IDE
   photo: https://logo.clearbit.com/https://www.https://code.visualstudio.com/
   href: https://www.code.visualstudio.com/
----
 
+---
 # Stack de tecnologia
 
 Com o avanço nos estudos na area de desenvolvimento web, tive contato com diversas ferramentas e serviços. Dessa forma, elaborei uma Stack moderna na qual contempla os mesmos valores em diferentes cenários de desenvolvimento web. Segue abaixo toda (ou quase toda) a minha Stack.
@@ -182,6 +182,13 @@ o usuário controla o dispositivo e os dados.
 - Optimized static resources (gzip filter, HTTP cache headers)
 - Log management configurable at runtime
 - Full Docker and Docker Compose
+<<<<<<< HEAD
 - Suporte para todos os principais provedores de nuvem: AWS, Cloud Foundry, Heroku, Kubernetes, OpenShift, Azure, Docker…
 
 ⭐️ 🎯📌💻🚀❓❗☕
+||||||| merged common ancestors
+- Suporte para todos os principais provedores de nuvem: AWS, Cloud Foundry, Heroku, Kubernetes, OpenShift, Azure, Docker…
+
+=======
+- Suporte para todos os principais provedores de nuvem: AWS, Cloud Foundry, Heroku, Kubernetes, OpenShift, Azure, Docker…
+>>>>>>> 427fc891bad84e8532b24062bbeada2d07ab18c1
