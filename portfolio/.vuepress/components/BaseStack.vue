@@ -11,27 +11,27 @@
 
 	export default {
 		name: 'BaseStack',
-		// data() {
-		// 	return {
-		// 		stack: info.stack
-		// 	}
-		// },
-		components: {
-			StackCard,
+		props: {
+			'group': {
+				type: String,
+				default: 'techs'
+			}
 		},
-        created(){
-			console.log(this.$page.frontmatter.techs)
-        },
+		components: { StackCard },
+		created() {
+			console.log(this.$page.frontmatter[this.group])
+			// console.log(this.$page.frontmatter.techs)
+		},
 		computed: {
 			techs() {
-				return [
-					...this.$page.frontmatter.techs
-						.filter(tech => {
-							return (tech.link && tech.link !== '#')
-						})
-				]
+                return this.techsGroup && this.techsGroup.filter(tech => {
+                    return (tech.photo && tech.photo !== '#')
+                })
 			},
+			techsGroup() {
+				return this.$page.frontmatter[this.group]
+			}
 
-		},
+		}
 	}
 </script>

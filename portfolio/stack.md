@@ -1,7 +1,7 @@
 ---
 title: stack
 sidebar: false
-techs:
+front:
 - name: HTML,
   photo: ./techs/html_logo2.png
   href: https://www.w3schools.com
@@ -66,11 +66,11 @@ techs:
 
 # Stack de tecnologia
 
-<BaseStack />
-
 Com o avanço nos estudos na area de desenvolvimento web, tive contato com diversas ferramentas e serviços. Dessa forma, elaborei uma Stack moderna na qual contempla os mesmos valores em diferentes cenários de desenvolvimento web. Segue abaixo toda (ou quase toda) a minha Stack.
 
 ####  Web Apps Monolitico
+
+<BaseStack group="mono" />
 
 ![Traditional web app](https://remotestorage.io/img/explainer-1-traditional-webapp-scoured.svg)
 
@@ -82,6 +82,8 @@ o usuário controla o dispositivo.
 ** por exemplo, LAMP / .Net / RoR / Django / etc. **
 
 ## Stack de tecnologia no lado do servidor
+
+<BaseStack group="back" />
 
 A complete [Spring application](https://spring.io/):
 
@@ -102,14 +104,16 @@ Laravel, Nuxt.js, lambda
 
 ## Stack de tecnologia para microsserviços
 
+<BaseStack group="micro" />
 
 Os microsserviços são opcionais
-
 - HTTP routing using [Netflix Zuul](https://github.com/Netflix/zuul) or [Traefik](https://traefik.io/)
 - Service discovery using [Netflix Eureka](https://github.com/Netflix/eureka) or [HashiCorp Consul](https://www.consul.io/)
 
 
 ## Stack de tecnologia no lado do cliente
+
+<BaseStack group="front" />
 
 Aplicativo de página única da Web (SPA):
 
@@ -180,3 +184,4 @@ o usuário controla o dispositivo e os dados.
 - Full Docker and Docker Compose
 - Suporte para todos os principais provedores de nuvem: AWS, Cloud Foundry, Heroku, Kubernetes, OpenShift, Azure, Docker…
 
+⭐️ 🎯📌💻🚀❓❗☕
