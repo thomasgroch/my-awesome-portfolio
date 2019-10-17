@@ -9,8 +9,8 @@ fields:
   name: sidebar
   label: sidebar
 - type: field_group_list
-  name: techs
-  label: techs
+  name: front
+  label: front-end techs
   fields:
   - type: text
     name: name
@@ -21,3 +21,10 @@ fields:
   - type: text
     name: href
     label: href
+  - name: back
+    type: list
+    config:
+      use_select: false
+      min: 
+      max: 
+    label: back
