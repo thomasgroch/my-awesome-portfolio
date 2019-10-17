@@ -4,10 +4,12 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: Stack Title
 - type: boolean
   name: sidebar
-  label: sidebar
+  label: Navegation Bar
+  hidden: true
+  default: false
 - type: field_group_list
   name: techs
   label: techs
@@ -21,3 +23,10 @@ fields:
   - type: text
     name: href
     label: href
+- name: asd
+  type: field_group_list
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: asd
