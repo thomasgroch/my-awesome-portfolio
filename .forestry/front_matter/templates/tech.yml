@@ -1,23 +1,25 @@
 ---
-label: tech
+label: stack
 hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: Stack Title
 - type: boolean
   name: sidebar
-  label: sidebar
-- type: field_group_list
-  name: techs
-  label: techs
+  label: Navegation Bar
+  hidden: true
+  default: false
+- name: asd
+  type: field_group_list
   fields:
-  - type: text
-    name: name
-    label: name
-  - type: file
-    name: photo
-    label: photo
-  - type: text
-    name: href
-    label: href
+  - name: tech
+    type: include
+    config: {}
+    template: tech
+    label: tech
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: asd
