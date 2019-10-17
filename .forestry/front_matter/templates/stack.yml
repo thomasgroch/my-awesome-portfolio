@@ -15,17 +15,10 @@ fields:
   fields:
   - type: text
     name: name
-    label: name
+    label: Tech name
   - type: file
     name: photo
-    label: photo
+    label: Tech icon photo
   - type: text
     name: href
-    label: href
-  - name: back
-    type: list
-    config:
-      use_select: false
-      min: 
-      max: 
-    label: back
+    label: Tech href
