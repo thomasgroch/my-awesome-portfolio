@@ -20,7 +20,7 @@
                 <div class="links py-2 sm:text-xl sm:flex sm:flex-row sm:justify-between tracking-wide"
                      v-if="data.links && data.links.length">
                     <div class="link py-6" v-for="(link, index) in activeLinks" :key="index">
-                        <router-link class="hover:text-black animated fadeInUp"
+                        <router-link class="hover:text-black"
                                      active-class="active"
                                      :to="link.href"
                                      v-text="link.title"

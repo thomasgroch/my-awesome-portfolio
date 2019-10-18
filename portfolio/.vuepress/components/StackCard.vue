@@ -1,5 +1,5 @@
 <template>
-<div class="mr-5">
+<div class="mr-5 text-center">
   <a :href="item.href"
       target="_blank">
     <img class="shadow h-8 sm:h-16 rounded-full"
