@@ -54,13 +54,13 @@ back:
 - name: Yarn
   photo: https://logo.clearbit.com/https://yarnpkg.com
   href: https://yarnpkg.com
-- name: Ohmy-zsh
+- name: Zsh
   photo: https://logo.clearbit.com/https://ohmyz.sh/
   href: https://ohmyz.sh/
 - name: WebStormIDE
   photo: https://logo.clearbit.com/https://www.jetbrains.com/
   href: https://www.jetbrains.com/webstorm
-- name: VisualStudio Code IDE
+- name: VSCodeIDE
   photo: https://logo.clearbit.com/https://www.https://code.visualstudio.com/
   href: https://www.code.visualstudio.com/
 

@@ -1,20 +1,14 @@
 <template>
-<!--    <div v-if="item.href" class="flex justify-center w-32 h-full">-->
-<!--        <img :src="image" class="object-cover w-64 flex self-center rounded-full shadow-lg mb-6"/>{{ item.name }}-->
-<!--    </div>-->
-
-    <div class="flex flex-col w-16 self-center justify-center min-h-full mx-10 text-center py-5">
-        <a :href="item.href"
-           target="_blank">
-            <img class="justify-center text-center object-cover rounded-full shadow-lg mb-6"
+    <div class="flex rounded-lg p-6 mx-auto w-1/3">
+        <div class="text-center mx-auto">
+            <a :href="item.href"
+               class="flex flex-col hover:text-black mx-auto text-center"
+               target="_blank">
+            <img class="bg-white h-12 w-12 md:h-16 md:w-16 object-cover rounded-full shadow-lg mx-auto"
                  :src="item.photo" />
-            <span v-text="item.name"
-                  class="hover:text-black"
-                  :href="item.href"
-                  target="_blank"></span>
-        </a>
+                <span class=" mt-5">{{item.name}}</span>
+            </a>
         </div>
-
     </div>
 </template>
 
