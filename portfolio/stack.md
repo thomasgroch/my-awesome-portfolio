@@ -1,69 +1,53 @@
 ---
 title: stack
 sidebar: false
+mono:
+- name: WordPress
+  href: https://www.wordpress.com
 front:
 - name: HTML
-  photo: ./techs/html_logo2.png
   href: https://www.w3schools.com
 - name: CSS
-  photo: "./techs/css_logo2.png"
   href: https://www.w3schools.com
 - name: SASS
-  photo: https://logo.clearbit.com/sass-lang.com
   href: https://sass-lang.com
 - name: Tailwind
-  photo: https://logo.clearbit.com/tailwindcss.com
   href: https://tailwindcss.com
 - name: Vuejs
-  photo: https://logo.clearbit.com/vuejs.org
   href: https://vuejs.org
 - name: jQuery
-  photo: https://logo.clearbit.com/https://jquery.com
   href: https://jquery.com
 back:
 - name: Docker
-  photo: https://logo.clearbit.com/docker.com
   href: https://docker.com
 - name: RestfulAPI
-  photo: https://logo.clearbit.com/https://restfulapi.net/
   href: https://restfulapi.net/
 - name: Laravel
-  photo: https://logo.clearbit.com/laravel.com
   href: https://laravel.com
 - name: MariaDB
-  photo: https://logo.clearbit.com/mariadb.com
   href: https://mariadb.com
 - name: SequelPro
-  photo: https://logo.clearbit.com/sequelpro.com
   href: https://sequelpro.com
 - name: Postman
-  photo: https://logo.clearbit.com/https://getpostman.com/
   href: https://getpostman.com/
 - name: Parceljs
-  photo: https://logo.clearbit.com/https://parceljs.org/
   href: https://parceljs.org/
-- name: Netlify
-  photo: https://logo.clearbit.com/netlify.com
-  href: https://netlify.com
-- name: Heroku
-  photo: https://logo.clearbit.com/https://heroku.com/
-  href: https://heroku.com/
 - name: DigitalOcean
-  photo: https://logo.clearbit.com/https://digitalocean.com/
   href: https://digitalocean.com/
 - name: Yarn
-  photo: https://logo.clearbit.com/https://yarnpkg.com
   href: https://yarnpkg.com
 - name: Zsh
-  photo: https://logo.clearbit.com/https://ohmyz.sh/
   href: https://ohmyz.sh/
 - name: WebStormIDE
-  photo: https://logo.clearbit.com/https://www.jetbrains.com/
   href: https://www.jetbrains.com/webstorm
 - name: VSCodeIDE
-  photo: https://logo.clearbit.com/https://www.https://code.visualstudio.com/
   href: https://www.code.visualstudio.com/
-
+micro:
+- name: Heroku
+  href: https://heroku.com/
+jam:
+- name: Netlify
+  href: https://netlify.com
 ---
 # Stack de tecnologia
 
@@ -131,6 +115,8 @@ Com o excelente fluxo de trabalho de desenvolvimento:
 - Testing with [Jest](https://facebook.github.io/jest/) and [Protractor](http://www.protractortest.org/)
 
 ## JAMstack
+
+<BaseStack group="jam" />
 
 E se um aplicação SPA não for suficiente para suas necessidades?
 

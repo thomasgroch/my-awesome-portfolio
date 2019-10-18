@@ -19,6 +19,12 @@ fields:
   - type: file
     name: photo
     label: Tech icon photo
+    default: ''
+      config:
+        required: false
   - type: text
     name: href
     label: Tech href
+    default: ''
+      config:
+        required: true

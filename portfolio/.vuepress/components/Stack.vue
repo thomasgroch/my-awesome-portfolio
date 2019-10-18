@@ -1,11 +1,11 @@
 <template>
-    <div class="flex rounded-lg p-6 mx-auto w-1/3">
+    <div class="flex rounded-lg p-6 mx-auto w-1/4">
         <div class="text-center mx-auto">
             <a :href="item.href"
                class="flex flex-col hover:text-black mx-auto text-center"
                target="_blank">
             <img class="bg-white h-12 w-12 md:h-16 md:w-16 object-cover rounded-full shadow-lg mx-auto"
-                 :src="item.photo" />
+                 :src="image" />
                 <span class=" mt-5">{{item.name}}</span>
             </a>
         </div>
@@ -39,10 +39,9 @@
 		computed: {
 			title() {
 				return (this.item.name) ? this.item.name : this.getHostName(this.item.href)
-			}
-			,
+			},
 			image() {
-				return 'https://logo.clearbit.com/' + this.item.href
+				return (this.item.photo) ? this.item.photo : 'https://logo.clearbit.com/' + this.getHostName(this.item.href)
 			}
 		}
 	}
