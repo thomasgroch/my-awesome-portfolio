@@ -3,6 +3,7 @@
         <div class="text-center mx-auto">
             <a :href="item.href"
                class="flex flex-col hover:text-black mx-auto text-center"
+               rel="noopener noreferrer"
                target="_blank">
             <img class="bg-white h-12 w-12 md:h-16 md:w-16 object-cover rounded-full shadow-lg mx-auto"
                  :src="image" />

@@ -18,7 +18,7 @@ If you're interested in what we do, you can [follow us on Twitter](https://twitt
 
 - [Github](https://github.com/thomasgroc)
 
-- <a target="_blank" href="dat://thomasgroch.hashbase.io/contato.html">Hashbase</a>
+- <a target="_blank" rel="noopener noreferrer" href="dat://thomasgroch.hashbase.io/contato.html">Hashbase</a>
 
 
 ::: slot footer

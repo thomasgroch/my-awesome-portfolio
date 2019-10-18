@@ -38,9 +38,9 @@ back:
   href: https://yarnpkg.com
 - name: Zsh
   href: https://ohmyz.sh/
-- name: WebStormIDE
+- name: WebStorm
   href: https://www.jetbrains.com/webstorm
-- name: VSCodeIDE
+- name: VSCode
   href: https://www.code.visualstudio.com/
 micro:
 - name: Heroku
