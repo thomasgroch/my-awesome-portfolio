@@ -5,9 +5,10 @@
                class="flex flex-col hover:text-black mx-auto text-center"
                rel="noopener noreferrer"
                target="_blank">
-            <img class="bg-white h-12 w-12 md:h-16 md:w-16 object-cover rounded-full shadow-lg mx-auto"
-                 :src="image" />
-                <span class=" mt-5">{{item.name}}</span>
+                <img class="h-12 w-12 md:h-16 md:w-16 object-cover rounded-full shadow-lg mx-auto"
+                     :src="image"/>
+                <span class="mt-5"
+                      v-text="title"></span>
             </a>
         </div>
     </div>
@@ -30,9 +31,9 @@
 		},
 		methods: {
 			getHostName(url) {
-				if (!url){
+				if (!url) {
 					return null
-                }
+				}
 				const match = url.match(/:\/\/(www[0-9]?\.)?(.[^/:]+)/i)
 				if (match != null && match.length > 2 && typeof match[2] === 'string' && match[2].length > 0) {
 					return match[2]
