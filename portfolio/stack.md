@@ -59,6 +59,8 @@ test:
 micro:
 - name: Docker
   href: https://docker.com
+- name: Portainer
+  href: https://portainer.io/
 - name: Heroku
   href: https://heroku.com/
 - name: sentry
@@ -105,7 +107,7 @@ Com o avanço nos estudos na area de desenvolvimento web, tive contato com diver
 
 <BaseStack group="mono" />
 
-### Stack de tecnologia para microsserviços
+### Micro Serviços
 
 <BaseStack group="micro" />
 
@@ -182,4 +184,4 @@ Pronto para entrar em produção
 
 [Boas ferramentas](https://free-for.dev/) SaaS, PaaS, IaaS para desenvolvimento automatizado da sua aplicação.
 
-⭐️ 🎯📌💻🚀❓❗☕
+⭐️ 🎯📌💻🚀❓❗☕ 📨
