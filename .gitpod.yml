@@ -2,8 +2,8 @@
 # image: <your-workspace-image>
 # Command to start on workspace startup (optional)
 tasks:
-  - init: yarn && yarn build:front
-    command: yarn build:front
+  - init: yarn
+    command: yarn start:front
 # Ports to expose on workspace startup (optional)
 ports:
   - port: 8000
