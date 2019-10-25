@@ -44,7 +44,7 @@
                                v-validate="'required'"
                                id="grid-nome"
                                type="text">
-                        <p class="text-red text-xs italic"
+                        <p class="text-red-500 text-xs italic"
                            v-if="errors.has('nome')">{{ errors.first('nome') }}</p>
 
                     </div>
@@ -66,7 +66,7 @@
                                    v-validate="'required|email'"
                                    id="grid-email"
                                    type="text">
-                            <p class="text-red text-xs italic"
+                            <p class="text-red-500 text-xs italic"
                                v-if="errors.has('email')">{{ errors.first('email') }}</p>
                         </div>
 
@@ -85,7 +85,7 @@
                                    v-validate="'required'"
                                    id="grid-telefone"
                                    type="text">
-                            <p class="text-red text-xs italic"
+                            <p class="text-red-500 text-xs italic"
                                v-if="errors.has('telefone')">{{ errors.first('telefone') }}</p>
                         </div>
 
@@ -106,7 +106,7 @@
                                 v-model="form.mensagem"
                                 @input="textareaResize" ref="textarea" rows="3"
                                 id="grid-mensagem"/>
-                        <p class="text-red text-xs italic"
+                        <p class="text-red-500 text-xs italic"
                            v-if="errors.has('mensagem')">{{ errors.first('mensagem') }}</p>
                         <p class="text-grey-600 text-xs italic">Detalhe o quanto você quiser. Por favor, não inclua
                             informações confidenciais ou sensíveis em sua mensagem.</p>
@@ -128,7 +128,7 @@
                                      v-validate="'required'"
                                      v-model="form.estado"
                                      id="grid-estado"/>
-                            <p class="text-red text-xs italic"
+                            <p class="text-red-500 text-xs italic"
                                v-if="errors.has('estado')">{{ errors.first('estado') }}</p>
                         </div>
 
@@ -138,7 +138,7 @@
 
                         <label class="block uppercase tracking-wide text-grey-700 text-xs font-bold mb-2"
                                for="grid-cidade">Cidade</label>
-                        <p class="text-red text-xs italic"
+                        <p class="text-red-500 text-xs italic"
                            v-if="errors.has('estado')">{{ errors.first('estado') }}</p>
                         <div class="relative">
                             <Cidades
@@ -149,7 +149,7 @@
                                     :estado="form.estado"
                                     @onCidadeSelected="changeCidade"
                                     id="grid-cidade"/>
-                            <p class="text-red text-xs italic"
+                            <p class="text-red-500 text-xs italic"
                                v-if="errors.has('cidade')">{{ errors.first('cidade') }}</p>
                         </div>
 
@@ -164,7 +164,7 @@
                         <strong class="font-bold">Brbrbr!</strong>
                         <span class="block sm:inline">Ops. Algo deu errado.</span>
                         <span class="absolute pin-t pin-b pin-r pr-2 py-3">
-                                                    <svg class="h-6 w-6 text-red" role="button"
+                                                    <svg class="h-6 w-6 text-red-500" role="button"
                                                          xmlns="http://www.w3.org/2000/svg"
                                                          viewBox="0 0 20 20">
                                                         <title>Fechar</title>
