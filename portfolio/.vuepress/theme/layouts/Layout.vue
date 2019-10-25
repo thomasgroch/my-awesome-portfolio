@@ -26,7 +26,7 @@
                 <slot name="page-bottom" slot="bottom"/>
             </Page>
         </div>
-        <div class="text-center text-sm text-grey-dark py-8 animated fadeInUp slow">
+        <div class="text-center text-sm text-grey-600 py-8 animated fadeInUp slow">
             <p>Siga-me no  <a target="_blank" href="https://twitter.com/thgroch">twitter</a>, ou assine o meu feed <a target="_blank" href="/rss.xml">rss</a>.</p>
             <p>© 2012-2019 Thomas Letsch Groch.<br />
                 Esta obra está licenciada sob uma licença <a rel="license" target="_blank" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>

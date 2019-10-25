@@ -6,13 +6,13 @@
                 <h1>Olá {{ form.nome }}</h1>
             </div>
             <div class="mb-8">
-                <div class="bg-green-lightest border-l-4 border-green p-4 mb-4" role="alert">
-                    <p class="text-green-dark font-bold">Sua mensagem foi enviada com sucesso.</p>
+                <div class="bg-green-100 border-l-4 border-green-500 p-4 mb-4" role="alert">
+                    <p class="text-green-600 font-bold">Sua mensagem foi enviada com sucesso.</p>
                 </div>
                 <p>Obrigado pelo seu interesse.</p>
             </div>
             <div class="flex justify-center">
-                <button class="bg-transparent shadow hover:bg-green text-green-dark font-semibold hover:text-white px-4 py-2 border border-green hover:border-transparent rounded"
+                <button class="bg-transparent shadow hover:bg-green-500 text-green-600 font-semibold hover:text-white px-4 py-2 border border-green-500 hover:border-transparent rounded"
                         @click.self="modal.visible = false">Fechar</button>
             </div>
         </div>
@@ -35,9 +35,9 @@
                 <div class="flex flex-wrap -mx-3 mb-2">
                     <div class="w-full md:w-full px-3 mb-3 md:mb-0">
 
-                        <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                        <label class="block uppercase tracking-wide text-grey-700 text-xs font-bold mb-2"
                                for="grid-nome">Nome</label>
-                        <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-grey"
+                        <input class="appearance-none block w-full bg-grey-200 text-grey-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-grey-500"
                                :class="{'input': true, 'border-red': errors.has('nome') }"
                                name="nome"
                                v-model="form.nome"
@@ -56,10 +56,10 @@
                     <div class="w-full px-3 mb-2 md:mb-0"
                          :class="{'input': true, 'md:w-1/2': hasFilled('email') }">
 
-                        <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                        <label class="block uppercase tracking-wide text-grey-700 text-xs font-bold mb-2"
                                for="grid-email">Endereço de e-mail</label>
                         <div class="relative">
-                            <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-grey"
+                            <input class="appearance-none block w-full bg-grey-200 text-grey-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-grey-500"
                                    :class="{'input': true, 'border-red': errors.has('email') }"
                                    name="email"
                                    v-model="form.email"
@@ -75,10 +75,10 @@
                     <div class="w-full md:w-1/2 px-3 mb-3 md:mb-0"
                          v-show="hasFilled('email')">
 
-                        <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                        <label class="block uppercase tracking-wide text-grey-700 text-xs font-bold mb-2"
                                for="grid-telefone">Telefone</label>
                         <div class="relative">
-                            <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-grey"
+                            <input class="appearance-none block w-full bg-grey-200 text-grey-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-grey-500"
                                    :class="{'input': true, 'border-red': errors.has('telefone') }"
                                    name="telefone"
                                    v-model="form.telefone"
@@ -96,10 +96,10 @@
                 <div class="flex flex-wrap -mx-3 mb-3">
                     <div class="w-full px-3">
 
-                        <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                        <label class="block uppercase tracking-wide text-grey-700 text-xs font-bold mb-2"
                                for="grid-mensagem">Como posso ajudar?</label>
                         <textarea
-                                class="appearance-none focus:shadow block w-full bg-grey-lighter text-grey-darker border rounded pt-3 pb-10 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-grey"
+                                class="appearance-none focus:shadow block w-full bg-grey-200 text-grey-700 border rounded pt-3 pb-10 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-grey-500"
                                 :class="{'input': true, 'border-red': errors.has('mensagem') }"
                                 name="mensagem"
                                 v-validate="'required|min:50'"
@@ -108,7 +108,7 @@
                                 id="grid-mensagem"/>
                         <p class="text-red text-xs italic"
                            v-if="errors.has('mensagem')">{{ errors.first('mensagem') }}</p>
-                        <p class="text-grey-dark text-xs italic">Detalhe o quanto você quiser. Por favor, não inclua
+                        <p class="text-grey-600 text-xs italic">Detalhe o quanto você quiser. Por favor, não inclua
                             informações confidenciais ou sensíveis em sua mensagem.</p>
 
                     </div>
@@ -119,7 +119,7 @@
                     <div class="w-full px-3 mb-3 md:mb-0"
                          :class="{'input': true, 'md:w-1/2': hasFilled('estado') }">
 
-                        <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                        <label class="block uppercase tracking-wide text-grey-700 text-xs font-bold mb-2"
                                for="grid-estado">Estado</label>
                         <div class="relative">
                             <Estados @onEstadoSelected="changeEstado"
@@ -136,7 +136,7 @@
                     <div class="w-full md:w-1/2 px-3 mb-3 md:mb-0"
                          v-if="hasFilled('estado')">
 
-                        <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                        <label class="block uppercase tracking-wide text-grey-700 text-xs font-bold mb-2"
                                for="grid-cidade">Cidade</label>
                         <p class="text-red text-xs italic"
                            v-if="errors.has('estado')">{{ errors.first('estado') }}</p>
@@ -159,7 +159,7 @@
                 <div class="w-full px-3 mb-3 md:mb-0">
 
                     <div v-if="this.status === 'error'"
-                         class="bg-red-lightest border border-red-light text-red-dark pl-4 pr-8 py-3 rounded relative"
+                         class="bg-red-100 border border-red-400 text-red-600 pl-4 pr-8 py-3 rounded relative"
                          role="alert">
                         <strong class="font-bold">Brbrbr!</strong>
                         <span class="block sm:inline">Ops. Algo deu errado.</span>
@@ -174,7 +174,7 @@
 
                     <div class="flex items-center justify-center px-3 my-6 md:mb-0 items-center">
                         <button
-                                class="bg-transparent shadow hover:bg-green text-green-dark font-semibold hover:text-white py-2 px-4 border border-green hover:border-transparent rounded"
+                                class="bg-transparent shadow hover:bg-green-500 text-green-600 font-semibold hover:text-white py-2 px-4 border border-green-500 hover:border-transparent rounded"
                                 type="submit">Enviar
                         </button>
                     </div>

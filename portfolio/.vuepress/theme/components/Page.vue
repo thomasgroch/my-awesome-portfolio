@@ -280,19 +280,19 @@
     padding 0 !important
 
 button.vssue-button:hover
-    @apply bg-green !important
+    @apply bg-green-500 !important
     @apply text-white !important
     @apply border-transparent !important
 
 button.vssue-button
     @apply bg-transparent !important
     @apply shadow !important
-    @apply text-green-dark !important
+    @apply text-green-600 !important
     @apply font-semibold !important
     @apply py-2 !important
     @apply px-4 !important
     @apply border !important
-    @apply border-green !important
+    @apply border-green-500 !important
     @apply rounded !important
 
 span.vssue-header-powered-by

@@ -3,7 +3,7 @@ module.exports = {
   plugins: [
     // "@silvanite/markdown-classes",
     ["@silvanite/tailwind", {
-      config: './tailwind.js',
+      config: './tailwind.config.js',
       purgecss: {
         enabled: true,
       },

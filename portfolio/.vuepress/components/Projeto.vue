@@ -14,13 +14,13 @@
                 {{ displayDate }}
             </span>
         </div>
-        <p class="text-grey-darker text-base">
+        <p class="text-grey-700 text-base">
             {{ description }}
         </p>
     </div>
 
     <div class="px-6 py-4">
-                <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2 mb-2"
+                <span class="inline-block bg-grey-200 rounded-full px-3 py-1 text-sm font-semibold text-grey-700 mr-2 mb-2"
                       v-if="tags.length > 0"
                       v-for="tag in tags">#{{ tag }}</span>
     </div>

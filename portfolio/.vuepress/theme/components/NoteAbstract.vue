@@ -3,7 +3,7 @@
     <div
       v-for="item in formatData"
       :key="item.path"
-      class="abstract-item text-grey-dark  flex flex-col">
+      class="abstract-item text-grey-600  flex flex-col">
 
         <router-link
                 class="pb-5"
