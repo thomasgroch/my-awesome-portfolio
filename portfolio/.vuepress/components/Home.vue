@@ -2,17 +2,17 @@
     <main class="mt-5 flex flex-col" aria-labelledby="main-title">
         <div class="flex mb-4 flex-wrap justify-center">
 
-            <header class="hero uppercase font-nunito px-4 py-2 m-2 text-center">
+            <header class="hero uppercase font-mono px-4 py-2 m-2 text-center">
 
                 <div class="animated fadeInDown">
                     <img v-if="data.heroImage" class="rounded shadow-lg" :src="$withBase(data.heroImage)"
                          :alt="data.heroAlt || 'hero'"/>
 
-                    <h1 class="font-nunito text-2xl sm:text-3xl tracking-wide" v-if="data.heroText !== null" id="main-title">{{
+                    <h1 class="font-mono text-2xl sm:text-3xl tracking-wide" v-if="data.heroText !== null" id="main-title">{{
                         data.heroText ||
                         $title || 'Hello' }}</h1>
 
-                    <p class="description my-6 mx-auto leading-tight font-nunito text-xl md:text-2xl">
+                    <p class="description my-6 mx-auto leading-tight font-mono text-xl md:text-2xl">
                         {{ data.tagline || $description || 'Welcome to your VuePress site' }}
                     </p>
                 </div>
