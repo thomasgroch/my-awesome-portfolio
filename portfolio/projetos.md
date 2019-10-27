@@ -159,7 +159,7 @@ Ajudo desenvolvedores e usuários a tirar o máximo proveito da Web como uma pla
 
 ## Setup ⚙️
 
-Você pode dar uma olhada nas ferramentas por trás do meu processo de desenvolvimento e nos serviços que executam este site, em [meu setup](stack).
+Você pode dar uma olhada nas ferramentas por trás do meu processo de desenvolvimento e nos serviços que executam este site em [meu setup](stack).
 
 ## Social 👥
 
