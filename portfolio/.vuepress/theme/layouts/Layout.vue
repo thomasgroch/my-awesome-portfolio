@@ -205,7 +205,8 @@
         height: 2px;
         bottom: 0;
         left: 0;
-        background-color: $accentColor;
+        @apply bg-green-500
+        /*background-color: $accentColor;*/
         visibility: hidden;
         -webkit-transform: scaleX(0);
         transform: scaleX(0);
