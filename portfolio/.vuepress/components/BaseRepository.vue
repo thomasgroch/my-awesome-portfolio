@@ -23,4 +23,6 @@
 	}
 </script>
 <style lang="stylus">
+    ul, ol
+        padding-left 0
 </style>
