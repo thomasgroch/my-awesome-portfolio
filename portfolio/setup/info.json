@@ -7,7 +7,6 @@
     {
       "text": "sobre",
       "link": "/sobre.html",
-      "href": "",
       "external": false,
       "draft": false
     },
@@ -20,7 +19,6 @@
     {
       "text": "projetos",
       "link": "/projetos.html",
-      "href": "",
       "external": false,
       "draft": false
     },
@@ -28,15 +26,13 @@
       "text": "contato",
       "link": "/contato.html",
       "draft": false,
-      "href": "",
       "external": false
     },
     {
       "text": "blog",
       "link": "/blog/index.html",
-      "href": "",
       "external": false,
-      "draft": false
+      "draft": true
     }
   ]
 }

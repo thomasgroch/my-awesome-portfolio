@@ -11,6 +11,7 @@
         <div class="flex flex-no-wrap">
             <Sidebar :items="sidebarItems"
                      @toggle-sidebar="toggleSidebar"
+                     class="bg-transparent"
                      :class="{'shadow-lg': isSidebarOpen}">
                 <slot name="sidebar-top" slot="top"/>
                 <slot name="sidebar-bottom" slot="bottom"/>

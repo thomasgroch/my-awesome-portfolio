@@ -2,7 +2,7 @@
 	<a :href="href"
 		target="_blank">
 		<font-awesome-icon :icon="icon"></font-awesome-icon>
-    <span v-text="displayTotal"></span>
+    <span class="tracking-wider" v-text="displayTotal"></span>
 	</a>
 </template>
 <script>
