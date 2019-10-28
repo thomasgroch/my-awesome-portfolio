@@ -8,7 +8,7 @@
                     <img v-if="data.heroImage" class="rounded shadow-lg" :src="$withBase(data.heroImage)"
                          :alt="data.heroAlt || 'hero'"/>
 
-                    <h1 class="font-mono text-2xl sm:text-3xl tracking-wide" v-if="data.heroText !== null" id="main-title">{{
+                    <h1 class="font-mono text-2xl sm:text-3xl font-bold tracking-wide" v-if="data.heroText !== null" id="main-title">{{
                         data.heroText ||
                         $title || 'Hello' }}</h1>
 
