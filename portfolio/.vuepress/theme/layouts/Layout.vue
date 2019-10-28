@@ -193,6 +193,7 @@
     top: 15px
     right: 50% !important
 .custom-layout a
+    @apply text-green-500
     text-decoration none
     position: relative;
     font-size: 1.28rem;
@@ -205,7 +206,8 @@
         height: 2px;
         bottom: 0;
         left: 0;
-        background-color: $accentColor;
+        /*background-color: $accentColor;*/
+        @apply bg-green-500
         visibility: hidden;
         -webkit-transform: scaleX(0);
         transform: scaleX(0);
