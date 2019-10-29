@@ -22,7 +22,7 @@
 <!--                 class="h-screen w-full absolute flex items-center justify-center bg-modal rounded-lg shadow-lg p-10">-->
 <!--            </div>-->
 
-            <form class="w-full max-w-md font-mono"
+            <form class="w-full max-w-md"
                   :action="formAction"
                   @submit.prevent="validateBeforeSubmit"
                   ref="form"

@@ -29,8 +29,8 @@
         </div>
         <div class="text-center text-sm text-grey-600 py-8"
              :class="{'animated fadeInUp slow': $page.frontmatter.home }">
-            <p>Siga-me no  <a target="_blank" href="https://twitter.com/thgroch">twitter</a>, ou assine o meu feed <a target="_blank" href="/rss.xml">rss</a>.</p>
-            <p>© 2012-2019 Thomas Letsch Groch.<br />
+            <p>Siga-me no  <a target="_blank" href="https://twitter.com/thgroch">twitter</a>, ou assine o meu feed <a target="_blank" href="/rss.xml">rss</a>. <router-link to="/cripto.html" class="italic">cripto</router-link></p>
+            <p>© 2012-2019 <a target="_blank" rel="noopener noreferrer" href="mailto://thomas.groch@gmail.com">Thomas Letsch Groch</a>(<a target="_blank" rel="noopener noreferrer" href="pgp-mail-at-thomasgroch-me.asc">PGP</a>).<br />
                 Esta obra está licenciada sob uma licença <a rel="license" target="_blank" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
         </div>
 

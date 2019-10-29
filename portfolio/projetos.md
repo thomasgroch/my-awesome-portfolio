@@ -157,10 +157,6 @@ Ajudo desenvolvedores e usuários a tirar o máximo proveito da Web como uma pla
 
 1. Implementação de Servidores
 
-## Setup ⚙️
-
-Você pode dar uma olhada nas ferramentas por trás do meu processo de desenvolvimento e nos serviços que executam este site em [meu setup](stack).
-
 ## Social 👥
 
  Com inglês avançado, estou pronto para atender outros fusos horários de trabalho.

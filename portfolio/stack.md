@@ -1,5 +1,5 @@
 ---
-title: stack
+title: Stack de tecnologias
 sidebar: false
 mono:
 - name: WordPress
@@ -71,9 +71,11 @@ jam:
   href: https://faunadb.com/
 - name: mailgun
   href: https://mailgun.com/
+- name: twilio
+  href: http://twilio.com/
 - name: Netlify
   href: https://netlify.com/
-  photo: https://www.netlify.com/img/press/logos/logomark.png
+  photo: https://seeklogo.com/images/N/netlify-logo-758722CDF4-seeklogo.com.png
 - name: forestry
   href: https://forestry.io/
 - name: Vuepress
@@ -98,19 +100,18 @@ uml:
 - name: free-for-dev
   href: https://free-for.dev/
   photo: https://cdn2.iconfinder.com/data/icons/enterprise-architecture-togaf-colored/512/Data_architecture-512.png
+- name: Visual Paradigm
+  href: https:/www.visual-paradigm.com/
+  photo: https://logo.clearbit.com/https:/www.visual-paradigm.com/
 ---
-# Stack de tecnologia 
-
 Com o avanço nos estudos na area de desenvolvimento web, tive contato com diversas ferramentas e serviços. Dessa forma, elaborei uma Stack moderna na qual contempla os mesmos valores em diferentes cenários de desenvolvimento web. Segue abaixo toda (ou quase toda) a minha Stack.</br>
 </br>
 
-Também faço [dotfiles](https://github.com/thomasgroch/dotfiles). 😉
-
-## Stack de tecnologia no lado do servidor 💻
+## Lado do servidor 💻
 
 <BaseStack group="back" />
 
-###  Web Apps Monoliticos
+### Web Apps Monoliticos
 
 <BaseStack group="mono" />
 
@@ -121,7 +122,7 @@ Também faço [dotfiles](https://github.com/thomasgroch/dotfiles). 😉
 - HTTP routing using [Netflix Zuul](https://github.com/Netflix/zuul) or [Traefik](https://traefik.io/)
 - Service discovery using [Netflix Eureka](https://github.com/Netflix/eureka) or [HashiCorp Consul](https://www.consul.io/)
 
-## Stack de tecnologia no lado do cliente 👨‍💻
+## Lado do cliente 👨‍💻
 
 <BaseStack group="front" />
 
@@ -139,7 +140,7 @@ Com o excelente fluxo de trabalho de desenvolvimento:
 - Build, optimization and live reload with [Webpack](https://webpack.js.org/)
 - Testing with [Jest](https://facebook.github.io/jest/) and [Protractor](http://www.protractortest.org/)
 
-## JAMstack 🎯
+## JAM stack 🎯
 
 E se um aplicação SPA não for suficiente para suas necessidades?
 
@@ -147,39 +148,30 @@ A renderização no lado do servidor (SSR), "Pre-Rendering" e o Static Site Gene
  Existe maneiras como esses sistemas funcionam é extrair conteúdo de um sistema de arquivos ou de um ponto de extremidade da API e executar uma tarefa de construção para gerar um site inteiro em HTML estático. O resultado final = sites extremamente rápidos, sem back-end e que podem ser implantados em qualquer lugar.
 
 <BaseStack group="jam" />
-    
-
 
 ## Ferramentas prontas para entrar em produção 🚀
 
+- Monitoramento e automação.
+- Caching em todas areas de maior processamento. 
+- Recursos estáticos otimizados (cabeçalhos de cache HTTP).
+- Gerenciamento de log configurável em tempo de execução.
+- Docker completo e Docker Compose
+- Nuvem agnostico Suporte para todos os principais provedores de nuvem: AWS, Cloud Foundry, Heroku, Kubernetes, OpenShift, Azure, Docker…
 
-- Monitoring and automation
-- Caching 
-- Optimized static resources (gzip filter, HTTP cache headers)
-- Log management configurable at runtime
-- Full Docker and Docker Compose
-- Suporte para todos os principais provedores de nuvem: AWS, Cloud Foundry, Heroku, Kubernetes, OpenShift, Azure, Docker…
+<BaseStack group="prod" />
 
-<BaseStack group="tools" />
 ## Privacy aware web software 🔒
 
-### [No-Backend](http://nobackend.org/) Web Apps
+- [No-Backend](http://nobackend.org/) Web App
+- [Unhosted](https://unhosted.org/) Web Apps
 
-```
-O desenvolvedor fornece aplicativos e dados, 
-o usuário controla o dispositivo.
-```
+## Workstation de desenvolvedor ‍💻 ⚙️
 
-**100% client-side app plus CouchDB, Hoodie, Firebase, Parse, Kinto, etc.**
+Você pode dar uma olhada nas ferramentas por trás do meu processo de desenvolvimento e nos serviços que executam este site em [meu setup](stack).
 
-### [Unhosted](https://unhosted.org/) Web Apps
+Faço [dotfiles](https://github.com/thomasgroch/dotfiles) também. 😉
 
-```
-O desenvolvedor fornece apenas o aplicativo, 
-o usuário controla o dispositivo e os dados.
-```
-
-**100% client-side app plus remoteStorage, Google Drive, Dropbox, etc.**
+<BaseStack group="tools" />
 
 ## Patterns ⭐️
 Boas ferramentas SaaS, PaaS, IaaS para desenvolvimento automatizado da sua aplicação.
@@ -187,4 +179,4 @@ Boas ferramentas SaaS, PaaS, IaaS para desenvolvimento automatizado da sua aplic
 <BaseStack group="uml" />
 
 
-⭐️ 🎯📌💻🚀❓❗☕ 📨
+🚧 ⭐️ 🎯📌💻🚀❓❗☕ 📨

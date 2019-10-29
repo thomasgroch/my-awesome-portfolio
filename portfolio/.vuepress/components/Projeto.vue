@@ -38,6 +38,7 @@
 				type: String,
 				required: true
 			},
+			photo: "",
 			href: {
 				type: String,
 				required: true,
@@ -65,7 +66,10 @@
 				// 	'&cache=1' +
 				// 	'&viewport=810x400' +
 				// 	'&url=' + encodeURI(this.href)
-					return 'https://render-tron.appspot.com/screenshot/' + encodeURI(this.href)
+                if(this.photo){
+                	return this.photo
+                }
+                return 'https://render-tron.appspot.com/screenshot/' + encodeURI(this.href)
 			},
 			displayDate() {
 				try {
