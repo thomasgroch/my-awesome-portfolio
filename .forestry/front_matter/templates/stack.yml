@@ -18,12 +18,9 @@ fields:
   - type: text
     name: href
     label: href
-  - type: text
+  - type: file
     name: photo
     label: Tech icon photo
-    default: ''
-     config:
-       required: false
 - type: field_group_list
   name: front
   label: front-end techs
@@ -34,12 +31,9 @@ fields:
   - type: text
     name: href
     label: href
-  - type: text
+  - type: file
     name: photo
     label: Tech icon photo
-    default: ''
-     config:
-       required: false
 - type: field_group_list
   name: back
   label: back-end techs
@@ -50,12 +44,9 @@ fields:
   - type: text
     name: href
     label: href
-  - type: text
+  - type: file
     name: photo
     label: Tech icon photo
-    default: ''
-     config:
-       required: false
 - type: field_group_list
   name: test
   label: test techs
@@ -66,12 +57,9 @@ fields:
   - type: text
     name: href
     label: href
-  - type: text
+  - type: file
     name: photo
     label: Tech icon photo
-    default: ''
-     config:
-       required: false
 - type: field_group_list
   name: micro
   label: micro techs
@@ -82,12 +70,9 @@ fields:
   - type: text
     name: href
     label: href
-  - type: text
+  - type: file
     name: photo
     label: Tech icon photo
-    default: ''
-     config:
-       required: false
 - type: field_group_list
   name: jam
   label: jam techs
@@ -98,12 +83,9 @@ fields:
   - type: text
     name: href
     label: href
-  - type: text
+  - type: file
     name: photo
     label: Tech icon photo
-    default: ''
-     config:
-       required: false
 - type: field_group_list
   name: tools
   label: tools techs
@@ -114,12 +96,9 @@ fields:
   - type: text
     name: href
     label: href
-  - type: text
+  - type: file
     name: photo
     label: Tech icon photo
-    default: ''
-     config:
-       required: false
 - type: field_group_list
   name: uml
   label: uml techs
@@ -130,9 +109,6 @@ fields:
   - type: text
     name: href
     label: href
-  - type: text
+  - type: file
     name: photo
     label: Tech icon photo
-    default: ''
-     config:
-       required: false
