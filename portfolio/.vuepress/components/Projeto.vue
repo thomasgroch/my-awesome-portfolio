@@ -1,11 +1,11 @@
 <template>
 <div class="my-5 sm:w-full md:w-full lg:w-1/2 xl:w-1/2">
-    <div class="mx-5 rounded shadow-lg min-h-full bg-base">
+    <div class="mx-5 rounded shadow-lg min-h-full bg-white flex flex-col">
         <img class="object-cover h-56 w-full" :src="displayImage" :alt="title" />
 
         <div class="px-6 py-4">
             <div class="mb-2 font-mono flex justify-between leading-tight flex-wrap">
-                <a class="font-bold text-xl w-1/2"
+                <a class="font-bold text-xl w-2/3"
                    :href="href"
                    target="_blank"
                    v-text="title"
@@ -19,8 +19,8 @@
             </p>
         </div>
 
-        <div class="px-6 py-4">
-            <span class="inline-block bg-grey-200 rounded-full px-3 py-1 text-sm font-semibold text-grey-700 mr-2 mb-2"
+        <div class="px-6 py-4 h-full ">
+            <span class="bg-grey-200 rounded-full px-3 py-1 text-sm font-semibold text-grey-700 mr-2 mb-2"
                   v-if="tags.length > 0"
                   v-for="tag in tags">#{{ tag }}</span>
         </div>
@@ -90,7 +90,7 @@
 				try {
 					const m = moment(this.date)
 					m.locale('pt-BR')
-					return m.format('Do MMM YY')
+					return m.format('MMM YY') // default: 'Do MMM YY'
 				}catch (e) {
                     return ''
 				}
