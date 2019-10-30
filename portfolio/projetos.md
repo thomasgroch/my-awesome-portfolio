@@ -17,11 +17,13 @@ projetos:
   - docker
   - aws
   draft: false
-- title: Loja Reserva 
+  photo: ''
+- title: Loja Reserva
   href: https://loja.mercadolivre.com.br/reserva
   photo: https://http2.mlstatic.com/resources/largesellers/316950140/reserva/background201805090525.jpg
   external: true
-  description: Desenvolvimento de API para integração do e-commerce da Reserva para portal de vendas MercadoLivre e ajudei a lidar com a grande escala de usuários.
+  description: Desenvolvimento de API para integração do e-commerce da Reserva para
+    portal de vendas MercadoLivre e ajudei a lidar com a grande escala de usuários.
   date: 2019-05-03T03:00:00.000+00:00
   tags:
   - backend
@@ -33,13 +35,15 @@ projetos:
 - title: Sephora Brasil
   href: https://pesquisa.sephora.com.br/
   external: true
-  description: Rotina de integração bidirecinal do gerenciamento de conteúdo com produtos do e-commerce externo em ASP.net.
+  description: Rotina de integração bidirecinal do gerenciamento de conteúdo com produtos
+    do e-commerce externo em ASP.net.
   date: 2019-04-18T03:00:00.000+00:00
   draft: false
   tags:
   - backend
   - php
   - wordpress
+  photo: portfolio/.vuepress/public/media/v1572462059/Pesquisa-Sephora-Brasil_mpvczz.png
 - title: Leads2b
   href: https://leads2b.com/
   external: true
@@ -51,16 +55,19 @@ projetos:
   - codeigniter
   - aws
   draft: false
+  photo: ''
 - title: EZTV
   href: https://sample-eztv-rss-generator.herokuapp.com/
   external: true
-  description: Arquivos php simples para descartar o conteúdo do eztv.it mostram as páginas e geram um feed RSS que pode ser lido pelos clientes utorrent e liberado gratuitamente sob o Creative Commons.
+  description: Arquivos php simples para descartar o conteúdo do eztv.it mostram as
+    páginas e geram um feed RSS que pode ser lido pelos clientes utorrent e liberado
+    gratuitamente sob o Creative Commons.
   date: 2017-05-01T00:00:00.000+00:00
   tags:
   - backend
   - php
-  draft: false 
-
+  draft: false
+  photo: ''
 - title: Resource Generator
   href: https://github.com/thomasgroch/ResourceGenerator
   external: true
@@ -69,9 +76,9 @@ projetos:
   tags:
   - backend
   draft: false
+  photo: ''
 
 ---
-
 # Projetos 📑
 
 Eficiência na comunicação e rápido aprendizado. 
