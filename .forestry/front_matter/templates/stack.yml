@@ -10,7 +10,7 @@ fields:
   label: sidebar
 - type: field_group_list
   name: mono
-  label: mono
+  label: mono techs
   fields:
   - type: text
     name: name
@@ -18,9 +18,15 @@ fields:
   - type: text
     name: href
     label: href
+  - type: file
+    name: photo
+    label: Tech icon photo
+    default: ''
+     config:
+       required: false
 - type: field_group_list
   name: front
-  label: front
+  label: front-end techs
   fields:
   - type: text
     name: name
@@ -28,9 +34,15 @@ fields:
   - type: text
     name: href
     label: href
+  - type: file
+    name: photo
+    label: Tech icon photo
+    default: ''
+     config:
+       required: false
 - type: field_group_list
   name: back
-  label: back
+  label: back-end techs
   fields:
   - type: text
     name: name
@@ -38,9 +50,15 @@ fields:
   - type: text
     name: href
     label: href
+  - type: file
+    name: photo
+    label: Tech icon photo
+    default: ''
+     config:
+       required: false
 - type: field_group_list
   name: test
-  label: test
+  label: test techs
   fields:
   - type: text
     name: name
@@ -48,9 +66,15 @@ fields:
   - type: text
     name: href
     label: href
+  - type: file
+    name: photo
+    label: Tech icon photo
+    default: ''
+     config:
+       required: false
 - type: field_group_list
   name: micro
-  label: micro
+  label: micro techs
   fields:
   - type: text
     name: name
@@ -58,9 +82,15 @@ fields:
   - type: text
     name: href
     label: href
+  - type: file
+    name: photo
+    label: Tech icon photo
+    default: ''
+     config:
+       required: false
 - type: field_group_list
   name: jam
-  label: jam
+  label: jam techs
   fields:
   - type: text
     name: name
@@ -68,9 +98,15 @@ fields:
   - type: text
     name: href
     label: href
+  - type: file
+    name: photo
+    label: Tech icon photo
+    default: ''
+     config:
+       required: false
 - type: field_group_list
   name: tools
-  label: tools
+  label: tools techs
   fields:
   - type: text
     name: name
@@ -78,9 +114,15 @@ fields:
   - type: text
     name: href
     label: href
+  - type: file
+    name: photo
+    label: Tech icon photo
+    default: ''
+     config:
+       required: false
 - type: field_group_list
   name: uml
-  label: uml
+  label: uml techs
   fields:
   - type: text
     name: name
@@ -88,3 +130,9 @@ fields:
   - type: text
     name: href
     label: href
+  - type: file
+    name: photo
+    label: Tech icon photo
+    default: ''
+     config:
+       required: false
