@@ -43,7 +43,7 @@ projetos:
   - backend
   - php
   - wordpress
-  photo: portfolio/.vuepress/public/media/v1572463282/portfolio/pesquisa-sephora-brasil_ps0dtx.png
+  photo: https://res.cloudinary.com/tgroch/image/upload/v1572464934/pesquisa-sephora-brasil_fgiqhm.png
 - title: Leads2b
   href: https://leads2b.com/
   external: true
