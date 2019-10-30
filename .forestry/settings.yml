@@ -44,7 +44,7 @@ sections:
 upload_dir: ''
 public_path: portfolio/.vuepress/public/media
 front_matter_path: ''
-use_front_matter_path: 
+use_front_matter_path: false
 file_template: ":filename:"
 instant_preview: false
 build:
