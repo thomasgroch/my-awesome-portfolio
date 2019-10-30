@@ -22,6 +22,11 @@ fields:
     type: text
     label: Project website
     default: "#"
+  - name: photo
+    type: file
+    config:
+      maxSize: 250
+    label: Project photo
   - name: external
     type: boolean
     label: External
