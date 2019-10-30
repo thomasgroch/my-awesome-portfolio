@@ -5,6 +5,7 @@
                     :key="`${i}-${projeto.title}`"
                     :title="projeto.title"
                     :href="projeto.href"
+                    :photo="projeto.photo"
                     :description="projeto.description"
                     :date="projeto.date"
                     :tags="projeto.tags"
@@ -27,8 +28,6 @@
 				]
 			},
 
-		},
-		created() {
 		}
 	}
 </script>

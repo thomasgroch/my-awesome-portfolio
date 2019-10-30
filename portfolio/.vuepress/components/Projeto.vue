@@ -38,7 +38,10 @@
 				type: String,
 				required: true
 			},
-			photo: "",
+			photo: {
+				type: String,
+				required: false
+			},
 			href: {
 				type: String,
 				required: true,
@@ -56,8 +59,23 @@
 			const slashes = protocol.concat('//')
 			this.host = slashes.concat(window.location.hostname)
         },
+		methods: {
+			getHostName(url) {
+				if (!url) {
+					return null
+				}
+				const match = url.match(/:\/\/(www[0-9]?\.)?(.[^/:]+)/i)
+				if (match != null && match.length > 2 && typeof match[2] === 'string' && match[2].length > 0) {
+					return match[2]
+				}
+				return null
+			}
+		},
 		computed: {
 			displayImage() {
+                if(this.photo){
+					return this.photo
+				}
 				// return 'https://http2pic.haschek.at/api.php?' +
 				// 	'onfail=' + encodeURI(this.host + '/images/no-image.svg') +
 				// 	'&ondomainfail=' + encodeURI(this.host + '/images/no-image.svg') +
@@ -66,10 +84,7 @@
 				// 	'&cache=1' +
 				// 	'&viewport=810x400' +
 				// 	'&url=' + encodeURI(this.href)
-                if(this.photo){
-                	return this.photo
-                }
-                return 'https://render-tron.appspot.com/screenshot/' + encodeURI(this.href)
+				return 'https://render-tron.appspot.com/screenshot/' + encodeURI(this.href)
 			},
 			displayDate() {
 				try {

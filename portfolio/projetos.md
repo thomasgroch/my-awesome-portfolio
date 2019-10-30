@@ -3,29 +3,6 @@ title: Projetos
 sidebar: false
 view: projeto
 projetos:
-- title: Loja Reserva 
-  href: https://loja.mercadolivre.com.br/reserva
-  external: true
-  description: Disponibilizamos recursos que lhe ajudaram em desempenho alimentar
-    e físico, independente se já pratica ou não exercícios ou alguma dieta.
-  date: 2019-05-03T03:00:00.000+00:00
-  tags:
-  - backend
-  - php
-  - java
-  - mercadolivre
-  - api
-  draft: false
-- title: Sephora Brasil
-  href: https://www.sephora.com.br/
-  external: true
-  description: Rotina de integração bidirecinal do gerenciamento de conteúdo com produtos do e-commerce externo em ASP.net.
-  date: 2019-04-18T03:00:00.000+00:00
-  draft: false
-  tags:
-  - backend
-  - php
-  - wordpress
 - title: Sellia
   href: http://sellia.com.br
   external: true
@@ -40,8 +17,31 @@ projetos:
   - docker
   - aws
   draft: false
-- title: XCRM
-  href: https://xcrm.com.br
+- title: Loja Reserva 
+  href: https://loja.mercadolivre.com.br/reserva
+  photo: https://http2.mlstatic.com/resources/largesellers/316950140/reserva/background201805090525.jpg
+  external: true
+  description: Desenvolvimento de API para integração do e-commerce da Reserva para portal de vendas MercadoLivre e ajudei a lidar com a grande escala de usuários.
+  date: 2019-05-03T03:00:00.000+00:00
+  tags:
+  - backend
+  - php
+  - java
+  - mercadolivre
+  - api
+  draft: false
+- title: Sephora Brasil
+  href: https://pesquisa.sephora.com.br/
+  external: true
+  description: Rotina de integração bidirecinal do gerenciamento de conteúdo com produtos do e-commerce externo em ASP.net.
+  date: 2019-04-18T03:00:00.000+00:00
+  draft: false
+  tags:
+  - backend
+  - php
+  - wordpress
+- title: Leads2b
+  href: https://leads2b.com/
   external: true
   description: Desenvolvimento de sistema de CRM Multitenancy. Implementação de gerenciador
     de empreendimentos, pessoas e empresas do projeto.

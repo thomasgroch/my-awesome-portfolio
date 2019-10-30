@@ -2,8 +2,8 @@
 title: Stack de tecnologias
 sidebar: false
 mono:
-- name: WordPress
-  href: https://www.wordpress.com
+- name: bedrock
+  href: https://roots.io/bedrock/
 - name: RoR
   href: https://www.rubyonrails.org
 - name: Laravel
@@ -67,18 +67,21 @@ micro:
   href: https://sentry.io/welcome/
   photo: https://res-4.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1424297929/rhfze61a1pxtxuxny98x.png
 jam:
+- name: GraphQL
+  href: https://graphql.org/
 - name: faunadb
   href: https://faunadb.com/
 - name: mailgun
   href: https://mailgun.com/
-- name: twilio
-  href: http://twilio.com/
 - name: Netlify
   href: https://netlify.com/
   photo: https://seeklogo.com/images/N/netlify-logo-758722CDF4-seeklogo.com.png
+- name: twilio
+  href: http://twilio.com/
+  photo: https://yt3.ggpht.com/a-/AAuE7mC_egia2982ysq8Tm9TUwwMOKXgW_xsHTqiXg=s900-mo-c-c0xffffffff-rj-k-no
 - name: forestry
   href: https://forestry.io/
-- name: Vuepress
+- name: vuepress
   href: https://vuepress.vuejs.org/
 - name: lambda
   href: https://aws.amazon.com/lambda/
@@ -97,6 +100,8 @@ tools:
 - name: Postman
   href: https://getpostman.com/
 uml:
+- name: nobackend
+  href: http://nobackend.org/
 - name: free-for-dev
   href: https://free-for.dev/
   photo: https://cdn2.iconfinder.com/data/icons/enterprise-architecture-togaf-colored/512/Data_architecture-512.png
@@ -104,12 +109,8 @@ uml:
   href: https:/www.visual-paradigm.com/
   photo: https://logo.clearbit.com/https:/www.visual-paradigm.com/
 ---
-Com o avanço nos estudos na area de desenvolvimento web, tive contato com diversas ferramentas e serviços. Dessa forma, elaborei uma Stack moderna na qual contempla os mesmos valores em diferentes cenários de desenvolvimento web. Segue abaixo toda (ou quase toda) a minha Stack.</br>
+Com o avanço nos estudos na area de desenvolvimento web, tive contato com diversas ferramentas e serviços. Dessa forma, elaborei uma Stack moderna na qual contempla os mesmos valores em diferentes fluxos de trabalho e desenvolvimento. Segue abaixo toda (ou quase toda) a minha Stack.</br>
 </br>
-
-## Lado do servidor 💻
-
-<BaseStack group="back" />
 
 ### Web Apps Monoliticos
 
@@ -117,28 +118,26 @@ Com o avanço nos estudos na area de desenvolvimento web, tive contato com diver
 
 ### Micro Serviços
 
-<BaseStack group="micro" />
+Trabalho com orquestragem de micro serviços auxiliares ao seu sistema ou arquitura completa.
 
-- HTTP routing using [Netflix Zuul](https://github.com/Netflix/zuul) or [Traefik](https://traefik.io/)
-- Service discovery using [Netflix Eureka](https://github.com/Netflix/eureka) or [HashiCorp Consul](https://www.consul.io/)
+*(Ex.: Descoberta de serviço, Roteamento HTTP)*
+
+<BaseStack group="micro" />
 
 ## Lado do cliente 👨‍💻
 
-<BaseStack group="front" />
-
 Aplicativo de página única da Web (SPA):
 
-- Componentes compatíveis com outros frameworks reativos ([Angular](https://angular.io/) ou [React](https://reactjs.org/)).
+- Componentes Reativos e Compatíveis com outros frameworks ([Angular](https://angular.io/) ou [React](https://reactjs.org/)).
 - Web design responsivo
-- Compatível com todos navegadores
 - Suporte à internacionalização
-- Realtime WebSocket
+- WebSocket em tempo real
 
-Com o excelente fluxo de trabalho de desenvolvimento:
+<BaseStack group="front" />
 
-- Easy installation of new JavaScript libraries with [NPM](https://www.npmjs.com/get-npm)
-- Build, optimization and live reload with [Webpack](https://webpack.js.org/)
-- Testing with [Jest](https://facebook.github.io/jest/) and [Protractor](http://www.protractortest.org/)
+## Lado do servidor 💻
+
+<BaseStack group="back" />
 
 ## JAM stack 🎯
 
@@ -160,11 +159,6 @@ A renderização no lado do servidor (SSR), "Pre-Rendering" e o Static Site Gene
 
 <BaseStack group="prod" />
 
-## Privacy aware web software 🔒
-
-- [No-Backend](http://nobackend.org/) Web App
-- [Unhosted](https://unhosted.org/) Web Apps
-
 ## Workstation de desenvolvedor ‍💻 ⚙️
 
 Você pode dar uma olhada nas ferramentas por trás do meu processo de desenvolvimento e nos serviços que executam este site em [meu setup](stack).
@@ -173,7 +167,8 @@ Faço [dotfiles](https://github.com/thomasgroch/dotfiles) também. 😉
 
 <BaseStack group="tools" />
 
-## Patterns ⭐️
+## Security 🔒, Patterns ⭐, UML 
+
 Boas ferramentas SaaS, PaaS, IaaS para desenvolvimento automatizado da sua aplicação.
 
 <BaseStack group="uml" />
