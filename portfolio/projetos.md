@@ -20,7 +20,7 @@ projetos:
   href: https://www.sephora.com.br/
   external: true
   description: Rotina de integração bidirecinal do gerenciamento de conteúdo com produtos do e-commerce externo em ASP.net.
-  date: 2019-04-18T03:00:00.000+00:00
+  date: 2019-04T03:00:00.000+00:00
   draft: false
   tags:
   - backend
@@ -32,7 +32,7 @@ projetos:
   description: Uma solução de agregador de mensagens instantâneas. - Um aplicativo
     que traz todos juntos. Ele permite que você se conecte a todas as plataformas
     de mensagens, incluindo o Facebook Messenger, WhatsApp e Instagram.
-  date: 2018-06-01T00:00:00.000+00:00
+  date: 2018-06T00:00:00.000+00:00
   tags:
   - mobile
   - backend
@@ -45,7 +45,7 @@ projetos:
   external: true
   description: Desenvolvimento de sistema de CRM Multitenancy. Implementação de gerenciador
     de empreendimentos, pessoas e empresas do projeto.
-  date: 2017-05-01T00:00:00.000+00:00
+  date: 2017-05T00:00:00.000+00:00
   tags:
   - backend
   - codeigniter
@@ -55,7 +55,7 @@ projetos:
   href: https://sample-eztv-rss-generator.herokuapp.com/
   external: true
   description: Arquivos php simples para descartar o conteúdo do eztv.it mostram as páginas e geram um feed RSS que pode ser lido pelos clientes utorrent e liberado gratuitamente sob o Creative Commons.
-  date: 2017-05-01T00:00:00.000+00:00
+  date: 2017-05T00:00:00.000+00:00
   tags:
   - backend
   - php
@@ -65,7 +65,7 @@ projetos:
   href: https://github.com/thomasgroch/ResourceGenerator
   external: true
   description: Gere toda a estrutura para um determinado nome de recurso.
-  date: 2017-05-01T00:00:00.000+00:00
+  date: 2017-05T00:00:00.000+00:00
   tags:
   - backend
   draft: false

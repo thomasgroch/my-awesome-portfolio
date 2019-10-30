@@ -71,7 +71,7 @@
 				try {
 					const m = moment(this.date)
 					m.locale('pt-BR')
-					return m.format('Do MMM YY')
+					return m.format('MMM YY')
 				}catch (e) {
                     return ''
 				}
