@@ -16,6 +16,9 @@ fields:
       - type: text
         name: name
         label: Tech name
+        default: ''
+          config:
+            required: false
       - type: file
         name: photo
         label: Tech icon photo
