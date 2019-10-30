@@ -1,0 +1,90 @@
+---
+label: stack
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: boolean
+  name: sidebar
+  label: sidebar
+- type: field_group_list
+  name: mono
+  label: mono
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: text
+    name: href
+    label: href
+- type: field_group_list
+  name: front
+  label: front
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: text
+    name: href
+    label: href
+- type: field_group_list
+  name: back
+  label: back
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: text
+    name: href
+    label: href
+- type: field_group_list
+  name: test
+  label: test
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: text
+    name: href
+    label: href
+- type: field_group_list
+  name: micro
+  label: micro
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: text
+    name: href
+    label: href
+- type: field_group_list
+  name: jam
+  label: jam
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: text
+    name: href
+    label: href
+- type: field_group_list
+  name: tools
+  label: tools
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: text
+    name: href
+    label: href
+- type: field_group_list
+  name: uml
+  label: uml
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: text
+    name: href
+    label: href
