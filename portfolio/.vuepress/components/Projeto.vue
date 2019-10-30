@@ -1,29 +1,29 @@
 <template>
 <div class="my-5 sm:w-full md:w-full lg:w-1/2 xl:w-1/2">
-    <div class="mx-5 rounded shadow-lg min-h-full">
-    <img class="w-full" :src="displayImage" :alt="title" />
+    <div class="mx-5 rounded shadow-lg min-h-full bg-base">
+        <img class="object-cover h-56 w-full" :src="displayImage" :alt="title" />
 
-    <div class="px-6 py-4">
-        <div class="mb-2 font-mono flex items-center justify-between leading-tight">
-            <a class="font-bold text-xl"
-               :href="href"
-               target="_blank"
-               v-text="title"
-               rel="noopener noreferrer"></a>
-            <span class="text-sm">
-                {{ displayDate }}
-            </span>
+        <div class="px-6 py-4">
+            <div class="mb-2 font-mono flex justify-between leading-tight flex-wrap">
+                <a class="font-bold text-xl w-1/2"
+                   :href="href"
+                   target="_blank"
+                   v-text="title"
+                   rel="noopener noreferrer"></a>
+                <span class="inline-block align-top text-sm text-right">
+                    {{ displayDate }}
+                </span>
+            </div>
+            <p class="text-grey-700 text-base">
+                {{ description }}
+            </p>
         </div>
-        <p class="text-grey-700 text-base">
-            {{ description }}
-        </p>
-    </div>
 
-    <div class="px-6 py-4">
-                <span class="inline-block bg-grey-200 rounded-full px-3 py-1 text-sm font-semibold text-grey-700 mr-2 mb-2"
-                      v-if="tags.length > 0"
-                      v-for="tag in tags">#{{ tag }}</span>
-    </div>
+        <div class="px-6 py-4">
+            <span class="inline-block bg-grey-200 rounded-full px-3 py-1 text-sm font-semibold text-grey-700 mr-2 mb-2"
+                  v-if="tags.length > 0"
+                  v-for="tag in tags">#{{ tag }}</span>
+        </div>
     </div>
 </div>
 </template>
