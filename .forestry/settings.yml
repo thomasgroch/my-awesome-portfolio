@@ -41,7 +41,7 @@ sections:
   label: Site Config
   templates:
   - info
-upload_dir: ''
+upload_dir: portfolio
 public_path: portfolio/.vuepress/public/media
 front_matter_path: ''
 use_front_matter_path: false
