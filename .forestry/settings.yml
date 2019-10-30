@@ -41,10 +41,10 @@ sections:
   label: Site Config
   templates:
   - info
-upload_dir: portfolio
-public_path: portfolio/.vuepress/public/media
-front_matter_path: ''
-use_front_matter_path: false
+upload_dir: ''
+public_path: https://res.cloudinary.com/tgroch/image/upload/c_scale,w_auto:100,dpr_auto
+front_matter_path: https://res.cloudinary.com/tgroch/image/upload
+use_front_matter_path: true
 file_template: ":filename:"
 instant_preview: false
 build:
