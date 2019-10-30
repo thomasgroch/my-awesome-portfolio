@@ -2,7 +2,7 @@
     <main class="mt-5 flex flex-col" aria-labelledby="main-title">
         <div class="flex mb-4 flex-wrap justify-center">
 
-            <header class="hero uppercase font-mono px-4 py-2 m-2 text-center">
+            <header class="hero uppercase font-mono px-4 py-2 m-2 text-center text-black">
 
                 <div class="animated fadeInDown">
                     <img v-if="data.heroImage" class="rounded shadow-lg" :src="$withBase(data.heroImage)"
