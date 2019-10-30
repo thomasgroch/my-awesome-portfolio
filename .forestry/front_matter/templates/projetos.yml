@@ -24,9 +24,10 @@ fields:
     default: "#"
   - name: photo
     type: file
+    label: Project photo
     config:
       maxSize: 250
-    label: Project photo
+      required: false
   - name: external
     type: boolean
     label: External
