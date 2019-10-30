@@ -3,13 +3,14 @@
     <div class="mx-5 rounded shadow-lg min-h-full">
     <img class="w-full" :src="displayImage" :alt="title" />
 
-    <div class="px-6 py-4">
+    <div class="px-2 py-4">
         <div class="mb-2 font-mono flex items-center justify-between leading-tight">
-            <a class="font-bold text-xl"
+			 <span><a class="font-bold text-xl"
                :href="href"
                target="_blank"
                v-text="title"
                rel="noopener noreferrer"></a>
+			   </span>
             <span class="text-sm">
                 {{ displayDate }}
             </span>
