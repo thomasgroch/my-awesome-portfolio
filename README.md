@@ -19,7 +19,7 @@ Esta applicação o conteúdo mudar apenas no deploy. Durante o build SSG render
 
 ## Credits 👥
 
-Eu reescrevi meu portfólio muitas vezes, e cada vez fui influenciado por alguém novo. Essas pessoas incluem:
+Eu reescrevi meu portfólio muitas vezes e cada vez fui influenciado por alguém novo. Essas pessoas incluem:
 
 - [recoluan](https://github.com/recoluan)
 
