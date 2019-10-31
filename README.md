@@ -9,7 +9,7 @@
 </a>
 
 
-Esta applicação o conteúdo mudar apenas no deploy. Durante o build SSG renderiza as páginas HTML. Quando o site é criado e cada página é renderizada em um arquivo HTML que inclui o conteúdo da página.
+Esta applicação o conteúdo mudar apenas no deploy. Durante o build SSG renderiza as páginas HTML, quando o site é criado e cada página é renderizada em um arquivo HTML que inclui o conteúdo da página.
 
 ## Env ⚙️
 
