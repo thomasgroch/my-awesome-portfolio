@@ -50,7 +50,7 @@ body
 
 .sidebar
   @apply text-base !important
-  background-color transparent
+  background-color $backgroundColor
   width $sidebarWidth
   position fixed
   z-index 10
@@ -197,6 +197,9 @@ th, td
 
 .navbar .links, .search-box input
   background-color transparent
+
+.darkmode--activated aside.sidebar
+  background-color black
 
 .darkmode--activated .page select,
 .darkmode--activated .page input,
