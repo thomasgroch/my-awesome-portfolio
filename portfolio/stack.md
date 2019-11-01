@@ -161,7 +161,7 @@ A renderização no lado do servidor (SSR), "Pre-Rendering" e o Static Site Gene
 
 <BaseStack group="prod" />
 
-## Workstation de desenvolvedor ‍💻 ⚙️
+## Workstation de desenvolvedor ‍💻
 
 Você pode dar uma olhada nas ferramentas por trás do meu processo de desenvolvimento e nos serviços que executam este site em [meu setup](stack).
 
