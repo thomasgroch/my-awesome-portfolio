@@ -109,8 +109,6 @@ uml:
   href: https:/www.visual-paradigm.com/
   photo: https://logo.clearbit.com/https:/www.visual-paradigm.com/
 ---
-## asd
-
 Com o avanço nos estudos na area de desenvolvimento web, tive contato com diversas ferramentas e serviços. Dessa forma, elaborei uma Stack moderna na qual contempla os mesmos valores em diferentes fluxos de trabalho e desenvolvimento. Segue abaixo toda (ou quase toda) a minha Stack.</br>
 </br>
 
