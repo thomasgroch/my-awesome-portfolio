@@ -15,8 +15,8 @@ html
 
 body
   min-height 100%;
-  @apply font-mono !important
-  @apply text-lg
+  @apply font-mono !important !important
+  @apply text-lg !important
   /*font-family -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !important*/
   -webkit-font-smoothing antialiased !important
   -moz-osx-font-smoothing grayscale !important
@@ -49,7 +49,7 @@ body
   display none
 
 .sidebar
-  @apply text-base
+  @apply text-base !important
   background-color transparent
   width $sidebarWidth
   position fixed
@@ -91,7 +91,7 @@ kbd
   padding 0 0.15em
 
 blockquote
-  @apply text-base
+  @apply text-base !important
   color #999
   border-left .5rem solid #dfe2e5
   margin 0.5rem 0
@@ -106,7 +106,7 @@ strong
   font-weight 600
 
 h1, h2, h3, h4, h5, h6
-  @apply font-bold
+  @apply font-bold !important
   line-height 1.25
   margin-top 1rem !important
   margin-bottom 1rem !important
@@ -123,20 +123,20 @@ h1, h2, h3, h4, h5, h6
     opacity: 1
 
 h1
-  @apply  text-4xl
+  @apply text-4xl !important
 
 h2
-  @apply text-3xl
-  @apply pb-1
-  @apply border-b-2
+  @apply text-3xl !important
+  @apply pb-1 !important
+  @apply border-b-2 !important
   /* border-bottom 1px solid $borderColor !important */
 
 h3
-  @apply text-2xl
-  @apply font-bold
+  @apply text-2xl !important
+  @apply font-bold !important
 
 a.header-anchor
-  @apply text-sm
+  @apply text-sm !important
   float left
   margin-left -0.87em
   padding-right 0.23em

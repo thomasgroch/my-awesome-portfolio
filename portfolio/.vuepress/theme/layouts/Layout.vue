@@ -186,10 +186,9 @@
 </script>
 
 <style src="prismjs/themes/prism-tomorrow.css"></style>
+<style src="@theme/styles/theme.styl" lang="stylus"></style>
 
 <style lang="stylus">
-@require '~@theme/styles/theme.styl'
-
 #nprogress .spinner
     display: block
     position: fixed
