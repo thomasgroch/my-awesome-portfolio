@@ -1,7 +1,7 @@
 ---
 title: Sobre
 sidebar: false
-navbar: false
+navbar: true
 ---
 Eu sou o @thomasgroch e sou um desenvolvedor de web.  
 Obtive contato com tecnologia desde os meus dez anos de idade, até hoje aprimorando minhas habilidades em linguagens {copiladas, interpretadas e transpilada} e consolidando meu trabalho em desenvolvimento de projetos {corporativos à open-sources}.  
