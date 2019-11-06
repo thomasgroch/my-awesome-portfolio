@@ -109,18 +109,18 @@ uml:
   href: https:/www.visual-paradigm.com/
   photo: https://logo.clearbit.com/https:/www.visual-paradigm.com/
 ---
+<p class="text-justify">
 Com o avanço nos estudos na area de desenvolvimento web, tive contato com diversas ferramentas e serviços. Dessa forma, elaborei uma Stack moderna na qual contempla os mesmos valores em diferentes fluxos de trabalho e desenvolvimento. Segue abaixo toda (ou quase toda) a minha Stack.</br>
-</br>
+</p>
 
 ### Web Apps Monoliticos
 
 <BaseStack group="mono" />
 
 ### Micro Serviços
-
+<p class="text-justify">
 Trabalho com orquestragem de micro serviços auxiliares ao seu sistema ou arquitura completa.
-
-*(Ex.: Descoberta de serviço, Roteamento HTTP)*
+</p>
 
 <BaseStack group="micro" />
 
@@ -141,10 +141,12 @@ Aplicativo de página única da Web (SPA):
 
 ## JAM stack 🎯
 
-E se um aplicação SPA não for suficiente para suas necessidades?
+E se um __aplicação SPA não for suficiente__ para suas necessidades? 🤔 
 
+<p class="text-justify">
 A renderização no lado do servidor (SSR), "Pre-Rendering" e o Static Site Generators (SSG) são técnicas para renderizar conteúdos. 
  Existe maneiras como esses sistemas funcionam é extrair conteúdo de um sistema de arquivos ou de um ponto de extremidade da API e executar uma tarefa de construção para gerar um site inteiro em HTML estático. O resultado final = sites extremamente rápidos, sem back-end e que podem ser implantados em qualquer lugar.
+</p>
 
 <BaseStack group="jam" />
 

@@ -10,7 +10,7 @@ fields:
 - name: navbar
   type: boolean
   label: Navegation Bar
-  default: false
+  default: true
   hidden: true
 pages:
 - portfolio/sobre.md
