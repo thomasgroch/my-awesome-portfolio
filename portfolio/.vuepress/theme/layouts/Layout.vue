@@ -26,7 +26,7 @@
                 <slot name="page-bottom" slot="bottom"/>
             </Page>
         </div>
-        <div class="text-center text-sm text-grey-600 py-8"
+        <div class="text-center text-sm text-gray-500 opacity-75 py-8"
              :class="{'animated fadeInUp slow': $page.frontmatter.home }">
             <p>Siga-me no  <a target="_blank" href="https://twitter.com/thgroch">twitter</a>, ou assine o meu feed <a target="_blank" href="/rss.xml">rss</a>. &bull; <router-link to="/cripto.html" class="italic">cripto</router-link></p>
             <p>© 2012-2019 <a target="_blank" rel="noopener noreferrer" href="mailto://thomas.groch@gmail.com">Thomas Letsch Groch</a>(<a target="_blank" rel="noopener noreferrer" href="pgp-mail-at-thomasgroch-me.asc">PGP</a>).<br />

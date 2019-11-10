@@ -1,20 +1,12 @@
 ---
 title: Stack de tecnologias
 sidebar: false
-mono:
-- name: bedrock
-  href: https://roots.io/bedrock/
-- name: RoR
-  href: https://www.rubyonrails.org
-- name: Laravel
-  href: https://laravel.com
-- name: Nuxt.js
-  href: https://nuxtjs.org/
-- name: Spring application
-  href: https://spring.io/
 front:
 - name: Tailwind
   href: https://tailwindcss.com
+- name: stylus
+  href: http://stylus-lang.com/
+  photo: http://stylus-lang.com/img/stylus-logo.svg
 - name: Vue.js
   href: https://vuejs.org
 - name: bulma
@@ -22,21 +14,23 @@ front:
 - name: Yarn
   href: https://yarnpkg.com/lang/en/
   photo: https://raw.githubusercontent.com/yarnpkg/assets/master/yarn-kitten-circle.png
-- name: Parcel.js
-  href: https://parceljs.org/
 - name: Webpack.js
   href: https://webpack.js.org/
+- name: Parcel.js
+  href: https://parceljs.org/
 - name: jQuery
   href: https://jquery.com
-- name: HTML
-  href: https://www.w3schools.com
-- name: SASS
-  href: https://sass-lang.com
 back:
 - name: Node.js
   href: https://nodejs.org/
+- name: Nuxt.js
+  href: https://nuxtjs.org/
 - name: PHP
   href: https://php.net/
+- name: Laravel
+  href: https://laravel.com
+- name: RoR
+  href: https://www.rubyonrails.org
 - name: RestfulAPI
   href: https://restfulapi.net/
 - name: MariaDB
@@ -44,25 +38,22 @@ back:
 - name: MongoDB
   href: https://www.mongodb.org/
   photo: https://smyl.es/wurdp/assets/mongodb.png
-- name: ElasticSearch
-  href: https://www.elastic.co/products/elasticsearch
-  photo: https://raw.githubusercontent.com/elastic/elasticsearch-net/master/build/nuget-icon.png
 - name: PostgreSQL
   href: https://www.postgresql.org
-- name: DigitalOcean
-  href: https://digitalocean.com/
+- name: Spring application
+  href: https://spring.io/
+- name: bedrock
+  href: https://roots.io/bedrock/
 test:
 - name: jest.js
   href: https://jestjs.io/
 - name: phpunit
   href: https://phpunit.de/
-micro:
+service:
 - name: Docker
   href: https://docker.com
 - name: Portainer
   href: https://portainer.io/
-- name: Heroku
-  href: https://heroku.com/
 - name: sentry
   href: https://sentry.io/welcome/
   photo: https://res-4.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1424297929/rhfze61a1pxtxuxny98x.png
@@ -100,80 +91,98 @@ tools:
 - name: Postman
   href: https://getpostman.com/
 uml:
-- name: nobackend
-  href: http://nobackend.org/
-- name: free-for-dev
-  href: https://free-for.dev/
-  photo: https://cdn2.iconfinder.com/data/icons/enterprise-architecture-togaf-colored/512/Data_architecture-512.png
+- name: phpunit
+  href: https://phpunit.de/
 - name: Visual Paradigm
   href: https:/www.visual-paradigm.com/
   photo: https://logo.clearbit.com/https:/www.visual-paradigm.com/
+- name: free-for-dev
+  href: https://free-for.dev/
+  photo: https://cdn2.iconfinder.com/data/icons/enterprise-architecture-togaf-colored/512/Data_architecture-512.png
+- name: nobackend
+  href: http://nobackend.org/
 ---
-<p class="text-justify">
+# Stack de tecnologias
+
 Com o avanço nos estudos na area de desenvolvimento web, tive contato com diversas ferramentas e serviços. Dessa forma, elaborei uma Stack moderna na qual contempla os mesmos valores em diferentes fluxos de trabalho e desenvolvimento. Segue abaixo toda (ou quase toda) a minha Stack.</br>
-</p>
 
-### Web Apps Monoliticos
+### Principais atividades 
 
-<BaseStack group="mono" />
+⇢ Manutenção, desenvolvimento de software web e infraestrutura utilizando as melhores práticas.
 
-### Micro Serviços
-<p class="text-justify">
-Trabalho com orquestragem de micro serviços auxiliares ao seu sistema ou arquitura completa.
-</p>
+⇢ Projetar escalabilidade de serviços para atender centenas de milhões de requisições por dia.
 
-<BaseStack group="micro" />
+⇢ Controle de código versionado.
 
-## Lado do cliente 👨‍💻
+⇢ Planejar suite de testes.
 
-Aplicativo de página única da Web (SPA):
+⇢ Elaboração de tarefas, sprints, requisitos e backlog de projetos web.
 
-- Componentes Reativos e Compatíveis com outros frameworks ([Angular](https://angular.io/) ou [React](https://reactjs.org/)).
-- Web design responsivo
-- Suporte à internacionalização
-- WebSocket em tempo real
+⇢ Protejo dados sensitivos de negócio da organização e compartilho o conhecimento. 
 
-<BaseStack group="front" />
+- ⇢ Ajudo outras pessoas com trabalho em equipe.
 
-## Lado do servidor 💻
+## 💻 Lado do servidor e Monoliticos
+
 
 <BaseStack group="back" />
 
-## JAM stack 🎯
+Boas ferramentas para SaaS, PaaS, IaaS para desenvolvimento automatizado da sua aplicação.
+Tiro muito proveito de orquestragem de containers e micro serviços com Docker Compose. Uso de [programação imperativa](https://pt.wikipedia.org/wiki/Programa%C3%A7%C3%A3o_imperativa) para manter a [fonte única da verdade](https://en.wikipedia.org/wiki/Single_source_of_truth) e simplificar o trabalho.
 
-E se um __aplicação SPA não for suficiente__ para suas necessidades? 🤔 
+⇢ Possuo afinidade com Wordpress Custom Post Types, Taxonomias e seu sistema de hierarquia de templates.
 
-<p class="text-justify">
+### SysAdmin 🔐
+
+Possuo também amplo conhecimento de sysadmin, orquestragem de containers e integração entre serviços. Posso executar testes de penetração e trabalhar com todos os sistemas de gerenciamento de conteúdo, incluindo WordPress e Durpal.  
+
+
+
+<BaseStack group="service" />
+
+## 👨‍💻 Lado do cliente
+
+Trabalho com SPA contemplando web design responsivo em todos dispositivos, suporte à internacionalização e WebSocket em tempo real.
+
+Desenvolvo componentes reativos em [Vue](https://vuejs.org/) que são compatíveis com todos outros frameworks ([Angular](https://angular.io/) ou [React](https://reactjs.org/)).
+
+<BaseStack group="front" />
+
+Alem disso, reaproveitamento de código com a cultura de [inner-source](https://en.wikipedia.org/wiki/Inner_source) a coleção de componentes de interface web ficam disponiveis entre as equipes da organização.
+
+## 🎯 JAM stack
+
+E se um aplicação __SPA não for suficiente__ para suas necessidades? 🤔 
+
 A renderização no lado do servidor (SSR), "Pre-Rendering" e o Static Site Generators (SSG) são técnicas para renderizar conteúdos. 
  Existe maneiras como esses sistemas funcionam é extrair conteúdo de um sistema de arquivos ou de um ponto de extremidade da API e executar uma tarefa de construção para gerar um site inteiro em HTML estático. O resultado final = sites extremamente rápidos, sem back-end e que podem ser implantados em qualquer lugar.
-</p>
 
 <BaseStack group="jam" />
 
-## Ferramentas prontas para entrar em produção 🚀
+## 🚀 Qualidade para entrar em produção
 
-- Monitoramento e automação.
-- Caching em todas areas de maior processamento. 
-- Recursos estáticos otimizados (cabeçalhos de cache HTTP).
-- Gerenciamento de log configurável em tempo de execução.
-- Docker completo e Docker Compose
-- Nuvem agnostico Suporte para todos os principais provedores de nuvem: AWS, Cloud Foundry, Heroku, Kubernetes, OpenShift, Azure, Docker…
+Monitoramento e automação.
+
+Caching em todas areas de maior processamento. 
+
+Otimização de recursos estáticos (cabeçalhos de cache HTTP).
+
+Gerenciamento de log em tempo de execução.
+
+Agnostico de Nuvem, trabalho com todos os principais provedores: ([AWS](https://aws.amazon.com/), [Cloud Foundry](https://www.cloudfoundry.org/), [Heroku](https://heroku.com/), [Kubernetes](https://kubernetes.io/), [OpenShift](https://www.openshift.com/), [Azure](https://azure.microsoft.com/)…)
 
 <BaseStack group="prod" />
 
-## Workstation de desenvolvedor ‍💻
+## 💻 Workstation de desenvolvedor
 
-Você pode dar uma olhada nas ferramentas por trás do meu processo de desenvolvimento e nos serviços que executam este site em [meu setup](stack).
-
-Faço [dotfiles](https://github.com/thomasgroch/dotfiles) também. 😉
+Você pode dar uma olhada nas [ferramentas por trás](https://github.com/thomasgroch/dotfiles/blob/master/Brewfile) do meu processo de desenvolvimento. E também nos [serviços que executam este site](https://github.com/thomasgroch/my-awesome-portfolio). 😉
 
 <BaseStack group="tools" />
 
-## Security 🔒, Patterns ⭐, UML 
+## 🔒 Security, Patterns e UML ⭐
 
-Boas ferramentas SaaS, PaaS, IaaS para desenvolvimento automatizado da sua aplicação.
+Conhecimento prático em testes (TDD, BDD, DDD) de integração de alto nivel para integridade do sistema e desenvolvimento ágil.
+
+Posso ajudar a desenvolver novos recursos para o seu site, verifico se ele é seguro e corrijo-o se for invadido.
 
 <BaseStack group="uml" />
-
-
-🚧 ⭐️ 🎯📌💻🚀❓❗☕ 📨

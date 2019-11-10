@@ -1,8 +1,16 @@
 ---
 sidebar: false
-title: Contato
+title: Contato 📨
 view: contato
 ---
-E aí, vamos conversar? 😉
+
+# Contato 📨
+
+💡 Teve uma ideia e quer começar seu projeto? 
+
+🛠 Gostou dos meus trabalhos e da minha stack? 
+
+Que tal bater um papo!? Me diz aí qual é a sua nova ideia 🙃
+
 
 <Contato />

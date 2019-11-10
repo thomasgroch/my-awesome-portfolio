@@ -26,6 +26,9 @@ _This is italic text_
 
 ## [Emojies](https://github.com/markdown-it/markdown-it-emoji)
 
+
+📊🚧 ⭐️ 🎯📌💻🚀❓❗☕ 📨📑💼
+
 Classic markup: :wink: :cry: :laughing: :yum:
 
 Shortcuts (emoticons): :-) :-( 8-) ;)
