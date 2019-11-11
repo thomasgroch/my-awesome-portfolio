@@ -1,5 +1,5 @@
 ---
-title: Stack de tecnologias
+title: Stack de tecnologias 📂
 sidebar: false
 front:
 - name: Tailwind
@@ -102,7 +102,7 @@ uml:
 - name: nobackend
   href: http://nobackend.org/
 ---
-# Stack de tecnologias
+# Stack de tecnologias 📂
 
 Com o avanço nos estudos na area de desenvolvimento web, tive contato com diversas ferramentas e serviços. Dessa forma, elaborei uma Stack moderna na qual contempla os mesmos valores em diferentes fluxos de trabalho e desenvolvimento. Segue abaixo toda (ou quase toda) a minha Stack.</br>
 
@@ -120,7 +120,7 @@ Com o avanço nos estudos na area de desenvolvimento web, tive contato com diver
 
 ⇢ Protejo dados sensitivos de negócio da organização e compartilho o conhecimento. 
 
-- ⇢ Ajudo outras pessoas com trabalho em equipe.
+⇢ Ajudo outras pessoas com trabalho em equipe.
 
 ## 💻 Lado do servidor e Monoliticos
 
@@ -130,11 +130,11 @@ Com o avanço nos estudos na area de desenvolvimento web, tive contato com diver
 Boas ferramentas para SaaS, PaaS, IaaS para desenvolvimento automatizado da sua aplicação.
 Tiro muito proveito de orquestragem de containers e micro serviços com Docker Compose. Uso de [programação imperativa](https://pt.wikipedia.org/wiki/Programa%C3%A7%C3%A3o_imperativa) para manter a [fonte única da verdade](https://en.wikipedia.org/wiki/Single_source_of_truth) e simplificar o trabalho.
 
-⇢ Possuo afinidade com Wordpress Custom Post Types, Taxonomias e seu sistema de hierarquia de templates.
+Possuo conhecimento sobre Wordpress Custom Post Types, Taxonomias e seu sistema de hierarquia de templates.
 
-### SysAdmin 🔐
+### 🔐 SysAdmin
 
-Possuo também amplo conhecimento de sysadmin, orquestragem de containers e integração entre serviços. Posso executar testes de penetração e trabalhar com todos os sistemas de gerenciamento de conteúdo, incluindo WordPress e Durpal.  
+Amplo conhecimento em sysadmin, orquestragem de containers e integração entre serviços. Posso executar testes de penetração e trabalhar com todos os sistemas de gerenciamento de conteúdo, incluindo WordPress e Durpal.  
 
 
 
@@ -154,8 +154,10 @@ Alem disso, reaproveitamento de código com a cultura de [inner-source](https://
 
 E se um aplicação __SPA não for suficiente__ para suas necessidades? 🤔 
 
-A renderização no lado do servidor (SSR), "Pre-Rendering" e o Static Site Generators (SSG) são técnicas para renderizar conteúdos. 
- Existe maneiras como esses sistemas funcionam é extrair conteúdo de um sistema de arquivos ou de um ponto de extremidade da API e executar uma tarefa de construção para gerar um site inteiro em HTML estático. O resultado final = sites extremamente rápidos, sem back-end e que podem ser implantados em qualquer lugar.
+> *A renderização no lado do servidor (SSR), "Pre-Rendering" e o Static Site Generators (SSG) são técnicas para renderizar conteúdos. 
+A maneira como esses sistemas funcionam é, extrair conteúdo de um sistema de arquivos ou de uma API executando uma tarefa de build para gerar um site inteiro em HTML estático.
+O resultado final é igual a sites extremamente rápidos, sem back-end e que podem ser implantados em qualquer lugar.*
+
 
 <BaseStack group="jam" />
 

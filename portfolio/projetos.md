@@ -56,18 +56,6 @@ projetos:
   - aws
   draft: false
   photo: ''
-- title: EZTV
-  href: https://sample-eztv-rss-generator.herokuapp.com/
-  external: true
-  description: Arquivos php simples para descartar o conteúdo do eztv.it mostram as
-    páginas e geram um feed RSS que pode ser lido pelos clientes utorrent e liberado
-    gratuitamente sob o Creative Commons.
-  date: 2017-05-01T00:00:00.000+00:00
-  tags:
-  - backend
-  - php
-  draft: false
-  photo: ''
 - title: Resource Generator
   href: https://github.com/thomasgroch/ResourceGenerator
   external: true
