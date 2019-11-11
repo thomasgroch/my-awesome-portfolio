@@ -3,7 +3,7 @@ title: "Projetos \U0001F4BC"
 sidebar: false
 view: projeto
 projetos:
-- title: workana-widget
+- title: workana widget
   href: https://github.com/thomasgroch/workana-widget
   photo: ''
   external: true
