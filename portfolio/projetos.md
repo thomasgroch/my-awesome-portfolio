@@ -1,8 +1,21 @@
 ---
-title: Projetos 💼
+title: "Projetos \U0001F4BC"
 sidebar: false
 view: projeto
 projetos:
+- title: workana-widget
+  href: https://github.com/thomasgroch/workana-widget
+  photo: ''
+  external: true
+  description: O workana-widget é um widget que permite aos usuários do Workana monitorar
+    os trabalhos mais recentes.
+  date: 2019-11-01 00:00:00 -0300
+  tags:
+  - bash
+  - vue
+  - nodejs
+  - tailwind
+  draft: false
 - title: Sellia
   href: http://sellia.com.br
   external: true
