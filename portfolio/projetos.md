@@ -5,7 +5,7 @@ view: projeto
 projetos:
 - title: workana widget
   href: https://github.com/thomasgroch/workana-widget
-  photo: ''
+  photo: https://user-images.githubusercontent.com/67318/68424371-970fe900-0182-11ea-9624-736e455e33e3.gif
   external: true
   description: O workana-widget é um widget que permite aos usuários do Workana monitorar
     os trabalhos mais recentes.
