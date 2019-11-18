@@ -62,7 +62,7 @@ module.exports = [
   ['link', { rel: 'mask-icon', href: '/favicon/safari-pinned-tab.svg', color: '#ff5733' }],
   ['link', { rel: 'shortcut icon', href: '/favicon/favicon.ico' }],
 
-  ['link', { rel: 'alternate', href: 'https://thomasgroch.com/', hreflang: 'pt-br' }],
+  ['link', { rel: 'alternate', href: 'https://thomasgroch.me/', hreflang: 'pt-br' }],
     // ['link', { rel: 'alternate', href:'https://MY_DOMAIN.COM/en/', hreflang: 'en' }],
 
   // Prebrowsing
