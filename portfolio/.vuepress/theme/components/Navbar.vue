@@ -4,20 +4,21 @@
 
     <router-link
       :to="$localePath"
-      class="home-link font-mono"
-    >
+      class="home-link font-mono hidden">
       <img
         class="logo"
         v-if="$site.themeConfig.logo"
         :src="$withBase($site.themeConfig.logo)"
-        :alt="$siteTitle"
-      >
-      <span
-        ref="siteName"
-        class="site-name"
-        v-if="$siteTitle"
-        :class="{ 'can-hide': $site.themeConfig.logo }"
-      >{{ $siteTitle }}</span><Badge text="beta" type="warn"/>
+        :alt="$siteTitle" />
+      <div class="sm:block hidden">
+        <span
+          ref="siteName"
+          class="site-name"
+          v-if="$siteTitle"
+          :class="{ 'can-hide': $site.themeConfig.logo }"
+          v-text="$siteTitle"></span>
+        <Badge text="beta" type="warn"/>
+      </div>
     </router-link>
 
     <div
