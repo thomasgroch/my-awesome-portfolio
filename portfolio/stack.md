@@ -7,23 +7,23 @@ front:
 - name: stylus
   href: http://stylus-lang.com/
   photo: http://stylus-lang.com/img/stylus-logo.svg
-- name: Vue.js
+- name: Vue
   href: https://vuejs.org
 - name: bulma
   href: https://bulma.io/
 - name: Yarn
   href: https://yarnpkg.com/lang/en/
   photo: https://raw.githubusercontent.com/yarnpkg/assets/master/yarn-kitten-circle.png
-- name: Webpack.js
+- name: Webpack
   href: https://webpack.js.org/
-- name: Parcel.js
+- name: Parcel
   href: https://parceljs.org/
 - name: jQuery
   href: https://jquery.com
 back:
-- name: Node.js
+- name: Node
   href: https://nodejs.org/
-- name: Nuxt.js
+- name: Nuxt
   href: https://nuxtjs.org/
 - name: PHP
   href: https://php.net/
@@ -31,21 +31,21 @@ back:
   href: https://laravel.com
 - name: RoR
   href: https://www.rubyonrails.org
-- name: RestfulAPI
+- name: Restful
   href: https://restfulapi.net/
 - name: MariaDB
   href: https://mariadb.com
 - name: MongoDB
   href: https://www.mongodb.org/
   photo: https://smyl.es/wurdp/assets/mongodb.png
-- name: PostgreSQL
+- name: Postgre
   href: https://www.postgresql.org
-- name: Spring application
+- name: Spring
   href: https://spring.io/
 - name: bedrock
   href: https://roots.io/bedrock/
 test:
-- name: jest.js
+- name: jest
   href: https://jestjs.io/
 - name: phpunit
   href: https://phpunit.de/
