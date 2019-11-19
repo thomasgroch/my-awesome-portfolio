@@ -1,6 +1,5 @@
 <template>
-    <div class="flex rounded-lg p-6 mx-auto w-1/4">
-        <div class="text-center mx-auto">
+    <div class="rounded-lg p-6 text-center mx-auto">
             <a :href="item.href"
                class="flex flex-col hover:text-black mx-auto text-center"
                rel="noopener noreferrer"
@@ -11,7 +10,6 @@
                       v-text="title"></span>
             </a>
         </div>
-    </div>
 </template>
 
 <script>

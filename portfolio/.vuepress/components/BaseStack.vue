@@ -1,5 +1,5 @@
 <template>
-    <div class="flex w-full flex-wrap self-center justify-center">
+    <div class="flex flex-wrap w-full self-center justify-center">
         <Stack v-for="(tech, index) in techs"
                    :item="tech"
                    :key="index"></Stack>
