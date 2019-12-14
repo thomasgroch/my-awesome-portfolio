@@ -81,6 +81,7 @@ tools:
   href: https://ohmyz.sh/
 - name: WebStorm
   href: https://www.jetbrains.com/webstorm/
+  photo: https://logo.clearbit.com/jetbrains.dev
 - name: VSCode
   href: https://www.code.visualstudio.com/
 - name: SequelPro
