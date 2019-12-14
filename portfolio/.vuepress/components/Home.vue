@@ -11,11 +11,30 @@
                     <h1 class="font-mono text-2xl sm:text-3xl font-bold tracking-wide" v-if="data.heroText !== null" id="main-title">{{
                         data.heroText ||
                         $title || 'Hello' }}</h1>
-
-                    <p class="description my-6 mx-auto leading-tight font-mono text-xl md:text-2xl">
-                        {{ data.tagline || $description || 'Welcome to your VuePress site' }}
-                    </p>
                 </div>
+
+                <vue-typed-js 
+                  :strings="['Full stack', 'Lead', 'Web', 'Exploit']"
+                  :repeat='Infinity'
+                  :shuffle='true'
+                  initial-action='erasing'
+                  :typeSpeed="100"
+                  :backSpeed="30"
+                  :backDelay="4000"
+                  :pre-erase-delay='7000'
+                  :pre-type-delay='5000'
+                  :type-delay='3500'
+                  :erase-delay='7500'
+                  :erase-on-complete='false'
+                  caret-animation='blink'
+                  erase-style='select-back'
+                  :loop="true">
+                  <p class="description my-6 mx-auto leading-tight font-mono text-xl md:text-2xl">
+                    <span class="typing"></span>developer,
+                    <br />adepto da convenção sobre configuração.
+                  </p>
+                    <!-- {{ //data.tagline || $description || 'Welcome to your VuePress site' }} -->
+                </vue-typed-js>
 
                 <div class="links py-2 sm:text-xl sm:flex sm:flex-row sm:justify-between tracking-wide"
                      v-if="data.links && data.links.length">

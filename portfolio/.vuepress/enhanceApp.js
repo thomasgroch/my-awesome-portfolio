@@ -1,4 +1,5 @@
 import VeeValidate, {Validator} from 'vee-validate'
+import VueTypedJs from 'vue-typed-js'
 import locale from './vee-validate-locales/pt_BR'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
@@ -23,6 +24,7 @@ export default ({
 	Vue.component('font-awesome-icon', FontAwesomeIcon)
 	Vue.use(VeeValidate)
 	Vue.use(animated)
+	Vue.use(VueTypedJs)
 	// Vue.mixin({
 	// 	localize (localeName) {
 	// 		// asynchronously load the locale file then localize the validator with it.
