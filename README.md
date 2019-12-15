@@ -1,6 +1,6 @@
 # my-awesome-portfolio ✨
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/0e2b53bc-ab0e-4c27-a171-7ecc29f4ca67/deploy-status)](https://app.netlify.com/sites/thomasgroch/deploys) [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgitlab.com%2Fthomas.groch%2Fmy-awesome-portfolio.svg?type=shield)](https://app.fossa.com/projects/git%2Bgitlab.com%2Fthomas.groch%2Fmy-awesome-portfolio?ref=badge_shield)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0e2b53bc-ab0e-4c27-a171-7ecc29f4ca67/deploy-status)](https://app.netlify.com/sites/thomasgroch/deploys) [![FOSSA Status](https://app.fossa.com/api/project/git%2Bgitlab.com%2Fthomas.groch%2Fmy-awesome-sportfolio.svg?type=shield)](https://app.fossa.com/projects/git%2Bgitlab.com%2Fthomas.groch%2Fmy-awesome-portfolio?ref=badge_shield)
 
 ## Deploy Buttons 🚀
 
