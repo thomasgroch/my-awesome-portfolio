@@ -189,33 +189,37 @@
 <style src="@theme/styles/theme.styl" lang="stylus"></style>
 
 <style lang="stylus">
+.darkmode-toggle
+	z-index: 1
+
 #nprogress .spinner
-    display: block
-    position: fixed
-    z-index: 1031
-    top: 15px
-    right: 50% !important
+	display: block
+	position: fixed
+	z-index: 1031
+	top: 15px
+	right: 50% !important
+
 .custom-layout a
-    text-decoration none
-    position: relative;
-    font-size: 1.28rem;
-    line-height: 36px;
-    display: inline-block;
+    text-decoration: none
+    position: relative
+    font-size: 1.28rem
+    line-height: 36px
+    display: inline-block
     :after
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        @apply bg-green-500
-        /*background-color: $accentColor;*/
-        visibility: hidden;
-        -webkit-transform: scaleX(0);
-        transform: scaleX(0);
-        transition: .3s ease-in-out;
-    :hover:after
-        visibility visible
-        -webkit-transform: scaleX(1);
-        transform: scaleX(1);
+		content: ""
+		position: absolute
+		width: 100%
+		height: 2px
+		bottom: 0
+		left: 0
+		@apply bg-green-500
+		/*background-color: $accentColor*/
+		visibility: hidden
+		-webkit-transform: scaleX(0)
+		transform: scaleX(0)
+		transition: .3s ease-in-out
+	:hover:after
+		visibility visible
+		-webkit-transform: scaleX(1)
+		transform: scaleX(1)
 </style>
