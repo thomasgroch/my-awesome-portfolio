@@ -11,13 +11,30 @@
         :src="$withBase($site.themeConfig.logo)"
         :alt="$siteTitle" />
       <div class="sm:block hidden">
-        <span
+        <vue-typed-js 
           ref="siteName"
           class="site-name"
           v-if="$siteTitle"
           :class="{ 'can-hide': $site.themeConfig.logo }"
-          v-text="$siteTitle"></span>
-        <Badge text="beta" type="warn"/>
+          :showCursor="true"
+          :strings="['Letsch Groch', '', 'portfolio', '', 'site', '', 'blog', '', 'host', '']"
+          :smartBackspace="true"
+          :typeSpeed="100"
+          :backSpeed="30"
+          :start-delay="5000"
+          :back-delay="8000"
+          :erase-delay='9000'
+          :type-delay='10000'
+          :pre-erase-delay='7000'
+          :pre-type-delay='5000'
+          :erase-on-complete='true'
+          erase-style='select-back'
+          caret-animation='blink'
+          :loop="true">
+            <div>
+              {{ $siteTitle }} <span class="-ml-1 typing"></span>
+            </div>
+        </vue-typed-js>
       </div>
     </router-link>
 
