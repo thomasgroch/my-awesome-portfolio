@@ -5,11 +5,12 @@ navbar: true
 ---
 # Sobre 👥
 
-Eu sou o [@thomasgroch](sobre.md) e sou um lead desenvolvedor web full stack.
-Obtive contato com tecnologia desde os meus dez anos de idade, até hoje aprimorando minhas habilidades em linguagens {copiladas, interpretadas e transpiladas} e consolidando meu trabalho em desenvolvimento de projetos corporativos à open-sources.
+Eu sou desenvolvedor desde 1999 e sou especializado no uso de Laravel, Nodejs e Vue.js, embora também use outras tecnologias, incluindo UML e Docker. Eu uso o Docker para provisionamento de servidores e implantações de aplicativos.
 
-Participo na formação do produto estreitando relações com o cliente para resolver suas dores assim porporcionando uma experiência agradável a ambos os lados.  
+Até hoje aprimoro [minhas habilidades](stack.html) em linguagens {copiladas, interpretadas e transpiladas} e consolidando meu trabalho em desenvolvimento.
 
-Curioso para saber como trabalho? Dê uma olhada nos meus [projetos](projetos.html) e na minha [stack](stack.html).
+Participo na formação do produto estreitando relações com o cliente para resolver suas dores assim porporcionando uma experiência agradável a ambos os lados.
 
-E ah, podemos entrar em [contato](contato.html) quando quiser. 🙂
+Gosto de contribuir com código aberto e manter uma variedade de projetos diferentes. Você pode vê-las nas minhas contas do Gitlab, GitHub e nos [meus projetos](projetos.html)
+
+E ah, podemos entrar em contato quando quiser. 🙂

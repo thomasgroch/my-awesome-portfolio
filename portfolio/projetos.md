@@ -9,7 +9,7 @@ projetos:
   external: true
   description: O workana-widget é um widget que permite aos usuários do Workana monitorar
     os trabalhos mais recentes.
-  date: 2019-11-01 00:00:00 -0300
+  date: 2019-11-01T00:00:00.000+00:00
   tags:
   - bash
   - vue

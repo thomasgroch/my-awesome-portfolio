@@ -84,6 +84,8 @@ tools:
   photo: https://logo.clearbit.com/jetbrains.dev
 - name: VSCode
   href: https://www.code.visualstudio.com/
+- name: AutoHotKey
+  href: https://www.autohotkey.com/
 - name: SequelPro
   href: https://sequelpro.com/
 - name: Postico
