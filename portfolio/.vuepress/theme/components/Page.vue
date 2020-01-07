@@ -207,6 +207,7 @@
 @require '~@parent-theme/styles/wrapper.styl'
 ::selection
     background: $accentColor /* WebKit/Blink Browsers */
+    color $secondColor
 
 ::-moz-selection
     background: $accentColor /* Gecko Browsers */
