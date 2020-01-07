@@ -1,31 +1,19 @@
 module.exports = {
-	'extends': 'eslint:recommended',
-	'env': {
-		'es6': true,
-		'node': true,
-		'browser': true
-	},
-	'plugins': ['html'],
-	'globals': {
-		'opts': true,
-		'vue': true
-	},
-	'rules': {
-		'indent': [
-			'error',
-			'tab'
-		],
-		'linebreak-style': [
-			'error',
-			'unix'
-		],
-		'quotes': [
-			'error',
-			'single'
-		],
-		'semi': [
-			'error',
-			'never'
-		]
-	}
+  root: true,
+  env: {
+    node: true
+  },
+  'extends': [
+    'plugin:vue/essential',
+    'eslint:recommended'
+  ],
+  rules: {
+    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-unused-vars': 'off',
+    'vue/no-unused-components': 'off'
+  },
+  parserOptions: {
+    parser: 'babel-eslint'
+  }
 }

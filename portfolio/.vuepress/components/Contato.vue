@@ -229,7 +229,6 @@
 					if (!result) {
 						this.status = 'error'
 						throw new Error('Form is not valid')
-						return
 					}
 
 					response = await fetch(this.formAction, {
@@ -238,7 +237,6 @@
 					})
 					if (Number(response.status) !== 200) {
 						throw new Error(`Status: ${response.status}. Error: ${response.body.error}.`)
-						return
 					}
 				} catch (error) {
 					console.log(error)

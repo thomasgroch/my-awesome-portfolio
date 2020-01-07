@@ -5,7 +5,7 @@
          @touchend="onTouchEnd">
         <!--<Password v-if="!isHasKey"></Password>-->
         <Navbar v-if="shouldShowNavbar"
-                @toggle-sidebar="toggleSidebar" />
+                @toggle-sidebar="toggleSidebar"/>
 
         <div class="sidebar-mask" @click="toggleSidebar(false)"></div>
         <div class="flex flex-no-wrap">
@@ -28,16 +28,22 @@
         </div>
         <div class="text-center text-sm text-gray-500 opacity-75 py-8"
              :class="{'animated fadeInUp slow': $page.frontmatter.home }">
-            <p>Siga-me no  <a target="_blank" href="https://twitter.com/thgroch">twitter</a>, ou assine o meu feed <a target="_blank" href="/rss.xml">rss</a>.</p>
-            	<p>
-            		<router-link to="/cripto.html" class="italic">cripto</router-link>
-            		&bull; <a href="https://tippin.me/@thgroch" rel="noopener noreferrer" target="_blank">
-				  		<img src="https://badgen.net/badge/%E2%9A%A1%EF%B8%8Ftippin.me/@thgroch/F0918E" alt="@thgroch on tippin.me"/>
-					</a>
+            <p>Siga-me no <a target="_blank" href="https://twitter.com/thgroch">twitter</a>, ou assine o meu feed <a
+                    target="_blank" href="/rss.xml">rss</a>.</p>
+            <p>
+                <router-link to="/cripto.html" class="italic">cripto</router-link>
+                &bull; <a href="https://tippin.me/@thgroch" rel="noopener noreferrer" target="_blank">
+                <img src="https://badgen.net/badge/%E2%9A%A1%EF%B8%8Ftippin.me/@thgroch/F0918E"
+                     alt="@thgroch on tippin.me"/>
+            </a>
             </p>
-            <p>© 2012-2019 <a target="_blank" rel="noopener noreferrer" href="mailto://thomas.groch@gmail.com">Thomas Letsch Groch</a>(<a target="_blank" rel="noopener noreferrer" href="pgp-mail-at-thomasgroch-me.asc">PGP</a>).<br />
-                Esta obra está licenciada sob uma licença <a rel="license" target="_blank" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
-        </p>
+            <p>© 2012-2019 <a target="_blank" rel="noopener noreferrer" href="mailto://thomas.groch@gmail.com">Thomas
+                Letsch Groch</a>(<a target="_blank" rel="noopener noreferrer"
+                                    href="pgp-mail-at-thomasgroch-me.asc">PGP</a>).<br/>
+                Esta obra está licenciada sob uma licença <a rel="license" target="_blank"
+                                                             href="http://creativecommons.org/licenses/by/4.0/">Creative
+                    Commons Attribution 4.0 International License</a>.
+            </p>
         </div>
 
         <router-view></router-view>
@@ -53,11 +59,11 @@
 	import Sidebar from '@parent-theme/components/Sidebar.vue'
 
 	import SWUpdatePopup from '@theme/components/SWUpdatePopup/'
-	import { resolveSidebarItems } from '@parent-theme/util/'
+	import {resolveSidebarItems} from '@parent-theme/util/'
 
 	export default {
-		components: { Page, Sidebar, Navbar, SWUpdatePopup},
-        name: 'Layout',
+		components: {Page, Sidebar, Navbar, SWUpdatePopup},
+		name: 'Layout',
 		data() {
 			return {
 				isSidebarOpen: false,
@@ -132,7 +138,7 @@
 			darkmode.showWidget()
 
 			// configure progress bar
-			nprogress.configure({ showSpinner: true })
+			nprogress.configure({showSpinner: true})
 			this.$router.beforeEach((to, from, next) => {
 				if (to.path !== from.path && !Vue.component(to.name)) {
 					nprogress.start()
@@ -146,7 +152,7 @@
 			})
 
 
-			this.$on("sw-updated", this.onSWUpdated);
+			this.$on('sw-updated', this.onSWUpdated)
 			// const keyPage = this.$site.themeConfig.keyPage
 			// if (!keyPage) {
 			// 	this.isHasKey =  true
@@ -157,35 +163,35 @@
 		},
 
 		methods: {
-			tagChange () {
+			tagChange() {
 				this.valineRefresh = true
 				setTimeout(() => {
 					this.valineRefresh = false
 				}, 300)
 			},
 			toggleSidebar(to) {
-				this.isSidebarOpen = typeof to === "boolean" ? to : !this.isSidebarOpen;
+				this.isSidebarOpen = typeof to === 'boolean' ? to : !this.isSidebarOpen
 			},
 			// side swipe
 			onTouchStart(e) {
 				this.touchStart = {
 					x: e.changedTouches[0].clientX,
 					y: e.changedTouches[0].clientY
-				};
+				}
 			},
 			onTouchEnd(e) {
-				const dx = e.changedTouches[0].clientX - this.touchStart.x;
-				const dy = e.changedTouches[0].clientY - this.touchStart.y;
+				const dx = e.changedTouches[0].clientX - this.touchStart.x
+				const dy = e.changedTouches[0].clientY - this.touchStart.y
 				if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 40) {
 					if (dx > 0 && this.touchStart.x <= 80) {
-						this.toggleSidebar(true);
+						this.toggleSidebar(true)
 					} else {
-						this.toggleSidebar(false);
+						this.toggleSidebar(false)
 					}
 				}
 			},
 			onSWUpdated(e) {
-				this.swUpdateEvent = e;
+				this.swUpdateEvent = e
 			}
 		}
 	}
@@ -195,37 +201,40 @@
 <style src="@theme/styles/theme.styl" lang="stylus"></style>
 
 <style lang="stylus">
-.darkmode-toggle
-	z-index: 1
+    .darkmode-toggle
+        z-index 1
 
-#nprogress .spinner
-	display: block
-	position: fixed
-	z-index: 1031
-	top: 15px
-	right: 50% !important
+    #nprogress .spinner
+        display block
+        position fixed
+        z-index 1031
+        top 15px
+        right 50% !important
 
-.custom-layout a
-    text-decoration: none
-    position: relative
-    font-size: 1.28rem
-    line-height: 36px
-    display: inline-block
-    :after
-		content: ""
-		position: absolute
-		width: 100%
-		height: 2px
-		bottom: 0
-		left: 0
-		@apply bg-green-500
-		/*background-color: $accentColor*/
-		visibility: hidden
-		-webkit-transform: scaleX(0)
-		transform: scaleX(0)
-		transition: .3s ease-in-out
-	:hover:after
-		visibility visible
-		-webkit-transform: scaleX(1)
-		transform: scaleX(1)
+    .custom-layout a {
+        text-decoration none
+        position relative
+        font-size 1.28rem
+        line-height 36px
+        display inline-block
+    }
+
+    &:after
+        content ""
+        position absolute
+        width 100%
+        height 2px
+        bottom 0
+        left 0
+        @apply bg-green-500
+        /*background-color $accentColor*/
+        visibility hidden
+        -webkit-transform scaleX(0)
+        transform scaleX(0)
+        transition .3s ease-in-out
+
+    &:hover
+        visibility visible
+        -webkit-transform scaleX(1)
+        transform scaleX(1)
 </style>

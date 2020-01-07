@@ -22,10 +22,11 @@
             </p>
         </div>
 
-        <div class="px-6 py-4 h-full inline-block">
+        <div class="px-6 py-4 h-full inline-block"
+             v-if="tags.length > 0">
             <p class="bg-gray-200 rounded-full px-3 py-1 text-xs uppercase tracking-wider font-medium text-black inline-block"
-                  v-if="tags.length > 0"
-                  v-for="tag in tags">#{{ tag }}</p>
+                  v-for="(tag, index) in tags"
+                  :key="index">#{{ tag }}</p>
         </div>
     </div>
 </div>

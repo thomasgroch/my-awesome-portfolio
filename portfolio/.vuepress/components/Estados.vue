@@ -3,7 +3,9 @@
         <select class="block appearance-none w-full bg-grey-200 border border-grey-200 text-grey-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-grey-500"
                 v-model="estado"
                 :id="id">
-            <option v-for="estado in estadosList" :value="estado.value">{{estado.text}}</option>
+            <option v-for="(estado, index) in estadosList"
+                    :value="estado.value"
+                    :key="index">{{estado.text}}</option>
         </select>
         <div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-700">
             <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">

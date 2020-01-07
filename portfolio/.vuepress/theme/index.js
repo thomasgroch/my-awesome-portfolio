@@ -5,7 +5,7 @@ module.exports = {
     ["@silvanite/tailwind", {
       config: './tailwind.config.js',
       purgecss: {
-        enabled: true,
+        enabled: false,
       },
     }]
   ]

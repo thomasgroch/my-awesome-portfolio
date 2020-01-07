@@ -28,7 +28,8 @@
 				]
 			},
 
-		}
+		},
+        components: {Projeto}
 	}
 </script>
 <style lang="stylus">

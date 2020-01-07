@@ -13,7 +13,7 @@
                         $title || 'Hello' }}</h1>
                 </div>
 
-                <vue-typed-js 
+                <vue-typed-js
                   :strings="['Full stack', 'Lead', 'Web', 'Exploit']"
                   :repeat='Infinity'
                   :shuffle='true'

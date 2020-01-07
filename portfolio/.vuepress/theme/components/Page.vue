@@ -89,7 +89,7 @@
 			prev() {
 				const prev = this.$page.frontmatter.prev
 				if (prev === false) {
-
+                    return ''
 				} else if (prev) {
 					return resolvePage(this.$site.pages, prev, this.$route.path)
 				} else {
@@ -100,7 +100,7 @@
 			next() {
 				const next = this.$page.frontmatter.next
 				if (next === false) {
-
+					return ''
 				} else if (next) {
 					return resolvePage(this.$site.pages, next, this.$route.path)
 				} else {
@@ -110,8 +110,7 @@
 
 			editLink() {
 				if (this.$page.frontmatter.editLink === false) {
-					return
-
+					return ''
 				}
 				const {
 					repo,
@@ -130,6 +129,7 @@
 				if (docsRepo && editLinks) {
 					return this.createEditLink(repo, docsRepo, docsDir, docsBranch, path)
 				}
+				return ''
 			},
 
 			editLinkText() {

@@ -20,6 +20,7 @@
 
 	export default {
 		name: 'BaseRepository',
+		components: {RepositoryCount}
 	}
 </script>
 <style lang="stylus">

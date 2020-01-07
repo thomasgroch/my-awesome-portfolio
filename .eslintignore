@@ -1,3 +1,9 @@
+*.styl
+*.md
+*.json
+fonts/
+public/
+
 .npmrc
 .firebase
 .firebaserc
