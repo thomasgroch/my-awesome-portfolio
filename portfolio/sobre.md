@@ -1,9 +1,9 @@
 ---
-title: Sobre 👥
+title: Sobre
 sidebar: false
 navbar: true
 ---
-# Sobre 👥
+# Sobre
 
 Eu sou desenvolvedor desde 1999 e sou especializado no uso de Laravel, Nodejs e Vue.js, embora também use outras tecnologias, incluindo UML e Docker. Eu uso o Docker para provisionamento de servidores e implantações de aplicativos.
 

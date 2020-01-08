@@ -1,5 +1,5 @@
 ---
-title: Stack de tecnologias 📂
+title: Stack de tecnologias
 sidebar: false
 front:
 - name: Tailwind
@@ -105,7 +105,7 @@ uml:
 - name: nobackend
   href: http://nobackend.org/
 ---
-# Stack de tecnologias 📂
+# Stack de tecnologias
 
 Com o avanço nos estudos na area de desenvolvimento web, tive contato com diversas ferramentas e serviços. Dessa forma, elaborei uma Stack moderna na qual contempla os mesmos valores em diferentes fluxos de trabalho e desenvolvimento. Segue abaixo toda (ou quase toda) a minha Stack.</br>
 
@@ -125,8 +125,7 @@ Com o avanço nos estudos na area de desenvolvimento web, tive contato com diver
 
 ⇢ Ajudo outras pessoas com trabalho em equipe.
 
-## 💻 Lado do servidor e Monoliticos
-
+## Lado do servidor 🗄
 
 <BaseStack group="back" />
 
@@ -135,15 +134,13 @@ Tiro muito proveito de orquestragem de containers e micro serviços com Docker C
 
 Possuo conhecimento sobre Wordpress Custom Post Types, Taxonomias e seu sistema de hierarquia de templates.
 
-### 🔐 SysAdmin
+### SysAdmin 🔐
 
 Amplo conhecimento em sysadmin, orquestragem de containers e integração entre serviços. Posso executar testes de penetração e trabalhar com todos os sistemas de gerenciamento de conteúdo, incluindo WordPress e Durpal.  
 
-
-
 <BaseStack group="service" />
 
-## 👨‍💻 Lado do cliente
+## Lado do cliente ‍💻
 
 Trabalho com SPA contemplando web design responsivo em todos dispositivos, suporte à internacionalização e WebSocket em tempo real.
 
@@ -184,7 +181,7 @@ Você pode dar uma olhada nas [ferramentas por trás](https://github.com/thomasg
 
 <BaseStack group="tools" />
 
-## 🔒 Security, Patterns e UML ⭐
+## 🔒 Security, Patterns e UML
 
 Conhecimento prático em testes (TDD, BDD, DDD) de integração de alto nivel para integridade do sistema e desenvolvimento ágil.
 

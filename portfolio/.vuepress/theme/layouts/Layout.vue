@@ -29,17 +29,13 @@
         <div class="text-center text-sm text-gray-500 opacity-75 py-8"
              :class="{'animated fadeInUp slow': $page.frontmatter.home }">
             <p>Siga-me no <a target="_blank" href="https://twitter.com/thgroch">twitter</a>, ou assine o meu feed <a
-                    target="_blank" href="/rss.xml">rss</a>.</p>
-            <p>
-                <router-link to="/cripto.html" class="italic">cripto</router-link>
-                &bull; <a href="https://tippin.me/@thgroch" rel="noopener noreferrer" target="_blank">
-                <img src="https://badgen.net/badge/%E2%9A%A1%EF%B8%8Ftippin.me/@thgroch/F0918E"
-                     alt="@thgroch on tippin.me"/>
-            </a>
+                    target="_blank" href="/rss.xml">rss</a>.
             </p>
             <p>© 2012-2019 <a target="_blank" rel="noopener noreferrer" href="mailto://thomas.groch@gmail.com">Thomas
                 Letsch Groch</a>(<a target="_blank" rel="noopener noreferrer"
-                                    href="pgp-mail-at-thomasgroch-me.asc">PGP</a>).<br/>
+                                    href="pgp-mail-at-thomasgroch-me.asc">PGP</a>).
+                &bull; <router-link to="/cripto.html" class="italic">contratar</router-link>
+                <br />
                 Esta obra está licenciada sob uma licença <a rel="license" target="_blank"
                                                              href="http://creativecommons.org/licenses/by/4.0/">Creative
                     Commons Attribution 4.0 International License</a>.

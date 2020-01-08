@@ -1,16 +1,12 @@
 ---
 sidebar: false
-title: Contato 📨
+title: Contato
 view: contato
 ---
+# Contato
 
-# Contato 📨
+Gostou dos [meus projetos](projetos.html) ou alguma coisa da [minha stack](stack.html) e quer **começar o seu projeto**? 
 
-💡 Teve uma ideia e quer **começar seu projeto**? 
-
-🛠 Gostou dos [meus trabalhos](projetos.html) e da [minha stack](stack.html)? 
-
-Que tal bater um papo!? Me diz aí qual é a sua nova ideia 🙃
-
+Podemos bater um papo. 🙂 Me diz aí qual é a sua ideia 💡
 
 <Contato />

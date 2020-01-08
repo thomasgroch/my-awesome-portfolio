@@ -15,4 +15,8 @@ Estou presente nestas redes de criptomoeda, você pode iniciar seu job por lá a
 
 <BaseStack group="markets" />
 
+<a href="https://tippin.me/@thgroch" rel="noopener noreferrer" target="_blank" class="align-center">
+    <img src="https://badgen.net/badge/%E2%9A%A1%EF%B8%8Ftippin.me/@thgroch/F0918E" alt="@thgroch on tippin.me" />
+</a>
+
 Aguardo seu contato.
