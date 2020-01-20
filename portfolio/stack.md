@@ -6,9 +6,11 @@ front:
   href: https://tailwindcss.com
 - name: stylus
   href: http://stylus-lang.com/
-  photo: http://stylus-lang.com/img/stylus-logo.svg
+  photo: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Stylus-logo.svg/200px-Stylus-logo.svg.png
 - name: Vue
   href: https://vuejs.org
+- name: orbitjs
+  href: https://orbitjs.com/
 - name: bulma
   href: https://bulma.io/
 - name: Yarn
@@ -109,7 +111,7 @@ uml:
 
 Com o avanço nos estudos na area de desenvolvimento web, tive contato com diversas ferramentas e serviços. Dessa forma, elaborei uma Stack moderna na qual contempla os mesmos valores em diferentes fluxos de trabalho e desenvolvimento. Segue abaixo toda (ou quase toda) a minha Stack.</br>
 
-### Principais atividades 
+### Principais atividades
 
 ⇢ Manutenção, desenvolvimento de software web e infraestrutura utilizando as melhores práticas.
 
@@ -121,7 +123,7 @@ Com o avanço nos estudos na area de desenvolvimento web, tive contato com diver
 
 ⇢ Elaboração de tarefas, sprints, requisitos e backlog de projetos web.
 
-⇢ Protejo dados sensitivos de negócio da organização e compartilho o conhecimento. 
+⇢ Protejo dados sensitivos de negócio da organização e compartilho o conhecimento.
 
 ⇢ Ajudo outras pessoas com trabalho em equipe.
 
@@ -136,7 +138,7 @@ Possuo conhecimento sobre Wordpress Custom Post Types, Taxonomias e seu sistema 
 
 ### SysAdmin 🔐
 
-Amplo conhecimento em sysadmin, orquestragem de containers e integração entre serviços. Posso executar testes de penetração e trabalhar com todos os sistemas de gerenciamento de conteúdo, incluindo WordPress e Durpal.  
+Amplo conhecimento em sysadmin, orquestragem de containers e integração entre serviços. Posso executar testes de penetração e trabalhar com todos os sistemas de gerenciamento de conteúdo, incluindo WordPress e Durpal.
 
 <BaseStack group="service" />
 
@@ -152,9 +154,9 @@ Alem disso, reaproveitamento de código com a cultura de [inner-source](https://
 
 ## 🎯 JAM stack
 
-E se um aplicação __SPA não for suficiente__ para suas necessidades? 🤔 
+E se um aplicação __SPA não for suficiente__ para suas necessidades? 🤔
 
-> *A renderização no lado do servidor (SSR), "Pre-Rendering" e o Static Site Generators (SSG) são técnicas para renderizar conteúdos. 
+> *A renderização no lado do servidor (SSR), "Pre-Rendering" e o Static Site Generators (SSG) são técnicas para renderizar conteúdos.
 A maneira como esses sistemas funcionam é, extrair conteúdo de um sistema de arquivos ou de uma API executando uma tarefa de build para gerar um site inteiro em HTML estático.
 O resultado final é igual a sites extremamente rápidos, sem back-end e que podem ser implantados em qualquer lugar.*
 
@@ -165,7 +167,7 @@ O resultado final é igual a sites extremamente rápidos, sem back-end e que pod
 
 Monitoramento e automação.
 
-Caching em todas areas de maior processamento. 
+Caching em todas areas de maior processamento.
 
 Otimização de recursos estáticos (cabeçalhos de cache HTTP).
 
