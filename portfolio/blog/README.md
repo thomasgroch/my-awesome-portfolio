@@ -3,9 +3,9 @@ title: Todos posts
 type: post
 sidebar: true
 ---
-# Blog page title
+# Blog WIP 🚧
 
-🚧 WIP
+<Tags />
 
 
 
@@ -19,7 +19,3 @@ export default {
   }
 }
 </script>
-
-
-# Tags
-<Tags/>

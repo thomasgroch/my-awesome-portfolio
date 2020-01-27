@@ -9,7 +9,12 @@ const generateBlogSideBar = dir => {
     .filter(p => basename(p) !== 'README.md')
     .map(x => '/blog/' + x)
 
-  files = files.map(file => {
+  files = files.filter(file => {
+    let frontmatter = parseFrontmatter(readFileSync(join(__dirname, '..', file), 'utf8').split('\n').map(l => l.trim()).join('\n'))
+    // console.log('Post: '+frontmatter.data.title)
+    // console.log(!frontmatter.data.draft)
+    return !frontmatter.data.draft
+  }).map(file => {
     let frontmatter = parseFrontmatter(readFileSync(join(__dirname, '..', file), 'utf8').split('\n').map(l => l.trim()).join('\n'))
     return {
       file: file,

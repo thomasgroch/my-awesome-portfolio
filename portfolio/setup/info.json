@@ -32,7 +32,7 @@
       "text": "blog",
       "link": "/blog/index.html",
       "external": false,
-      "draft": true
+      "draft": false
     }
   ]
 }

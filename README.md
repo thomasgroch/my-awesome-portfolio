@@ -23,7 +23,13 @@ Eu reescrevi meu portfólio muitas vezes e cada vez fui influenciado por alguém
 
 - [recoluan](https://github.com/recoluan)
 
+## License
+
+Os arquivos e scripts neste repositório são licenciados sob a Licença MIT, que é uma licença muito permissiva que permite usar, modificar, copiar, distribuir, vender, doar, etc. o software. Em outras palavras, faça o que quiser com ele. O único requisito da licença MIT é que a licença e o aviso de direitos autorais sejam fornecidos com o software.
+
 ## Refs 🖇
 
+- [alt-hosting](https://teetotality.blog/posts/how-this-blog-was-made/)
+- [deploy](https://dev.to/agentofuser/the-complete-beginner-s-guide-to-deploying-your-first-static-website-to-ipfs-33po)
 - [laxxx](https://github.com/alexfoxy/laxxx)
 - [vuepress socket examples](https://vuepress-examples.netlify.com/)
