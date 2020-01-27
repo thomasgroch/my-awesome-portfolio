@@ -53,7 +53,9 @@
 			let pages = this.$site.pages,
 				hasTags = [],
 				newTags = []
-			pages.forEach(page => {
+			pages.filter(item => {
+				return !item.frontmatter.draft
+			}).forEach(page => {
 				let tags = page.frontmatter.tags
 				if (tags) {
 					tags.forEach(tag => {
@@ -82,6 +84,8 @@
 				let pages = this.$site.pages
 				this.currentTag = tag
 				pages = pages.filter(item => {
+					return !item.frontmatter.draft
+				}).filter(item => {
 					let tags = item.frontmatter.tags
 					return tags && item.frontmatter.tags.indexOf(tag) > -1
 				})
