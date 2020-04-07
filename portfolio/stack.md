@@ -25,6 +25,8 @@ front:
 back:
 - name: Node
   href: https://nodejs.org/
+- name: hapi
+  href: https://hapi.dev/
 - name: Nuxt
   href: https://nuxtjs.org/
 - name: PHP
@@ -44,6 +46,7 @@ back:
   href: https://www.postgresql.org
 - name: Spring
   href: https://spring.io/
+  photo: https://spring.io/images/spring-logo-fc4350c59999bb62c468361537212419.svg
 - name: bedrock
   href: https://roots.io/bedrock/
 test:
