@@ -30,8 +30,8 @@ _This is italic text_
 📊🚧 ⭐️ 🎯📌💻🚀❓❗☕ 📨📑💼
 
 ![docker logo](https://png.icons8.com/color/50/000000/docker.png)
-![alt tag](http://icons.iconarchive.com/icons/dakirby309/simply-styled/32/OS-Linux-icon.png)
-![alt tag](http://icons.iconarchive.com/icons/yootheme/social-bookmark/32/social-windows-button-icon.png)
+![alt tag](https://icons.iconarchive.com/icons/dakirby309/simply-styled/32/OS-Linux-icon.png)
+![alt tag](https://icons.iconarchive.com/icons/yootheme/social-bookmark/32/social-windows-button-icon.png)
 
 Classic markup: :wink: :cry: :laughing: :yum:
 
