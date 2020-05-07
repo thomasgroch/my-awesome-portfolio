@@ -40,6 +40,10 @@
                                                              href="http://creativecommons.org/licenses/by/4.0/">Creative
                     Commons Attribution 4.0 International License</a>.
             </p>
+            <div v-if="isProduction">
+	            <noscript><img src="//tghost-shynet.herokuapp.com/ingress/60242794-246d-4d43-bad2-3676aec6dd9c/pixel.gif"></noscript>
+	            <script src="//tghost-shynet.herokuapp.com/ingress/60242794-246d-4d43-bad2-3676aec6dd9c/script.js"></script>
+        	</div>
         </div>
 
         <router-view></router-view>
@@ -70,6 +74,9 @@
 		},
 
 		computed: {
+			isProduction(){
+				return (process.env.NODE_ENV === 'production')
+			},
 			shouldShowNavbar() {
 				const {themeConfig} = this.$site
 				const {frontmatter} = this.$page
