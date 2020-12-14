@@ -69,6 +69,8 @@ jam:
   href: https://faunadb.com/
 - name: mailgun
   href: https://mailgun.com/
+- name: Pulumi
+  href: https://pulumi.com/
 - name: Netlify
   href: https://netlify.com/
   photo: https://seeklogo.com/images/N/netlify-logo-758722CDF4-seeklogo.com.png
@@ -112,7 +114,7 @@ uml:
 ---
 # Stack de tecnologias
 
-Com o avanço nos estudos na area de desenvolvimento web, tive contato com diversas ferramentas e serviços. Dessa forma, elaborei uma Stack moderna na qual contempla os mesmos valores em diferentes fluxos de trabalho e desenvolvimento. Segue abaixo toda (ou quase toda) a minha Stack.</br>
+Com o avanço nos estudos na area de desenvolvimento web, tive contato com diversas ferramentas e serviços. Dessa forma, elaborei uma Stack moderna na qual contempla os mesmos valores em diferentes fluxos de trabalho e desenvolvimento. Segue abaixo toda (ou quase toda) minha stack.</br>
 
 ### Principais atividades
 
