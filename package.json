@@ -4,16 +4,16 @@
   "description": "my awesome portfolio frontend.",
   "author": "Thomas Letsch Groch <thomas.groch@gmail.com>",
   "scripts": {
-    "serve": "yarn build:front && npx http-server dist/ -c-1 -o -a 0.0.0.0",
+    "serve": "npm build:front && npx http-server dist/ -c-1 -o -a 0.0.0.0",
     "build": "run-p build:**",
     "bootstrap": "node ./bootstrap-fauna-database.js",
     "build:back": "netlify-lambda build lambda/ --timeout 7",
     "build:front": "vuepress build portfolio --dest dist",
-    "debug": "npx nodejs-dashboard -- yarn dev",
-    "dev": "yarn start:front",
+    "debug": "npx nodejs-dashboard -- npm dev",
+    "dev": "npm start:front",
     "lint": "eslint \"./portfolio/.vuepress/**/*\" --ext .js,.vue --fix",
-    "prebuild": "echo 'setup faunaDB'; yarn bootstrap",
-    "precommit": "yarn lint",
+    "prebuild": "echo 'setup faunaDB'; npm bootstrap",
+    "precommit": "npm lint",
     "start": "run-s start:**",
     "start:back": "netlify-lambda serve lambda/ --timeout 8 -c webpack.server.js",
     "start:front": "vuepress dev portfolio --host 0.0.0.0 --port 8080"
@@ -85,8 +85,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/thomasgroch/my-awesome-portfolio"
-  },
-  "engines": {
-    "yarn": "0.23.2"
   }
 }
